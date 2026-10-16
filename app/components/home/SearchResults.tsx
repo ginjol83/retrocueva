@@ -2,6 +2,7 @@ import type { CSSProperties, ReactNode } from "react";
 import Link from "next/link";
 import { accent } from "../../lib/data";
 import type { SearchResults } from "../../lib/search";
+import Highlight from "../Highlight";
 import { EmptyState, SectionTitle, SubsectionTitle } from "./SectionBits";
 
 interface ResultRow {
@@ -11,14 +12,27 @@ interface ResultRow {
   accentColor: string;
   href?: string;
   external?: boolean;
+  query?: string;
 }
 
-function ResultRow({ title, subtitle, meta, accentColor, href, external }: ResultRow) {
+function ResultRow({
+  title,
+  subtitle,
+  meta,
+  accentColor,
+  href,
+  external,
+  query = "",
+}: ResultRow) {
   const style = { "--accent": accentColor } as CSSProperties;
   const body = (
     <div className="flex flex-1 flex-wrap items-baseline gap-x-3 gap-y-1 px-4 py-3">
-      <span className="font-pixel text-[11px] leading-6 text-ink">{title}</span>
-      <span className="font-retro text-base text-ink/50">{subtitle}</span>
+      <span className="font-pixel text-[11px] leading-6 text-ink">
+        <Highlight text={title} query={query} />
+      </span>
+      <span className="font-retro text-base text-ink/50">
+        <Highlight text={subtitle} query={query} />
+      </span>
       {meta && (
         <span className="ml-auto font-retro text-base text-ink/40">{meta}</span>
       )}
@@ -67,7 +81,7 @@ export default function SearchResults({
   query: string;
 }) {
   return (
-    <section className="py-14">
+    <section className="py-14" role="status" aria-live="polite" aria-atomic="false">
       <SectionTitle
         title={`Resultados para «${query}»`}
         count={results.total}
@@ -85,6 +99,7 @@ export default function SearchResults({
               <ResultRow
                 key={`m-${machine.id}`}
                 href={`/maquinas/${machine.id}`}
+                query={query}
                 accentColor={accent(machine.name)}
                 title={machine.name}
                 subtitle={`${machine.manufacturer} · ${machine.cpu}`}
@@ -100,6 +115,7 @@ export default function SearchResults({
               <ResultRow
                 key={`g-${game.id}`}
                 href={`/juegos/${game.id}`}
+                query={query}
                 accentColor={accent(game.platform)}
                 title={game.title}
                 subtitle={`${game.platform} · ${game.genre}`}
@@ -118,6 +134,7 @@ export default function SearchResults({
                   key={`a-${article.id}`}
                   href={internal ? `/articulos/${article.id}` : article.link}
                   external={!internal}
+                  query={query}
                   accentColor={accent(article.magazine)}
                   title={article.title}
                   subtitle={`${article.magazine} ${article.issue ?? ""}`.trim()}
@@ -135,6 +152,7 @@ export default function SearchResults({
                 key={`d-${item.id}`}
                 href={item.link}
                 external={Boolean(item.link)}
+                query={query}
                 accentColor={accent(item.platform)}
                 title={item.title}
                 subtitle={`${item.platform} · ${item.language}`}
@@ -149,7 +167,8 @@ export default function SearchResults({
             items={results.serials.map((row) => (
               <ResultRow
                 key={`s-${row.id}`}
-                href="/placas"
+                href={`/placas?equipo=${encodeURIComponent(row.machine)}`}
+                query={query}
                 accentColor="#00f0ff"
                 title={row.serial || "Pendiente de leer"}
                 subtitle={row.machine}

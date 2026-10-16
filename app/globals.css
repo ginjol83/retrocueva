@@ -58,6 +58,46 @@ body::after {
   );
 }
 
+:focus-visible {
+  outline: 2px solid var(--color-neon);
+  outline-offset: 2px;
+}
+
+.skip-link {
+  position: absolute;
+  left: 0.75rem;
+  top: -100%;
+  z-index: 100;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-neon);
+  background: #05060f;
+  color: var(--color-neon);
+  font-family: var(--font-retro), monospace;
+  font-size: 1.125rem;
+}
+
+.skip-link:focus {
+  top: 0.75rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .blink {
+    animation: none;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
 .font-pixel {
   font-family: var(--font-pixel), monospace;
 }

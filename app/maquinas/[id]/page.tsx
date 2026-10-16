@@ -8,9 +8,13 @@ import {
   gamesForMachine,
   getMachine,
   accent,
+  articlesMentioning,
   code,
+  serialsForMachine,
 } from "../../lib/data";
 import Logo from "../../components/Logo";
+
+export const instant = false;
 
 export function generateStaticParams() {
   return machines.map((machine) => ({ id: String(machine.id) }));
@@ -21,10 +25,19 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { id } = await props.params;
   const machine = getMachine(Number(id));
-  if (!machine) return { title: "Equipo no encontrado · RETROCUEVA" };
+  if (!machine) return { title: "Equipo no encontrado" };
   return {
-    title: `${machine.name} · RETROCUEVA`,
+    title: machine.name,
     description: machine.description,
+    alternates: { canonical: `/maquinas/${machine.id}` },
+    openGraph: {
+      title: machine.name,
+      description: machine.description,
+      url: `/maquinas/${machine.id}`,
+      images: machine.image
+        ? [{ url: machine.image, alt: machine.name }]
+        : undefined,
+    },
   };
 }
 
@@ -35,6 +48,8 @@ export default async function MachinePage(props: PageProps<"/maquinas/[id]">) {
 
   const color = accent(machine.name);
   const related = gamesForMachine(machine);
+  const relatedSerials = serialsForMachine(machine);
+  const mentions = articlesMentioning(machine.name);
 
   const specs = [
     { label: "Fabricante", value: machine.manufacturer },
@@ -68,7 +83,7 @@ export default async function MachinePage(props: PageProps<"/maquinas/[id]">) {
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl px-6 py-12">
+      <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
         <p className="font-retro text-lg tracking-widest text-ink/40">
           COLECCIÓN / <span style={{ color }}>{machine.name.toUpperCase()}</span>
         </p>
@@ -176,6 +191,68 @@ export default async function MachinePage(props: PageProps<"/maquinas/[id]">) {
                   <p className="mt-2 text-sm leading-relaxed text-ink/70">
                     {game.description}
                   </p>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {relatedSerials.length > 0 && (
+          <section className="mt-12">
+            <h2 className="font-pixel text-[11px] text-ink/80">
+              <span style={{ color }}>#</span> Números de serie de esta unidad
+            </h2>
+            <ul className="mt-4 grid gap-3">
+              {relatedSerials.map((row) => (
+                <li key={row.id}>
+                  <Link
+                    href={`/placas?equipo=${encodeURIComponent(row.machine)}`}
+                    className="retro-card"
+                    style={{ "--accent": color } as CSSProperties}
+                  >
+                    <div className="flex flex-1 flex-wrap items-baseline gap-x-3 gap-y-1 px-4 py-3">
+                      <span className="font-retro text-lg text-neon">
+                        {row.serial || "pendiente"}
+                      </span>
+                      <span className="font-retro text-base text-ink/50">
+                        {row.pattern || "sin patrón"}
+                      </span>
+                      <span className="ml-auto font-retro text-base text-ink/40">
+                        {row.source || "—"}
+                      </span>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {mentions.length > 0 && (
+          <section className="mt-12">
+            <h2 className="font-pixel text-[11px] text-ink/80">
+              <span style={{ color }}>@</span> Aparece en
+            </h2>
+            <ul className="mt-4 grid gap-3">
+              {mentions.map((article) => (
+                <li key={article.id}>
+                  <Link
+                    href={`/articulos/${article.id}`}
+                    className="retro-card"
+                    style={{ "--accent": accent(article.magazine) } as CSSProperties}
+                  >
+                    <div className="flex flex-1 flex-wrap items-baseline gap-x-3 gap-y-1 px-4 py-3">
+                      <span className="font-pixel text-[11px] leading-6 text-ink">
+                        {article.title}
+                      </span>
+                      <span className="font-retro text-base text-ink/50">
+                        {article.magazine} {article.issue ?? ""}
+                      </span>
+                      <span className="ml-auto font-retro text-base text-ink/40">
+                        {article.year}
+                      </span>
+                    </div>
+                  </Link>
                 </li>
               ))}
             </ul>

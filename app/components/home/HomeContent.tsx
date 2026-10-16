@@ -1,80 +1,78 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import Link from "next/link";
 import Logo from "../Logo";
+import { about, articles, developed, samaruc, serials, videos, machines, games } from "../../lib/data";
 import {
-  about,
-  articles,
-  developed,
-  games,
-  machinePlatforms,
-  machines,
-  normalize,
-  samaruc,
-  serials,
-  videos,
-} from "../../lib/data";
+  ALL,
+  decadeOptions,
+  filterGames,
+  filterMachines,
+  genreOptions,
+  isSortKey,
+  manufacturerOptions,
+  platformOptions,
+  type SortKey,
+} from "../../lib/collection";
 import { searchAll } from "../../lib/search";
+import { useUrlState } from "../../lib/use-url-state";
 import AboutSection from "./AboutSection";
 import ArticlesSection from "./ArticlesSection";
 import CollectionMenu from "./CollectionMenu";
 import CollectionSection from "./CollectionSection";
 import DevelopedSection from "./DevelopedSection";
 import SamarucSection from "./SamarucSection";
+import SearchInput from "./SearchInput";
 import SearchResults from "./SearchResults";
 import VideosSection from "./VideosSection";
 
+const DEFAULTS = {
+  q: "",
+  platform: ALL,
+  genre: ALL,
+  fab: ALL,
+  decada: ALL,
+  orden: "id",
+};
+
 export default function HomeContent() {
-  const [query, setQuery] = useState("");
-  const [platform, setPlatform] = useState("all");
-  const [genre, setGenre] = useState("all");
+  const { state, setValues, reset } = useUrlState(DEFAULTS);
+  const { q: rawQuery, platform, genre, fab, decada } = state;
+  const sort: SortKey = isSortKey(state.orden) ? state.orden : "id";
 
-  const q = query.trim();
+  const query = rawQuery.trim();
 
-  const platforms = useMemo(
-    () =>
-      Array.from(
-        new Set([
-          ...machines.flatMap((machine) => machinePlatforms(machine)),
-          ...games.map((game) => game.platform),
-        ]),
-      ).sort((a, b) => a.localeCompare(b, "es")),
-    [],
-  );
-
-  const genres = useMemo(
-    () =>
-      Array.from(new Set(games.map((game) => game.genre))).sort((a, b) =>
-        a.localeCompare(b, "es"),
-      ),
-    [],
-  );
+  const platforms = useMemo(() => platformOptions(), []);
+  const genres = useMemo(() => genreOptions(), []);
+  const manufacturers = useMemo(() => manufacturerOptions(), []);
+  const decades = useMemo(() => decadeOptions(), []);
 
   const filteredMachines = useMemo(
     () =>
-      machines.filter(
-        (machine) =>
-          platform === "all" ||
-          machinePlatforms(machine).some(
-            (item) => normalize(item) === normalize(platform),
-          ),
-      ),
-    [platform],
+      filterMachines(machines, {
+        platform,
+        genre,
+        manufacturer: fab,
+        decade: decada,
+        sort,
+      }),
+    [platform, genre, fab, decada, sort],
   );
 
   const filteredGames = useMemo(
     () =>
-      games.filter(
-        (game) =>
-          (platform === "all" ||
-            normalize(game.platform) === normalize(platform)) &&
-          (genre === "all" || game.genre === genre),
-      ),
-    [platform, genre],
+      filterGames(games, {
+        platform,
+        genre,
+        manufacturer: fab,
+        decade: decada,
+        sort,
+      }),
+    [platform, genre, fab, decada, sort],
   );
 
-  const results = useMemo(() => (q ? searchAll(q) : null), [q]);
+  const results = useMemo(() => (query ? searchAll(query) : null), [query]);
 
   const firstYear = useMemo(() => Math.min(...machines.map((m) => m.year)), []);
 
@@ -84,6 +82,13 @@ export default function HomeContent() {
     { value: genres.length, label: "Géneros" },
     { value: firstYear, label: "Desde el año" },
   ];
+
+  const filtering =
+    platform !== ALL ||
+    genre !== ALL ||
+    fab !== ALL ||
+    decada !== ALL ||
+    sort !== "id";
 
   return (
     <div className="min-h-dvh">
@@ -165,23 +170,16 @@ export default function HomeContent() {
 
       <div className="border-y border-white/10 bg-[#05060f]/70 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-end px-6 py-4">
-          <label className="relative block w-full md:w-96">
-            <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 font-retro text-lg text-ink/40">
-              &gt;
-            </span>
-            <input
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder="Buscar en la colección…"
-              className="w-full border-2 border-white/15 bg-black/40 py-2 pl-8 pr-4 font-retro text-lg text-ink outline-none transition-colors placeholder:text-ink/30 focus:border-neon"
-            />
-          </label>
+          <SearchInput
+            value={rawQuery}
+            onChange={(value) => setValues({ q: value })}
+          />
         </div>
       </div>
 
-      <main className="mx-auto max-w-6xl px-6">
+      <main id="contenido" className="mx-auto max-w-6xl px-6">
         {results ? (
-          <SearchResults results={results} query={q} />
+          <SearchResults results={results} query={query} />
         ) : (
           <>
             <CollectionSection
@@ -189,14 +187,20 @@ export default function HomeContent() {
               games={filteredGames}
               platforms={platforms}
               genres={genres}
+              manufacturers={manufacturers}
+              decades={decades}
               platform={platform}
               genre={genre}
-              onPlatform={setPlatform}
-              onGenre={setGenre}
-              onClear={() => {
-                setPlatform("all");
-                setGenre("all");
-              }}
+              manufacturer={fab}
+              decade={decada}
+              sort={sort}
+              filtering={filtering}
+              onPlatform={(value) => setValues({ platform: value })}
+              onGenre={(value) => setValues({ genre: value })}
+              onManufacturer={(value) => setValues({ fab: value })}
+              onDecade={(value) => setValues({ decada: value })}
+              onSort={(value) => setValues({ orden: value })}
+              onClear={reset}
             />
             <AboutSection data={about} />
             <ArticlesSection data={articles} />

@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 import type { Game, Machine } from "../../lib/data";
+import { ALL, SORT_OPTIONS, type SortKey } from "../../lib/collection";
 import GameCard from "./GameCard";
 import MachineCard from "./MachineCard";
 import { EmptyState, SectionTitle, SubsectionTitle } from "./SectionBits";
@@ -29,69 +30,130 @@ function Chip({
   );
 }
 
+function ChipRow({
+  label,
+  allLabel,
+  value,
+  options,
+  onSelect,
+}: {
+  label: string;
+  allLabel: string;
+  value: string;
+  options: string[];
+  onSelect: (value: string) => void;
+}) {
+  if (options.length === 0) return null;
+  return (
+    <div className="flex flex-wrap items-center gap-2">
+      <span className="mr-2 font-retro text-base tracking-widest text-ink/40">
+        {label}
+      </span>
+      <Chip active={value === ALL} onClick={() => onSelect(ALL)}>
+        {allLabel}
+      </Chip>
+      {options.map((item) => (
+        <Chip
+          key={item}
+          active={value === item}
+          onClick={() => onSelect(value === item ? ALL : item)}
+        >
+          {item}
+        </Chip>
+      ))}
+    </div>
+  );
+}
+
 export default function CollectionSection({
   machines,
   games,
   platforms,
   genres,
+  manufacturers,
+  decades,
   platform,
   genre,
+  manufacturer,
+  decade,
+  sort,
+  filtering,
   onPlatform,
   onGenre,
+  onManufacturer,
+  onDecade,
+  onSort,
   onClear,
 }: {
   machines: Machine[];
   games: Game[];
   platforms: string[];
   genres: string[];
+  manufacturers: string[];
+  decades: string[];
   platform: string;
   genre: string;
+  manufacturer: string;
+  decade: string;
+  sort: SortKey;
+  filtering: boolean;
   onPlatform: (value: string) => void;
   onGenre: (value: string) => void;
+  onManufacturer: (value: string) => void;
+  onDecade: (value: string) => void;
+  onSort: (value: SortKey) => void;
   onClear: () => void;
 }) {
-  const filtered = platform !== "all" || genre !== "all";
-
   return (
     <section id="coleccion" className="scroll-mt-24 py-14">
       <SectionTitle title="Colección" count={machines.length + games.length} />
 
-      <div className="mb-10 border-2 border-white/10 bg-white/[0.02] p-4">
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="mr-2 font-retro text-base tracking-widest text-ink/40">
-            Plataforma
-          </span>
-          <Chip active={platform === "all"} onClick={() => onPlatform("all")}>
-            Todo
-          </Chip>
-          {platforms.map((item) => (
-            <Chip
-              key={item}
-              active={platform === item}
-              onClick={() => onPlatform(platform === item ? "all" : item)}
-            >
-              {item}
-            </Chip>
-          ))}
-        </div>
+      <div className="mb-10 space-y-3 border-2 border-white/10 bg-white/[0.02] p-4">
+        <ChipRow
+          label="Plataforma"
+          allLabel="Todo"
+          value={platform}
+          options={platforms}
+          onSelect={onPlatform}
+        />
+        <ChipRow
+          label="Género"
+          allLabel="Todo"
+          value={genre}
+          options={genres}
+          onSelect={onGenre}
+        />
+        <ChipRow
+          label="Fabricante"
+          allLabel="Todo"
+          value={manufacturer}
+          options={manufacturers}
+          onSelect={onManufacturer}
+        />
+        <ChipRow
+          label="Década"
+          allLabel="Todas"
+          value={decade}
+          options={decades}
+          onSelect={onDecade}
+        />
 
-        <div className="mt-3 flex flex-wrap items-center gap-2">
-          <span className="mr-2 font-retro text-base tracking-widest text-ink/40">
-            Género
-          </span>
-          <Chip active={genre === "all"} onClick={() => onGenre("all")}>
-            Todo
-          </Chip>
-          {genres.map((item) => (
-            <Chip
-              key={item}
-              active={genre === item}
-              onClick={() => onGenre(genre === item ? "all" : item)}
+        <div className="flex flex-wrap items-center gap-3 border-t border-white/10 pt-3">
+          <label className="flex items-center gap-2 font-retro text-base text-ink/40">
+            Orden
+            <select
+              value={sort}
+              onChange={(event) => onSort(event.target.value as SortKey)}
+              className="border-2 border-white/15 bg-black/40 px-2 py-1 font-retro text-base text-ink outline-none transition-colors focus:border-neon"
             >
-              {item}
-            </Chip>
-          ))}
-          {filtered && (
+              {SORT_OPTIONS.map((option) => (
+                <option key={option.value} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </label>
+          {filtering && (
             <button
               type="button"
               onClick={onClear}

@@ -3,8 +3,11 @@ import type { CSSProperties } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { accent, articles, getArticle } from "../../lib/data";
+import { accent, articles, entitiesMentionedIn, getArticle } from "../../lib/data";
+import { SITE_URL } from "../../lib/site";
 import Logo from "../../components/Logo";
+
+export const instant = false;
 
 export function generateStaticParams() {
   return articles
@@ -17,10 +20,17 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { id } = await props.params;
   const article = getArticle(Number(id));
-  if (!article) return { title: "Artículo no encontrado · RETROCUEVA" };
+  if (!article) return { title: "Artículo no encontrado" };
   return {
-    title: `${article.title} · RETROCUEVA`,
+    title: article.title,
     description: article.summary,
+    alternates: { canonical: `/articulos/${article.id}` },
+    openGraph: {
+      title: article.title,
+      description: article.summary,
+      url: `/articulos/${article.id}`,
+      images: article.cover ? [{ url: article.cover, alt: article.title }] : undefined,
+    },
   };
 }
 
@@ -31,9 +41,27 @@ export default async function ArticlePage(props: PageProps<"/articulos/[id]">) {
 
   const color = accent(article.magazine);
   const magazineName = article.magazine.toUpperCase();
+  const mentioned = entitiesMentionedIn(article);
+  const hasMentioned = mentioned.games.length > 0 || mentioned.machines.length > 0;
 
   return (
     <div className="min-h-dvh" style={{ "--accent": color } as CSSProperties}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: article.title,
+            description: article.summary,
+            author: article.author ? { "@type": "Person", name: article.author } : undefined,
+            publisher: { "@type": "Organization", name: article.magazine },
+            datePublished: article.year ? `${article.year}-01-01` : undefined,
+            image: article.cover ? `${SITE_URL}${article.cover}` : undefined,
+            mainEntityOfPage: `${SITE_URL}/articulos/${article.id}`,
+          }).replace(/</g, "\\u003c"),
+        }}
+      />
       <header className="sticky top-0 z-40 border-b border-white/10 bg-[#05060f]/80 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
           <Logo />
@@ -46,7 +74,7 @@ export default async function ArticlePage(props: PageProps<"/articulos/[id]">) {
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl px-6 py-12">
+      <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
         <p className="font-retro text-lg tracking-widest text-ink/40">
           {magazineName} / ARTÍCULOS /{" "}
           <span style={{ color }}>
@@ -236,6 +264,58 @@ export default async function ArticlePage(props: PageProps<"/articulos/[id]">) {
               </p>
             )}
           </div>
+        )}
+
+        {hasMentioned && (
+          <section className="mt-12">
+            <h2 className="font-pixel text-[11px] text-ink/80">
+              <span style={{ color }}>#</span> En la colección
+            </h2>
+            <ul className="mt-4 grid gap-3">
+              {mentioned.machines.map((machine) => (
+                <li key={`m-${machine.id}`}>
+                  <Link
+                    href={`/maquinas/${machine.id}`}
+                    className="retro-card"
+                    style={{ "--accent": accent(machine.name) } as CSSProperties}
+                  >
+                    <div className="flex flex-1 flex-wrap items-baseline gap-x-3 gap-y-1 px-4 py-3">
+                      <span className="font-pixel text-[11px] leading-6 text-ink">
+                        {machine.name}
+                      </span>
+                      <span className="font-retro text-base text-ink/50">
+                        {machine.manufacturer} · hardware
+                      </span>
+                      <span className="ml-auto font-retro text-base text-ink/40">
+                        {machine.year}
+                      </span>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+              {mentioned.games.map((game) => (
+                <li key={`g-${game.id}`}>
+                  <Link
+                    href={`/juegos/${game.id}`}
+                    className="retro-card"
+                    style={{ "--accent": accent(game.platform) } as CSSProperties}
+                  >
+                    <div className="flex flex-1 flex-wrap items-baseline gap-x-3 gap-y-1 px-4 py-3">
+                      <span className="font-pixel text-[11px] leading-6 text-ink">
+                        {game.title}
+                      </span>
+                      <span className="font-retro text-base text-ink/50">
+                        {game.platform} · software
+                      </span>
+                      <span className="ml-auto font-retro text-base text-ink/40">
+                        {game.year}
+                      </span>
+                    </div>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
         )}
       </main>
 

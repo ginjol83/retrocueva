@@ -3,8 +3,17 @@ import type { CSSProperties } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { accent, games, gamesOnPlatform, getGame } from "../../lib/data";
+import {
+  accent,
+  articlesMentioning,
+  games,
+  gamesOnPlatform,
+  getGame,
+  machinesForPlatform,
+} from "../../lib/data";
 import Logo from "../../components/Logo";
+
+export const instant = false;
 
 export function generateStaticParams() {
   return games.map((game) => ({ id: String(game.id) }));
@@ -15,10 +24,17 @@ export async function generateMetadata(
 ): Promise<Metadata> {
   const { id } = await props.params;
   const game = getGame(Number(id));
-  if (!game) return { title: "Juego no encontrado · RETROCUEVA" };
+  if (!game) return { title: "Juego no encontrado" };
   return {
-    title: `${game.title} · RETROCUEVA`,
+    title: game.title,
     description: game.description,
+    alternates: { canonical: `/juegos/${game.id}` },
+    openGraph: {
+      title: game.title,
+      description: game.description,
+      url: `/juegos/${game.id}`,
+      images: game.image ? [{ url: game.image, alt: game.title }] : undefined,
+    },
   };
 }
 
@@ -29,6 +45,8 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
 
   const color = accent(game.platform);
   const siblings = gamesOnPlatform(game.platform, game.id);
+  const machinesForGame = machinesForPlatform(game.platform);
+  const mentions = articlesMentioning(game.title);
 
   const specs = [
     { label: "Plataforma", value: game.platform },
@@ -62,7 +80,7 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl px-6 py-12">
+      <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
         <p className="font-retro text-lg tracking-widest text-ink/40">
           COLECCIÓN / SOFTWARE /{" "}
           <span style={{ color }}>{game.title.toUpperCase()}</span>
@@ -172,6 +190,62 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
                     <p className="mt-2 text-sm leading-relaxed text-ink/70">
                       {sibling.description}
                     </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {machinesForGame.length > 0 && (
+          <section className="mt-12">
+            <h2 className="font-pixel text-[11px] text-ink/80">
+              <span style={{ color }}>#</span> Equipos compatibles
+            </h2>
+            <ul className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+              {machinesForGame.map((machine) => (
+                <li key={machine.id}>
+                  <Link
+                    href={`/maquinas/${machine.id}`}
+                    className="block border-2 border-white/10 bg-[#0b0e1d] p-5 transition-colors hover:border-[var(--accent)]"
+                  >
+                    <p className="font-pixel text-[11px] leading-6 text-ink">
+                      {machine.name}
+                    </p>
+                    <p className="mt-2 font-retro text-lg text-ink/50">
+                      {machine.manufacturer} · {machine.year}
+                    </p>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {mentions.length > 0 && (
+          <section className="mt-12">
+            <h2 className="font-pixel text-[11px] text-ink/80">
+              <span style={{ color }}>@</span> Aparece en
+            </h2>
+            <ul className="mt-4 grid gap-3">
+              {mentions.map((article) => (
+                <li key={article.id}>
+                  <Link
+                    href={`/articulos/${article.id}`}
+                    className="retro-card"
+                    style={{ "--accent": accent(article.magazine) } as CSSProperties}
+                  >
+                    <div className="flex flex-1 flex-wrap items-baseline gap-x-3 gap-y-1 px-4 py-3">
+                      <span className="font-pixel text-[11px] leading-6 text-ink">
+                        {article.title}
+                      </span>
+                      <span className="font-retro text-base text-ink/50">
+                        {article.magazine} {article.issue ?? ""}
+                      </span>
+                      <span className="ml-auto font-retro text-base text-ink/40">
+                        {article.year}
+                      </span>
+                    </div>
                   </Link>
                 </li>
               ))}

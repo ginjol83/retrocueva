@@ -205,6 +205,9 @@ export const getSerial = (id: number): Serial | undefined =>
 export const getDeveloped = (id: number): DevelopedGame | undefined =>
   developed.find((d) => d.id === id);
 
+export const getVideo = (id: string): Video | undefined =>
+  videos.find((v) => v.id === id);
+
 export const gamesOnPlatform = (platform: string, excludeId?: number): Game[] =>
   games.filter((g) => g.platform === platform && g.id !== excludeId);
 
@@ -217,3 +220,55 @@ export const gamesForMachine = (machine: Machine): Game[] => {
   const platforms = machinePlatforms(machine).map(normalize);
   return games.filter((game) => platforms.includes(normalize(game.platform)));
 };
+
+export const machinesForPlatform = (platform: string): Machine[] => {
+  const target = normalize(platform);
+  return machines.filter((machine) =>
+    machinePlatforms(machine).some((item) => normalize(item) === target),
+  );
+};
+
+export const serialsForMachine = (machine: Machine): Serial[] => {
+  const name = normalize(machine.name);
+  return serials.filter((row) => normalize(row.machine) === name);
+};
+
+const articleText = (article: Article): string =>
+  [
+    article.title,
+    article.summary,
+    article.lead ?? "",
+    ...(article.sections ?? []).flatMap((section) => [
+      section.heading ?? "",
+      ...section.blocks.flatMap((block) =>
+        block.kind === "p"
+          ? [block.text]
+          : block.kind === "ul"
+            ? block.items
+            : [block.caption ?? "", block.alt],
+      ),
+    ]),
+  ].join(" ");
+
+export const articlesMentioning = (term: string): Article[] => {
+  const needle = normalize(term);
+  if (needle.length < 4) return [];
+  return articles.filter((article) =>
+    normalize(articleText(article)).includes(needle),
+  );
+};
+
+export const entitiesMentionedIn = (
+  article: Article,
+): { games: Game[]; machines: Machine[] } => {
+  const text = normalize(articleText(article));
+  return {
+    games: games.filter(
+      (game) => game.title.length >= 4 && text.includes(normalize(game.title)),
+    ),
+    machines: machines.filter((machine) =>
+      text.includes(normalize(machine.name)),
+    ),
+  };
+};
+

@@ -5,9 +5,15 @@ import SerialsTable from "../components/SerialsTable";
 import { serials } from "../lib/data";
 
 export const metadata: Metadata = {
-  title: "Números de serie · RETROCUEVA",
+  title: "Números de serie",
   description:
     "Base de datos de números de serie recogidos de varios equipos para validar cómo se generan: segmentos separados, patrón inferido, fuente de lectura y notas.",
+  alternates: { canonical: "/placas" },
+  openGraph: {
+    title: "Números de serie",
+    description:
+      "Base de datos de números de serie recogidos para validar cómo se generan.",
+  },
 };
 
 export default function PlacasPage() {
@@ -38,7 +44,7 @@ export default function PlacasPage() {
         </div>
       </header>
 
-      <main className="mx-auto max-w-6xl px-6 py-12">
+      <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
         <p className="font-retro text-lg tracking-widest text-ink/40">
           RETROCUEVA / BASE DE DATOS /{" "}
           <span className="text-neon">NÚMEROS DE SERIE</span>
