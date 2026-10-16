@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Logo from "../components/Logo";
+import SerialsTable from "../components/SerialsTable";
 import { serials } from "../lib/data";
 
 export const metadata: Metadata = {
@@ -111,84 +112,7 @@ export default function PlacasPage() {
         />
 
         <section className="mt-8">
-          {serials.length === 0 ? (
-            <p className="border-2 border-dashed border-white/15 px-6 py-14 text-center font-retro text-xl text-ink/50">
-              Base de datos vacía: aquí se irán cargando los números de serie
-              recogidos.
-            </p>
-          ) : (
-            <div className="overflow-x-auto border-2 border-white/10">
-              <table className="w-full min-w-[54rem] border-collapse text-left">
-                <thead>
-                  <tr className="border-b border-white/10 bg-white/[0.03] font-retro text-base tracking-widest text-ink/40">
-                    <th scope="col" className="px-4 py-3 font-normal">
-                      Nº de serie
-                    </th>
-                    <th scope="col" className="px-4 py-3 font-normal">
-                      Equipo
-                    </th>
-                    <th scope="col" className="px-4 py-3 font-normal">
-                      Segmentos
-                    </th>
-                    <th scope="col" className="px-4 py-3 font-normal">
-                      Patrón
-                    </th>
-                    <th scope="col" className="px-4 py-3 font-normal">
-                      Fuente
-                    </th>
-                    <th scope="col" className="px-4 py-3 font-normal">
-                      Notas
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {serials.map((row) => (
-                    <tr
-                      key={row.id}
-                      className="border-b border-white/5 align-top transition-colors last:border-b-0 hover:bg-white/[0.03]"
-                    >
-                      <td className="px-4 py-3 font-retro text-lg text-neon">
-                        {row.serial || (
-                          <span className="border border-dashed border-white/20 px-2 py-0.5 text-base text-ink/40">
-                            pendiente
-                          </span>
-                        )}
-                      </td>
-                      <td className="px-4 py-3 text-sm text-ink/80">
-                        {row.machine}
-                      </td>
-                      <td className="px-4 py-3">
-                        {row.parts.length === 0 ? (
-                          <span className="text-sm text-ink/40">—</span>
-                        ) : (
-                          <div className="flex flex-wrap gap-1.5">
-                            {row.parts.map((part) => (
-                              <span
-                                key={part.label}
-                                className="border border-white/15 px-2 py-0.5 font-retro text-base text-ink/45"
-                              >
-                                {part.label}{" "}
-                                <span className="text-ink">{part.value}</span>
-                              </span>
-                            ))}
-                          </div>
-                        )}
-                      </td>
-                      <td className="px-4 py-3 font-retro text-base text-ink/80">
-                        {row.pattern || "—"}
-                      </td>
-                      <td className="px-4 py-3 text-sm text-ink/70">
-                        {row.source || "—"}
-                      </td>
-                      <td className="px-4 py-3 text-sm text-ink/60">
-                        {row.notes || "—"}
-                      </td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
-          )}
+          <SerialsTable serials={serials} />
 
           <p className="mt-5 border-l-2 border-neon/50 pl-4 font-retro text-base text-ink/50">
             Los segmentos y patrones marcados son hipótesis de lectura, no

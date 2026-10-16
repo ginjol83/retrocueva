@@ -17,6 +17,7 @@ export interface Machine {
   storage: string;
   description: string;
   image?: string;
+  platforms?: string[];
   serial: string;
   condition: string;
   acquired: number;
@@ -198,15 +199,21 @@ export const getGame = (id: number): Game | undefined =>
 export const getArticle = (id: number): Article | undefined =>
   articles.find((a) => a.id === id);
 
+export const getSerial = (id: number): Serial | undefined =>
+  serials.find((s) => s.id === id);
+
+export const getDeveloped = (id: number): DevelopedGame | undefined =>
+  developed.find((d) => d.id === id);
+
 export const gamesOnPlatform = (platform: string, excludeId?: number): Game[] =>
   games.filter((g) => g.platform === platform && g.id !== excludeId);
 
-const normalize = (value: string) => value.toLowerCase().trim();
+export const normalize = (value: string) => value.toLowerCase().trim();
+
+export const machinePlatforms = (machine: Machine): string[] =>
+  machine.platforms?.length ? machine.platforms : [machine.name];
 
 export const gamesForMachine = (machine: Machine): Game[] => {
-  const name = normalize(machine.name);
-  return games.filter((game) => {
-    const platform = normalize(game.platform);
-    return name.includes(platform) || platform.includes(name);
-  });
+  const platforms = machinePlatforms(machine).map(normalize);
+  return games.filter((game) => platforms.includes(normalize(game.platform)));
 };

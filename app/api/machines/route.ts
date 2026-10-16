@@ -1,7 +1,5 @@
-import machines from '../../../db/machines.json';
+import { machines } from "../../lib/data";
 
 export async function GET() {
-  return new Response(JSON.stringify(machines), {
-    headers: { "Content-Type": "application/json" },
-  });
+  return Response.json(machines);
 }

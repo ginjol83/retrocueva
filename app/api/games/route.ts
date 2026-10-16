@@ -1,7 +1,5 @@
-import games from '../../../db/games.json';
+import { games } from "../../lib/data";
 
 export async function GET() {
-  return new Response(JSON.stringify(games), {
-    headers: { "Content-Type": "application/json" },
-  });
+  return Response.json(games);
 }
