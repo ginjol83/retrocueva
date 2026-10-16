@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "title": "StarCombat Galactic Force",
+    "platform": "Game Boy",
+    "year": 2021,
+    "language": "C",
+    "tools": "GBDK",
+    "description": "Shooter espacial para Game Boy escrito en C, con sprites propios y sistema de colisiones."
+  },
+  {
+    "id": 2,
+    "title": "GB Ajedrez",
+    "platform": "Game Boy",
+    "language": "C",
+    "tools": "GBDK",
+    "description": "Ajedrez para Game Boy con tablero gráfico, menú y estados de partida, escrito en C."
+  },
+  {
+    "id": 3,
+    "title": "CQ Do You Copy",
+    "platform": "Game Boy",
+    "language": "GB Studio",
+    "tools": "GB Studio",
+    "description": "Juego para Game Boy desarrollado con GB Studio, con escenas y guion propios."
+  },
+  {
+    "id": 4,
+    "title": "La Mansión Embrujada",
+    "platform": "ZX Spectrum",
+    "language": "C",
+    "tools": "Z88DK · motor de aventuras propio",
+    "description": "Aventura conversacional para ZX Spectrum construida sobre un motor de aventuras modular desarrollado en C."
+  }
+]

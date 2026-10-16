@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "serial": "MX10-0231-JP",
+    "machine": "Casio MX-10",
+    "parts": [
+      { "label": "Modelo", "value": "MX10" },
+      { "label": "Lote", "value": "0231" },
+      { "label": "País", "value": "JP" }
+    ],
+    "pattern": "{MODELO}-{LOTE}-{PAÍS}",
+    "source": "Etiqueta trasera",
+    "notes": "Segmentos y significado por confirmar."
+  },
+  {
+    "id": 2,
+    "serial": "MO5-1984-0217",
+    "machine": "Thomson MO5",
+    "parts": [
+      { "label": "Modelo", "value": "MO5" },
+      { "label": "Año", "value": "1984" },
+      { "label": "Secuencia", "value": "0217" }
+    ],
+    "pattern": "{MODELO}-{AÑO}-{SECUENCIA}",
+    "source": "Etiqueta trasera",
+    "notes": "Correspondencia número de serie ↔ placa por confirmar."
+  },
+  {
+    "id": 3,
+    "serial": "",
+    "machine": "Portátil 486",
+    "parts": [],
+    "pattern": "",
+    "source": "",
+    "notes": "Pendiente de leer el número de serie."
+  }
+]

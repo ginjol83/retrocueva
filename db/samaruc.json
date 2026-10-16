@@ -1,0 +1,18 @@
+{
+  "name": "Samaruc",
+  "tagline": "Editor de C retro con compilación integrada",
+  "author": "Andrés Giménez",
+  "year": 2026,
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Samaruc es un entorno de desarrollo para C retro construido en JavaFX. Integra compilación para GBDK (Game Boy) y Z88DK (Z80) para que puedas escribir, compilar y probar tus programas de 8 bits desde una sola aplicación.",
+  "platforms": ["Game Boy", "ZX Spectrum"],
+  "stack": ["Java 17", "JavaFX", "Maven", "GBDK", "Z88DK"],
+  "features": [
+    "Editor de código C para plataformas de 8 bits",
+    "Compilación integrada con GBDK (Game Boy) y Z88DK (Z80)",
+    "Plantillas y proyectos de ejemplo (Game Boy y ZX Spectrum)",
+    "Emuladores para probar los resultados (Emulicious, JSpeccy)",
+    "Empaquetado nativo de la aplicación con jpackage (exe/msi)"
+  ]
+}

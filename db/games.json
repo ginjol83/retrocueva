@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "Space Invaders",
+    "platform": "Game Boy",
+    "year": 1990,
+    "genre": "Shoot 'em up",
+    "publisher": "Taito",
+    "region": "Japón",
+    "code": "DMG-SPA-JPN",
+    "description": "Conversión para Game Boy del mítico arcade de Taito: oleadas de alienígenas que descienden hasta alcanzarte. Edición japonesa.",
+    "image": "/Juegos/GB_DMG/Space_invaders_JAP.jpg",
+    "condition": "Buen estado",
+    "acquired": 2024,
+    "location": "Vitrina principal · Bandeja Game Boy",
+    "notes": "Versión japonesa de 1990 del arcade de Taito para Game Boy."
+  },
+  {
+    "id": 2,
+    "title": "R-Type",
+    "platform": "Game Boy",
+    "year": 1991,
+    "genre": "Shoot 'em up",
+    "publisher": "Irem",
+    "region": "Japón",
+    "code": "DMG-REA",
+    "description": "Port para Game Boy del shoot'em up horizontal de Irem, con el R-Type como arma contra el imperio Bydo. Edición japonesa.",
+    "image": "/Juegos/GB_DMG/RType_JAP.jpg",
+    "condition": "Excelente",
+    "acquired": 2023,
+    "location": "Vitrina principal · Bandeja Game Boy",
+    "notes": "Versión japonesa de 1991; en Europa se publicó a cargo de Nintendo."
+  },
+  {
+    "id": 3,
+    "title": "Lunar Lander",
+    "platform": "Game Boy",
+    "year": 1990,
+    "genre": "Simulación",
+    "publisher": "Pack-In-Video",
+    "region": "Japón",
+    "code": "DMG-LLA",
+    "description": "Alunizaje con gestión de combustible, esquiva de meteoritos y recolección de minerales. Publicado por Pack-In-Video, solo se editó en Japón.",
+    "image": "/Juegos/GB_DMG/Lunar_Lander_JAP.jpg",
+    "condition": "Buen estado",
+    "acquired": 2023,
+    "location": "Vitrina principal · Bandeja Game Boy",
+    "notes": "Solo se editó en Japón, el 21 de septiembre de 1990."
+  }
+]

@@ -1,0 +1,19 @@
+{
+  "intro": [
+    "RETROCUEVA es mi colección personal de informática retro: ordenadores, consolas y juegos que voy documentando uno a uno, con su número de serie, su estado y su ficha técnica. Todo lo que sale aquí está en mi casa, en la vitrina, y se puede abrir y ver.",
+    "También programo para 8 bits. Así conviven el hardware que conservo con el software que desarrollo: el editor de C retro Samaruc, juegos para Game Boy y aventuras para ZX Spectrum."
+  ],
+  "members": [
+    {
+      "name": "Andrés Giménez",
+      "role": "Coleccionista y desarrollador",
+      "bio": "Trabajo con C y Java sobre plataformas de 8 bits. Mi trabajo de fin de grado fue Samaruc, un editor de C retro con compilación integrada para GBDK y Z88DK, y de ahí han salido varios juegos para Game Boy y un motor de aventuras para ZX Spectrum."
+    }
+  ],
+  "highlights": [
+    { "label": "Colección", "value": "Casio MX-10, Thomson MO5 y portátil 486" },
+    { "label": "Software", "value": "Samaruc, juegos de Game Boy y ZX Spectrum" },
+    { "label": "Herramientas", "value": "GBDK, Z88DK y JavaFX" },
+    { "label": "Publicaciones", "value": "Artículos en revistas de retroinformática" }
+  ]
+}

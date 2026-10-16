@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Casio MX-10",
+    "manufacturer": "Casio",
+    "year": 1985,
+    "cpu": "Z80A @ 3.58 MHz",
+    "ram": "16 KB",
+    "storage": "Cartucho MSX / Casete",
+    "description": "Microordenador MSX1 de Casio, sucesor del PV-16. Destaca por su tamaño compacto y su chip gráfico TI TMS9118 con 16 colores y 32 sprites.",
+    "image": "/microordenadores/CASIO_MX.jpg",
+    "serial": "MX10-0231-JP",
+    "condition": "Excelente",
+    "acquired": 2024,
+    "location": "Vitrina principal · Centro",
+    "notes": "Unidad original del mercado japonés. Para casete requiere la interfaz FA-32."
+  },
+  {
+    "id": 2,
+    "name": "Thomson MO5",
+    "manufacturer": "Thomson",
+    "year": 1984,
+    "cpu": "Motorola 6809E @ 1 MHz",
+    "ram": "48 KB",
+    "storage": "Casete / Cartucho",
+    "description": "Ordenador doméstico y educativo francés de 1984, con BASIC en ROM y chip gráfico EFGJ03L. Fue protagonista del plan estatal \"Informatique pour Tous\" en las escuelas.",
+    "image": "/microordenadores/Thompson_MO5.jpg",
+    "serial": "MO5-1984-0217",
+    "condition": "Buen estado",
+    "acquired": 2023,
+    "location": "Estante A · Vitrina 2",
+    "notes": "Teclado de goma y BASIC integrado. Usa un lector de casete específico del MO5."
+  },
+  {
+    "id": 3,
+    "name": "Portátil 486",
+    "manufacturer": "Genérico",
+    "year": 1993,
+    "cpu": "Intel 486DX @ 33 MHz",
+    "ram": "8 MB",
+    "storage": "Disquetera 3.5\" / Disco duro",
+    "description": "Ordenador portátil de la era 486 con pantalla LCD, disquetera de 3,5 pulgadas y MS-DOS. Un salto generacional respecto a los equipos de 8 bits.",
+    "image": "/Ordenadores/486_PORTATIL.jpg",
+    "serial": "PENDIENTE",
+    "condition": "Buen estado",
+    "acquired": 2023,
+    "location": "Estante D · Balda 1",
+    "notes": "Marca y modelo por identificar; actualizar ficha cuando se revise."
+  }
+]

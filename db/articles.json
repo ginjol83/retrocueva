@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "title": "Broken Sword: La Leyenda de los Templarios – Reforged, el regreso de un clásico",
+    "magazine": "CAAD",
+    "issue": "Número por confirmar",
+    "year": 2024,
+    "author": "Andrés Giménez",
+    "summary": "Análisis de Broken Sword: The Shadow of the Templars – Reforged, la revisión en 4K del clásico de Revolution Software de 1996: historia, mejoras técnicas, narrativa, jugabilidad y notas finales.",
+    "link": "",
+    "magazineUrl": "https://caad.club/tienda/",
+    "magazineLabel": "Comprar o descargar el CAAD original",
+    "cover": "/articulos/broken-sword/image1.png",
+    "lead": "Broken Sword: The Shadow of the Templars es un videojuego de tipo point and click desarrollado y publicado en 1996 por Revolution Software, un estudio británico fundado por Charles Cecil en 1990. Este título, lanzado después de las míticas aventuras de LucasArts y Sierra, supuso un salto adelante en la popularización de un género que muchos consideraban en declive.",
+    "specs": [
+      { "label": "Título", "value": "Broken Sword: La leyenda de los templarios - Reforged" },
+      { "label": "Comentarista", "value": "Andrés Giménez" },
+      { "label": "Género", "value": "Aventura gráfica click and point" },
+      { "label": "Autor", "value": "Revolution Software" },
+      { "label": "Versiones", "value": "PC, Playstation 5, Nintendo Switch, Xbox One/Series X/S" },
+      { "label": "Versión comentada", "value": "PC" },
+      { "label": "Idiomas", "value": "Español, Inglés, Francés, Italiano, Alemán y Checo" },
+      { "label": "Precio", "value": "29,99 € (Steam)" },
+      { "label": "Año", "value": "2024" },
+      { "label": "Página oficial", "value": "https://revolution.co.uk/" }
+    ],
+    "sections": [
+      {
+        "blocks": [
+          { "kind": "p", "text": "Broken Sword: The Shadow of the Templars es un videojuego de tipo point and click desarrollado y publicado en 1996 por Revolution Software, un estudio británico fundado por Charles Cecil en 1990. Este título, lanzado después de las míticas aventuras de LucasArts y Sierra, supuso un salto adelante en la popularización de un género que muchos consideraban en declive. Para muchos jóvenes que no vivieron la época dorada del point and click, Broken Sword se convirtió en su puerta de entrada a este estilo de juegos." },
+          { "kind": "p", "text": "28 años después, el 19 de septiembre de 2024, llega Broken Sword: The Shadow of the Templars – Reforged, una revisión del clásico con gráficos remasterizados en 4K y audio mejorado. Con esta nueva versión, Revolution Software busca atraer a nuevos jugadores y sorprender a los nostálgicos del original." }
+        ]
+      },
+      {
+        "heading": "Una historia de conspiraciones y misterio",
+        "blocks": [
+          { "kind": "p", "text": "La trama del juego sigue a George Stobbart, un turista estadounidense que presencia un atentado con bomba en un café de París, perpetrado por un misterioso payaso. Lo que comienza como un simple incidente pronto lo sumerge en una conspiración ancestral relacionada con los Caballeros Templarios. En su aventura, se une a la periodista francesa Nico Collard, y juntos recorren el mundo resolviendo acertijos, descifrando símbolos ocultos y enfrentándose a peligrosas sociedades secretas." },
+          { "kind": "p", "text": "Inspirado en hechos históricos y mitología templaria, el juego sumerge al jugador en una narrativa profunda, con diálogos ingeniosos, personajes carismáticos y una ambientación fascinante." },
+          { "kind": "p", "text": "Uno de sus aspectos más destacables es el humor de sus diálogos y la forma en que explora el ocultismo con una base histórica, logrando una historia que engancha desde la primera escena en la cafetería de París. La sensación de estar protagonizando una película de aventuras al más puro estilo Hollywood es uno de sus grandes atractivos." }
+        ]
+      },
+      {
+        "heading": "Las mejoras de la versión Reforged",
+        "blocks": [
+          { "kind": "p", "text": "La nueva versión incluye varias mejoras técnicas:" },
+          { "kind": "ul", "items": [
+            "Gráficos remasterizados en 4K, por primera vez podremos disfrutar de este clásico en alta definición.",
+            "Audio mejorado, incluyendo la banda sonora del compositor Barrington Pheloung."
+          ] },
+          { "kind": "p", "text": "Sin embargo, no todo son novedades. Como punto negativo, no se han modificado los controles ni hay cambios en la jugabilidad o la interfaz, lo que podría ser una oportunidad perdida para hacer la experiencia más accesible a las nuevas generaciones." },
+          { "kind": "img", "src": "/articulos/broken-sword/image3.png", "alt": "Escena de Broken Sword: The Shadow of the Templars – Reforged", "width": 1211, "height": 702 }
+        ]
+      },
+      {
+        "heading": "Narrativa",
+        "blocks": [
+          { "kind": "p", "text": "Narrativamente, el juego se centra en la investigación y el misterio, con una trama que atrapa al jugador desde el principio. Los personajes están bien construidos, aunque no llegan a ser completamente carismáticos. George Stobbart, por ejemplo, no desborda personalidad única y recuerda mucho al típico héroe estadounidense de las películas: un sabelotodo algo exagerado. Aun así, cumple con su papel de manera efectiva y coherente dentro de la historia." },
+          { "kind": "p", "text": "Los diálogos, como ya se ha comentado anteriormente, son muy divertidos y están bien trabajados. No hay grandes vacíos narrativos ni momentos forzados; todo parece fluir con naturalidad, algo que se agradece enormemente. En un juego de este tipo, donde no hay acción frenética ni botones que machacar, la historia se convierte en el corazón de la experiencia, y esta sin duda cumple con creces." }
+        ]
+      },
+      {
+        "heading": "Jugabilidad",
+        "blocks": [
+          { "kind": "p", "text": "La jugabilidad es la típica de un point and click clásico, sin grandes innovaciones pero sólida. Incluso hoy en día, las mecánicas se mantienen vigentes y hacen que el juego sea muy disfrutable." },
+          { "kind": "p", "text": "Uno de sus puntos fuertes son los puzzles, que destacan por ser coherentes y lógicos. No dejan lugar a \"probar al tuntún\", sino que requieren observación y pensamiento crítico, lo que ofrece un desafío interesante para cualquier jugador. Este equilibrio entre accesibilidad y desafío es clave en su éxito." }
+        ]
+      },
+      {
+        "heading": "Apartado técnico",
+        "blocks": [
+          { "kind": "p", "text": "El apartado técnico de esta versión Reforged es uno de sus mayores puntos a favor. Los gráficos en alta definición son preciosos y dan nueva vida a los escenarios y personajes sin perder el estilo clásico que caracteriza al juego." },
+          { "kind": "p", "text": "No obstante, hubiera sido interesante que se añadieran algunas escenas nuevas o contenido adicional para complementar la experiencia. El hecho de que se haya limitado principalmente a mejorar los gráficos y el sonido deja la sensación de que esta remasterización podría haber ido un paso más allá." },
+          { "kind": "img", "src": "/articulos/broken-sword/image2.png", "alt": "Captura de Broken Sword: The Shadow of the Templars – Reforged", "width": 1232, "height": 698 }
+        ]
+      },
+      {
+        "heading": "¿Vale la pena para nuevos jugadores y veteranos?",
+        "blocks": [
+          { "kind": "p", "text": "Aunque no voy a ser muy objetivo, diría rotundamente que sí. Los nuevos jugadores tienen ante sí una excelente aproximación a un género que parece estar resurgiendo, mientras que los veteranos pueden revivir la experiencia con la misma ilusión de entonces, sin las limitaciones técnicas que podrían hacer que el juego se sintiera anticuado." }
+        ]
+      },
+      {
+        "heading": "¿Podría haber una nueva entrega en el futuro?",
+        "blocks": [
+          { "kind": "p", "text": "Parece que sí. Dado el éxito de esta versión, el estudio ha manifestado su interés en realizar el mismo proceso de Reforged con la segunda entrega de la saga, Broken Sword II: Las Fuerzas del Mal." },
+          { "kind": "p", "text": "Para quienes aún no han experimentado esta joya de los 90, les invito a darle una oportunidad. Broken Sword sigue siendo una obra de culto que merece ser redescubierta." }
+        ]
+      }
+    ],
+    "scores": [
+      { "label": "Ambientación", "value": 7 },
+      { "label": "Jugabilidad", "value": 7 },
+      { "label": "Gráficos", "value": 10 },
+      { "label": "Guión", "value": 9 },
+      { "label": "Dificultad", "value": 7 },
+      { "label": "Sonido", "value": 10 }
+    ],
+    "credits": "Comentada por Andrés Giménez",
+    "instagram": "@tecnicgimenezing"
+  }
+]
