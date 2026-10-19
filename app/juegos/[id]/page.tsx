@@ -204,8 +204,11 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
             </div>
             <p className="mt-4 font-retro text-base text-ink/50">
               Títulos del romset de Game Boy ·{" "}
-              <Link href="/gameboy" className="transition-colors hover:text-neon">
-                base de datos Game Boy
+              <Link
+                href="/base-de-datos/juegos"
+                className="transition-colors hover:text-neon"
+              >
+                buscador de juego
               </Link>
             </p>
           </section>

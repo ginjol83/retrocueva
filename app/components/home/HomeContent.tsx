@@ -19,6 +19,7 @@ import { searchAll } from "../../lib/search";
 import { useUrlState } from "../../lib/use-url-state";
 import AboutSection from "./AboutSection";
 import ArticlesSection from "./ArticlesSection";
+import BaseDatosMenu from "./BaseDatosMenu";
 import CollectionMenu from "./CollectionMenu";
 import CollectionSection from "./CollectionSection";
 import DevelopedSection from "./DevelopedSection";
@@ -115,12 +116,7 @@ export default function HomeContent() {
             <a href="#desarrollos" className="text-ink/70 transition-colors hover:text-neon">
               Desarrollos
             </a>
-            <Link
-              href="/gameboy"
-              className="text-ink/70 transition-colors hover:text-neon"
-            >
-              Game Boy
-            </Link>
+            <BaseDatosMenu />
           </nav>
         </div>
       </header>
@@ -215,8 +211,8 @@ export default function HomeContent() {
         <p className="font-retro text-lg text-ink/50">
           RETROCUEVA · mi colección · {machines.length} equipos · {games.length}{" "}
           juegos ·{" "}
-          <Link href="/gameboy" className="transition-colors hover:text-neon">
-            base de datos Game Boy
+          <Link href="/base-de-datos" className="transition-colors hover:text-neon">
+            base de datos
           </Link>
         </p>
       </footer>

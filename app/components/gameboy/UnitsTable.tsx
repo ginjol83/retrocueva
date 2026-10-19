@@ -36,7 +36,7 @@ export default function UnitsTable() {
               </td>
               <td className="px-4 py-3">
                 <Link
-                  href={`/gameboy?serial=${encodeURIComponent(unit.serial)}`}
+                  href={`/base-de-datos/placas?serial=${encodeURIComponent(unit.serial)}`}
                   className="font-retro text-lg text-neon transition-colors hover:underline"
                 >
                   {unit.serial}

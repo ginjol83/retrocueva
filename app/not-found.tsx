@@ -29,10 +29,10 @@ export default function NotFound() {
           Volver al inicio
         </Link>
         <Link
-          href="/gameboy"
+          href="/base-de-datos"
           className="border-2 border-white/20 px-5 py-2.5 font-retro text-lg text-ink transition-all hover:border-cyber hover:text-cyber"
         >
-          Base de datos Game Boy
+          Base de datos
         </Link>
       </div>
     </main>

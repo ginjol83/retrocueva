@@ -167,7 +167,7 @@ export default function SearchResults({
             items={results.serials.map((unit) => (
               <ResultRow
                 key={`s-${unit.id}`}
-                href={`/gameboy?serial=${encodeURIComponent(unit.serial)}`}
+                href={`/base-de-datos/placas?serial=${encodeURIComponent(unit.serial)}`}
                 query={query}
                 accentColor="#9be15d"
                 title={unit.serial}

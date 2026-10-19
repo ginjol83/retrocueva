@@ -13,10 +13,34 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${SITE_URL}/gameboy`,
+      url: `${SITE_URL}/base-de-datos`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: `${SITE_URL}/base-de-datos/placas`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.6,
+    },
+    {
+      url: `${SITE_URL}/base-de-datos/juegos`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${SITE_URL}/base-de-datos/unidades`,
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    {
+      url: `${SITE_URL}/base-de-datos/enviar-serial`,
+      lastModified,
+      changeFrequency: "yearly",
+      priority: 0.4,
     },
   ];
 
