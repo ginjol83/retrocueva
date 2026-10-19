@@ -82,17 +82,35 @@ export interface Article {
   instagram?: string;
 }
 
+export type ProjectBlock =
+  | { kind: "p"; text: string }
+  | { kind: "ul"; items: string[] }
+  | { kind: "quote"; text: string }
+  | { kind: "table"; headers: string[]; rows: string[][] };
+
+export interface ProjectSection {
+  heading: string;
+  blocks: ProjectBlock[];
+}
+
+export interface ProjectScreenshot {
+  src: string;
+  alt: string;
+  caption?: string;
+}
+
 export interface Project {
   name: string;
-  tagline: string;
+  title: string;
+  lead: string;
   author: string;
   year: number;
   version: string;
   license: string;
-  description: string;
   platforms: string[];
   stack: string[];
-  features: string[];
+  sections: ProjectSection[];
+  screenshots?: ProjectScreenshot[];
   link?: string;
 }
 

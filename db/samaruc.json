@@ -1,18 +1,113 @@
 {
   "name": "Samaruc",
-  "tagline": "Editor de C retro con compilación integrada",
+  "title": "Samaruc: un IDE de 8 bits hecho a mano",
+  "lead": "*Programar para una Game Boy, un ZX Spectrum o un Amstrad CPC no debería parecerse a hacer malabares con scripts de consola y un emulador abierto en otra ventana.* **Samaruc** nace justo de ahí: de querer un entorno decente para el desarrollo retro, con compilador, emulador y editores gráficos en el mismo sitio.",
   "author": "Andrés Giménez",
   "year": 2026,
   "version": "1.0.0",
   "license": "MIT",
-  "description": "Samaruc es un entorno de desarrollo para C retro construido en JavaFX. Integra compilación para GBDK (Game Boy) y Z88DK (Z80) para que puedas escribir, compilar y probar tus programas de 8 bits desde una sola aplicación.",
-  "platforms": ["Game Boy", "ZX Spectrum"],
-  "stack": ["Java 17", "JavaFX", "Maven", "GBDK", "Z88DK"],
-  "features": [
-    "Editor de código C para plataformas de 8 bits",
-    "Compilación integrada con GBDK (Game Boy) y Z88DK (Z80)",
-    "Plantillas y proyectos de ejemplo (Game Boy y ZX Spectrum)",
-    "Emuladores para probar los resultados (Emulicious, JSpeccy)",
-    "Empaquetado nativo de la aplicación con jpackage (exe/msi)"
+  "platforms": [
+    "Game Boy / Game Boy Color",
+    "ZX Spectrum",
+    "Amstrad CPC",
+    "Atari XE/XL",
+    "Commodore 64",
+    "Sega Master System / Game Gear",
+    "MSX / MSX2",
+    "NES / Famicom"
+  ],
+  "stack": ["Java 17", "JavaFX", "Maven", "GBDK-2020", "Z88DK", "CC65", "devkitSMS"],
+  "sections": [
+    {
+      "heading": "Qué es Samaruc",
+      "blocks": [
+        {
+          "kind": "p",
+          "text": "Samaruc es un **IDE de escritorio para desarrollo retro de 8 bits**, escrito en **Java 17 + JavaFX** y construido con Maven. Su promesa es sencilla: coges una carpeta, eliges plataforma, escribes C o ensamblador, y con un par de clics compilas y **ejecutas en el emulador** — sin pegar comandos ni configurar toolchains a mano."
+        },
+        {
+          "kind": "p",
+          "text": "No es un editor de texto con un botón de compilar pegado encima. Es un entorno completo: toolchains reales empaquetadas, emuladores integrados, editores de tiles/sprites/audio, control de versiones con Git y GitHub, y una capa de asistencia por IA opcional."
+        }
+      ]
+    },
+    {
+      "heading": "¿Por qué otro IDE retro?",
+      "blocks": [
+        {
+          "kind": "p",
+          "text": "Porque la mayoría de entornos \"todo en uno\" para 8 bits son o muy antiguos, o muy específicos de una sola máquina, o dependen de un stack web que no termina de encajar en un escritorio. Samaruc apuesta por:"
+        },
+        {
+          "kind": "ul",
+          "items": [
+            "**Una sola aplicación** para muchas máquinas, con perfiles de compilación por plataforma en lugar de un batiburrillo de scripts.",
+            "**Toolchains empaquetadas**: GBDK-2020, Z88DK, CC65 y devkitSMS viajan con la app, así que no hay media hora de \"instala esto antes\".",
+            "**Emuladores listos** para probar el resultado sin salir del IDE.",
+            "**Java + JavaFX**: multiplataforma por construcción y, para quien quiera trastear, un código legible con arquitectura MVC."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Plataformas soportadas",
+      "blocks": [
+        {
+          "kind": "p",
+          "text": "Samaruc trata como ciudadanas de primera a las máquinas que más se usan para hacer juegos caseros hoy:"
+        },
+        {
+          "kind": "table",
+          "headers": ["Plataforma", "Toolchain", "Emulador integrado"],
+          "rows": [
+            ["**Game Boy / Game Boy Color**", "GBDK-2020", "Emulicious"],
+            ["**ZX Spectrum**", "Z88DK", "JSpeccy"],
+            ["**Amstrad CPC**", "Z88DK", "Caprice32"],
+            ["**Atari XE/XL**", "CC65", "Altirra"],
+            ["**Commodore 64**", "CC65", "SDL2VICE"],
+            ["**Sega Master System / Game Gear**", "Z88DK", "Emulicious"],
+            ["**MSX / MSX2**", "Z88DK", "openMSX"],
+            ["**NES / Famicom**", "CC65", "Mesen"]
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "Cada plataforma tiene su **plantilla de proyecto**, su **perfil de compilación** y, cuando aplica, su **conversor de gráficos** con las particularidades reales de su hardware (paletas, planos de bits, tablas de atributos…). Samaruc también **detecta la plataforma** de un proyecto ya existente y te ofrece aplicar el perfil que le corresponde."
+        }
+      ]
+    },
+    {
+      "heading": "Un editor con ambiciones de IDE de verdad",
+      "blocks": [
+        {
+          "kind": "p",
+          "text": "La parte de edición no se queda corta. Resaltado de sintaxis por lenguaje y plataforma, plegado de bloques, minimapa navegable, multicursor y selección en columna, autocompletado contextual por SDK (`Ctrl+Space`), búsqueda y reemplazo en todo el proyecto, vista dividida, breadcrumbs de símbolos, análisis estático en tiempo real, refactorización de renombrado, formateo automático, historial local por archivo con snapshots y restauración, snippets, plantillas, y una paleta de comandos (`Ctrl+Shift+P`) más apertura rápida de archivos (`Ctrl+P`) al estilo de los editores modernos."
+        },
+        {
+          "kind": "quote",
+          "text": "También hay cuidado por los detalles de plataforma: el conversor PNG→C genera código distinto para Game Boy, ZX, CPC, Atari, C64, SMX, MSX y NES, y el resaltador reconoce las funciones propias de cada SDK (`gb_`, `msx_`, `ppu_`, `cpc_`, `vic_`…) para que el código de terceros se lea bien."
+        }
+      ]
+    },
+    {
+      "heading": "Editores gráficos y de audio incluidos",
+      "blocks": [
+        {
+          "kind": "ul",
+          "items": [
+            "**Editor de tiles y sprites** con la paleta y el formato de cada máquina.",
+            "**Editor de mapas de tiles** con capas de colisión y exportación de arreglos C.",
+            "**Editor de pantalla de ZX Spectrum**.",
+            "**Conversor PNG→bits** para las plataformas que lo necesitan.",
+            "**Editor de audio** con generación de SFX y melodías y previsualización: PSG de Game Boy (con importación VGM/MOD), AY-3-8910 para ZX/CPC/MSX, SID para C64 y la APU del NES.",
+            "**Traductor de texto de ROMs de Game Boy** para localizar juegos existentes."
+          ]
+        },
+        {
+          "kind": "p",
+          "text": "Todo el código que generan estos editores es código C/ASM **de verdad**, pensado para compilar con el toolchain de la plataforma."
+        }
+      ]
+    }
   ]
 }
