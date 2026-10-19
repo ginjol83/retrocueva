@@ -1,3 +1,4 @@
+import { json } from "../../../lib/api";
 import { developed, getDeveloped } from "../../../lib/data";
 import { notFoundJson, parseId } from "../../../lib/http";
 
@@ -13,5 +14,5 @@ export async function GET(
   const parsed = parseId(id);
   const item = parsed === null ? undefined : getDeveloped(parsed);
   if (!item) return notFoundJson();
-  return Response.json(item);
+  return json(item);
 }

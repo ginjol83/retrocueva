@@ -1,3 +1,4 @@
+import { json } from "../../../lib/api";
 import { games, getGame } from "../../../lib/data";
 import { notFoundJson, parseId } from "../../../lib/http";
 
@@ -13,5 +14,5 @@ export async function GET(
   const parsed = parseId(id);
   const game = parsed === null ? undefined : getGame(parsed);
   if (!game) return notFoundJson();
-  return Response.json(game);
+  return json(game);
 }

@@ -1,3 +1,4 @@
+import { json } from "../../../lib/api";
 import { getSerial, serials } from "../../../lib/data";
 import { notFoundJson, parseId } from "../../../lib/http";
 
@@ -13,5 +14,5 @@ export async function GET(
   const parsed = parseId(id);
   const row = parsed === null ? undefined : getSerial(parsed);
   if (!row) return notFoundJson();
-  return Response.json(row);
+  return json(row);
 }
