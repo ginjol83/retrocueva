@@ -3,21 +3,20 @@ import {
   developed,
   games,
   machines,
-  serials,
   normalize,
   type Article,
   type DevelopedGame,
   type Game,
   type Machine,
-  type Serial,
 } from "./data";
+import { gbUnits, type GbUnit } from "./gameboy";
 
 export interface SearchResults {
   machines: Machine[];
   games: Game[];
   articles: Article[];
   developed: DevelopedGame[];
-  serials: Serial[];
+  serials: GbUnit[];
   total: number;
 }
 
@@ -87,16 +86,8 @@ export const searchAll = (query: string): SearchResults => {
         item.year,
       ),
     ),
-    serials: serials.filter((row) =>
-      matches(
-        q,
-        row.serial,
-        row.machine,
-        row.pattern,
-        row.source,
-        row.notes,
-        row.parts.map((part) => part.value).join(" "),
-      ),
+    serials: gbUnits.filter((unit) =>
+      matches(q, unit.serial, unit.model, unit.boardRevision),
     ),
   };
 

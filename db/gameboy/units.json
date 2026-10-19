@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "model": "GB DMG AZUL",
+    "boardRevision": "CPU-06",
+    "serial": "GH3783310"
+  },
+  {
+    "id": 2,
+    "model": "GB DMG",
+    "boardRevision": "CPU-08",
+    "serial": "GH1696040"
+  },
+  {
+    "id": 3,
+    "model": "GB DMG",
+    "boardRevision": "CPU-07",
+    "serial": "GH4626582"
+  },
+  {
+    "id": 4,
+    "model": "GB DMG",
+    "boardRevision": "CPU-08",
+    "serial": "GH1680848"
+  },
+  {
+    "id": 5,
+    "model": "GB DMG",
+    "boardRevision": "CPU-01",
+    "serial": "G01310831"
+  },
+  {
+    "id": 6,
+    "model": "GB DMG",
+    "boardRevision": "CPU-05",
+    "serial": "G12237838"
+  },
+  {
+    "id": 7,
+    "model": "GB DMG",
+    "boardRevision": "CPU-06",
+    "serial": "G39205411"
+  },
+  {
+    "id": 8,
+    "model": "GB DMG",
+    "boardRevision": "CPU-08",
+    "serial": "GM2001939"
+  },
+  {
+    "id": 9,
+    "model": "GB DMG",
+    "boardRevision": "CPU-05",
+    "serial": "G13549741"
+  },
+  {
+    "id": 10,
+    "model": "GB DMG",
+    "boardRevision": "CPU-06",
+    "serial": "G31584586"
+  },
+  {
+    "id": 11,
+    "model": "GB DMG (Americana)",
+    "boardRevision": "CPU-06",
+    "serial": "G721048947"
+  },
+  {
+    "id": 12,
+    "model": "GB DMG (Americana)",
+    "boardRevision": "CPU-08",
+    "serial": "G774039619"
+  }
+]

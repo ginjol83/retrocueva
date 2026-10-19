@@ -10,8 +10,8 @@ Leyenda: `[x]` hecho · `[~]` en curso · `[ ]` pendiente · `[–]` descartado 
 ## Estado actual (resumen)
 
 - **Stack**: Next.js 16.4.1 (App Router, Turbopack, `cacheComponents`, `partialPrefetching`), React 19, Tailwind 4, TypeScript.
-- **Datos**: JSON en `db/` importados en `app/lib/data.ts` (3 equipos, 3 juegos, 1 artículo, 1 vídeo, 3 serials, 4 desarrollos).
-- **Páginas**: `/` (colección + editorial), `/placas`, fichas `/maquinas/[id]`, `/juegos/[id]`, `/articulos/[id]`.
+- **Datos**: JSON en `db/` importados en `app/lib/data.ts` (3 equipos, 3 juegos, 1 artículo, 1 vídeo, 4 desarrollos) + `db/gameboy/` (10 rangos DMG, 12 unidades propias, 1002 equivalencias de romset).
+- **Páginas**: `/` (colección + editorial), `/gameboy` (seriales DMG + romset), fichas `/maquinas/[id]`, `/juegos/[id]`, `/articulos/[id]`. `/placas` redirige a `/gameboy`.
 - **API**: listas y detalle en `/api/{games,machines,serials,articles,videos,developed}`; listas con `?q=`, `?page=`/`?perPage=` y cabecera `Cache-Control`.
 - **Ya hecho**: búsqueda global, filtros (plataforma/género/fabricante/década/orden), estado en URL, relación máquina↔juegos por `platforms`, tabla interactiva de serials, split de la home en componentes, API con `?q=`/paginación/`Cache-Control`, SEO (metadata/OG/sitemap/robots/manifest/JSON-LD), `not-found`/`error`, a11y.
 - **Despliegue**: producción en Vercel → <https://retrocueva.vercel.app> (integración git: cada push a `main` redespliega). Falta `NEXT_PUBLIC_SITE_URL` y dominio propio (4.19).
@@ -21,9 +21,9 @@ Leyenda: `[x]` hecho · `[~]` en curso · `[ ]` pendiente · `[–]` descartado 
 
 ## Fase 1 — Contenido y datos  `[ ]` (bloqueada: faltan datos)
 
-- [ ] **1.1 Lookup de número de serie Game Boy DMG** desde `doc/bd (1).json` (10 rangos `serial_ini`/`serial_end` → mainboard, CPU, VRAM, WRAM, LCD/power/jack, `made_in`, tornillos, año). Modelo `SerialRange` + página `/gameboy`.
-- [ ] **1.2** Importar `doc/gb_romset_tabla_equiv.xlsx` (equivalencias de ROM set).
-- [ ] **1.3** Importar `doc/serials.xls.xlsx`.
+- [x] **1.1 Lookup de número de serie Game Boy DMG** desde `doc/bd (1).json` (10 rangos `serial_ini`/`serial_end` → mainboard, CPU, VRAM, WRAM, LCD/power/jack, `made_in`, tornillos, año). Página `/gameboy` (la sección de seriales se pivoto a solo GB; `/placas` redirige).
+- [x] **1.2** Importar `doc/gb_romset_tabla_equiv.xlsx` (1002 juegos: títulos USA/EUR/JAP, "No salio" = no publicado). Buscador en `/gameboy` + títulos por región en fichas de juego GB.
+- [x] **1.3** Importar `doc/serials.xls.xlsx` (12 unidades propias con revisión observada). Regenerables con `npm run import:gb`.
 - [ ] **1.4** Ampliar colección real (C64, ZX Spectrum, NES, Atari 2600, Amstrad CPC, BBC Micro…).
 - [ ] **1.5** Más vídeos + metadatos (`channel`, `duration`).
 - [ ] **1.6** Rellenar seriales pendientes (Portátil 486) y añadir más.
@@ -69,6 +69,8 @@ Leyenda: `[x]` hecho · `[~]` en curso · `[ ]` pendiente · `[–]` descartado 
 ---
 
 ## Decisiones de diseño
+
+- **Base de datos Game Boy** (oct. 2026): la sección de seriales se pivoto a solo Game Boy en `/gameboy` (lookup de serial → revisión de placa + unidades propias + romset). Regla: **si el serial es de una unidad propia, manda la revisión observada**; los rangos de `bd (1).json` quedan como referencia comunitaria (hay conflictos GH documentados en la UI). `/placas` redirige (308); los 3 seriales no-GB siguen en `db/serials.json` + `/api/serials`, fuera de la UI, como semilla de la futura BD multi-máquina. Datos regenerables desde `doc/` con `npm run import:gb`.
 
 - **Estado en la URL** (Fase 2): se sincroniza con `history.replaceState` desde componentes cliente (hook `useUrlState`), sin `useSearchParams`, para que la home siga prerenderizada íntegra (SEO) y no aparezcan avisos de Suspense. El filtrado sigue en cliente porque los datos ya viajan en el bundle; el filtrado en servidor se hará al migrar a BD (Fase 5).
 - **Next 16 / Cache Components**: las fichas dinámicas usan `generateStaticParams` y `export const instant = false` (son estáticas; se descarta la validación de navegación instantánea).

@@ -205,8 +205,7 @@ export default async function MachinePage(props: PageProps<"/maquinas/[id]">) {
             <ul className="mt-4 grid gap-3">
               {relatedSerials.map((row) => (
                 <li key={row.id}>
-                  <Link
-                    href={`/placas?equipo=${encodeURIComponent(row.machine)}`}
+                  <article
                     className="retro-card"
                     style={{ "--accent": color } as CSSProperties}
                   >
@@ -221,7 +220,7 @@ export default async function MachinePage(props: PageProps<"/maquinas/[id]">) {
                         {row.source || "—"}
                       </span>
                     </div>
-                  </Link>
+                  </article>
                 </li>
               ))}
             </ul>

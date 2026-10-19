@@ -13,7 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${SITE_URL}/placas`,
+      url: `${SITE_URL}/gameboy`,
       lastModified,
       changeFrequency: "monthly",
       priority: 0.6,

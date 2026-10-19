@@ -29,10 +29,10 @@ export default function NotFound() {
           Volver al inicio
         </Link>
         <Link
-          href="/placas"
+          href="/gameboy"
           className="border-2 border-white/20 px-5 py-2.5 font-retro text-lg text-ink transition-all hover:border-cyber hover:text-cyber"
         >
-          Números de serie
+          Base de datos Game Boy
         </Link>
       </div>
     </main>

@@ -162,17 +162,16 @@ export default function SearchResults({
           />
 
           <Group
-            title="Números de serie"
+            title="Game Boy"
             count={results.serials.length}
-            items={results.serials.map((row) => (
+            items={results.serials.map((unit) => (
               <ResultRow
-                key={`s-${row.id}`}
-                href={`/placas?equipo=${encodeURIComponent(row.machine)}`}
+                key={`s-${unit.id}`}
+                href={`/gameboy?serial=${encodeURIComponent(unit.serial)}`}
                 query={query}
-                accentColor="#00f0ff"
-                title={row.serial || "Pendiente de leer"}
-                subtitle={row.machine}
-                meta={row.pattern || undefined}
+                accentColor="#9be15d"
+                title={unit.serial}
+                subtitle={`${unit.model} · ${unit.boardRevision}`}
               />
             ))}
           />

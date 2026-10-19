@@ -1,0 +1,6014 @@
+[
+  {
+    "id": 1,
+    "ntsc": "Pokemon Yellow",
+    "pal": "Pokemon Yellow",
+    "jp": "Pokemon Yellow"
+  },
+  {
+    "id": 2,
+    "ntsc": "Pokemon Red",
+    "pal": "Pokemon Red",
+    "jp": "Pokemon Red"
+  },
+  {
+    "id": 3,
+    "ntsc": "Pokemon Blue",
+    "pal": "Pokemon Blue",
+    "jp": "Pokemon Blue"
+  },
+  {
+    "id": 4,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pokemon Green"
+  },
+  {
+    "id": 5,
+    "ntsc": "Super Mario Land",
+    "pal": "Super Mario Land",
+    "jp": "Super Mario Land"
+  },
+  {
+    "id": 6,
+    "ntsc": "Super Mario Land 2",
+    "pal": "Super Mario Land 2",
+    "jp": "Super Mario Land 2"
+  },
+  {
+    "id": 7,
+    "ntsc": "Wario Land Super Mario Land 3",
+    "pal": "Wario Land Super Mario Land 3",
+    "jp": "Wario Land: Super Mario Land 3"
+  },
+  {
+    "id": 8,
+    "ntsc": "Wario Land II",
+    "pal": "Wario Land II",
+    "jp": "No salio"
+  },
+  {
+    "id": 9,
+    "ntsc": "Tetris",
+    "pal": "Tetris",
+    "jp": "Tetris"
+  },
+  {
+    "id": 10,
+    "ntsc": "Tetris 2",
+    "pal": "Tetris 2",
+    "jp": "Tetris Flash"
+  },
+  {
+    "id": 11,
+    "ntsc": "Metroid 2 Return of Samus",
+    "pal": "Metroid II: Return of Samus",
+    "jp": "Metroid II: Return of Samus"
+  },
+  {
+    "id": 12,
+    "ntsc": "Zelda Link's Awakening",
+    "pal": "Zelda Link's Awakening",
+    "jp": "Zelda Link's Awakening"
+  },
+  {
+    "id": 13,
+    "ntsc": "Kirby's Dream Land",
+    "pal": "Kirby's Dream Land",
+    "jp": "Hoshi no Kirby"
+  },
+  {
+    "id": 14,
+    "ntsc": "Kirby's Dream Land 2",
+    "pal": "Kirby's Dream Land 2",
+    "jp": "Hoshi no Kirby 2"
+  },
+  {
+    "id": 15,
+    "ntsc": "Kirby's Pinball Land",
+    "pal": "Kirby's Pinball Land",
+    "jp": "Kirby's Pinball Land"
+  },
+  {
+    "id": 16,
+    "ntsc": "Kirby's Star Stacker",
+    "pal": "Kirby's Star Stacker",
+    "jp": "Kirby no Kirakira Kids"
+  },
+  {
+    "id": 17,
+    "ntsc": "Kirby's Block Ball",
+    "pal": "Kirby's Block Ball",
+    "jp": "Kirby's Block Ball"
+  },
+  {
+    "id": 18,
+    "ntsc": "Mega Man: Dr Wily's Revenge",
+    "pal": "Mega Man: Dr. Wily's Revenge",
+    "jp": "Rockman World"
+  },
+  {
+    "id": 19,
+    "ntsc": "Mega Man 2",
+    "pal": "Mega Man II",
+    "jp": "Rockman World 2"
+  },
+  {
+    "id": 20,
+    "ntsc": "Mega Man 3",
+    "pal": "Mega Man III",
+    "jp": "Rockman World 3"
+  },
+  {
+    "id": 21,
+    "ntsc": "Mega Man 4",
+    "pal": "Mega Man IV",
+    "jp": "Rockman World 4"
+  },
+  {
+    "id": 22,
+    "ntsc": "Mega Man 5",
+    "pal": "Mega Man V",
+    "jp": "Rockman World 5"
+  },
+  {
+    "id": 23,
+    "ntsc": "Prince of Persia",
+    "pal": "Prince of Persia",
+    "jp": "Prince of Persia"
+  },
+  {
+    "id": 24,
+    "ntsc": "Donkey Kong",
+    "pal": "Donkey Kong",
+    "jp": "Donkey Kong"
+  },
+  {
+    "id": 25,
+    "ntsc": "Donkey Kong Land",
+    "pal": "Donkey Kong Land",
+    "jp": "Super Donkey Kong GB"
+  },
+  {
+    "id": 26,
+    "ntsc": "Donkey Kong Land 2",
+    "pal": "Donkey Kong Land 2",
+    "jp": "Donkey Kong Land"
+  },
+  {
+    "id": 27,
+    "ntsc": "Donkey Kong Land III",
+    "pal": "Donkey Kong Land III",
+    "jp": "(en japon salio para la color)"
+  },
+  {
+    "id": 28,
+    "ntsc": "Dr. Mario",
+    "pal": "Dr. Mario",
+    "jp": "Dr. Mario"
+  },
+  {
+    "id": 29,
+    "ntsc": "No salio",
+    "pal": "Lingo",
+    "jp": "No salio"
+  },
+  {
+    "id": 30,
+    "ntsc": "Castlevania Adventure",
+    "pal": "Castlevania Adventure",
+    "jp": "Dracula Densetsu"
+  },
+  {
+    "id": 31,
+    "ntsc": "Castlevania II Belmont's Revenge",
+    "pal": "Castlevania II Belmont's Revenge",
+    "jp": "Dracula Densetsu II"
+  },
+  {
+    "id": 32,
+    "ntsc": "Castlevania Legends",
+    "pal": "Castlevania Legends",
+    "jp": "Akumajo Dracula Dark Night Prelude"
+  },
+  {
+    "id": 33,
+    "ntsc": "Kid Dracula",
+    "pal": "Kid Dracula",
+    "jp": "Akumajou Special: Boku Dracula-Kun"
+  },
+  {
+    "id": 34,
+    "ntsc": "Teenage Mutant Ninja Turtles Fall of the Foot Clan",
+    "pal": "Teenage Mutant Hero Turtles: Fall of the Foot Clan",
+    "jp": "Teenage Mutant Ninja Turtles"
+  },
+  {
+    "id": 35,
+    "ntsc": "Teenage Mutant Ninja Turtles II Back from the Sewers",
+    "pal": "Teenage Mutant Hero Turtles III: Radical Rescue",
+    "jp": "Teenage Mutant Ninja Turtles 2"
+  },
+  {
+    "id": 36,
+    "ntsc": "Teenage Mutant Ninja Turtles III Radical Rescue",
+    "pal": "Teenage Mutant Hero Turtles II: Back From the Sewers",
+    "jp": "Teenage Mutant Ninja Turtles 3"
+  },
+  {
+    "id": 37,
+    "ntsc": "Star Trek 25th Anniversary",
+    "pal": "Generations: Beyond the Nexus",
+    "jp": "No salio"
+  },
+  {
+    "id": 38,
+    "ntsc": "Star Trek the Next Generation",
+    "pal": "Star Trek 25th Anniversary",
+    "jp": "No salio"
+  },
+  {
+    "id": 39,
+    "ntsc": "Star Trek Generations Beyond the Nexus",
+    "pal": "Star Trek the Next Generation",
+    "jp": "No salio"
+  },
+  {
+    "id": 40,
+    "ntsc": "Double Dragon",
+    "pal": "Double Dragon",
+    "jp": "Double Dragon"
+  },
+  {
+    "id": 41,
+    "ntsc": "Double Dragon II The Revenge",
+    "pal": "Double Dragon II",
+    "jp": "No salio"
+  },
+  {
+    "id": 42,
+    "ntsc": "Double Dragon III The Arcade Game",
+    "pal": "Double Dragon III",
+    "jp": "No salio"
+  },
+  {
+    "id": 43,
+    "ntsc": "Battletoads & Double Dragon",
+    "pal": "Battletoads & Double Dragon",
+    "jp": "No salio"
+  },
+  {
+    "id": 44,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nekketsu Kouha Kunio-Kun: Bangai Rantouhen"
+  },
+  {
+    "id": 45,
+    "ntsc": "Mortal Kombat",
+    "pal": "Mortal Kombat",
+    "jp": "Mortal Kombat"
+  },
+  {
+    "id": 46,
+    "ntsc": "Mortal Kombat II",
+    "pal": "Mortal Kombat II",
+    "jp": "Mortal Kombat II"
+  },
+  {
+    "id": 47,
+    "ntsc": "Mortal Kombat and Mortal Kombat II",
+    "pal": "Mortal Kombat I & II",
+    "jp": "Mortal Kombat I & II"
+  },
+  {
+    "id": 48,
+    "ntsc": "Mortal Kombat 3",
+    "pal": "Mortal Kombat 3",
+    "jp": "No salio"
+  },
+  {
+    "id": 49,
+    "ntsc": "No salio",
+    "pal": "Trip World",
+    "jp": "Trip World"
+  },
+  {
+    "id": 50,
+    "ntsc": "Ghostbusters II",
+    "pal": "Ghostbusters II",
+    "jp": "Ghostbusters II"
+  },
+  {
+    "id": 51,
+    "ntsc": "Real Ghostbusters",
+    "pal": "Garfield Labyrinth",
+    "jp": "Mickey Mouse IV: Mahou no Labyrinth"
+  },
+  {
+    "id": 52,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Popeye"
+  },
+  {
+    "id": 53,
+    "ntsc": "Popeye 2",
+    "pal": "Popeye 2",
+    "jp": "Popeye 2"
+  },
+  {
+    "id": 54,
+    "ntsc": "Duck Tales",
+    "pal": "Duck Tales",
+    "jp": "Duck Tales"
+  },
+  {
+    "id": 55,
+    "ntsc": "Duck Tales 2",
+    "pal": "Duck Tales 2",
+    "jp": "Duck Tales 2"
+  },
+  {
+    "id": 56,
+    "ntsc": "Pocahontas",
+    "pal": "Pocahontas",
+    "jp": "No salio"
+  },
+  {
+    "id": 57,
+    "ntsc": "Catrap",
+    "pal": "No salio",
+    "jp": "Pit Man"
+  },
+  {
+    "id": 58,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Sonar"
+  },
+  {
+    "id": 59,
+    "ntsc": "Amazing Tater",
+    "pal": "No salio",
+    "jp": "Puzzle Boy II"
+  },
+  {
+    "id": 60,
+    "ntsc": "No salio",
+    "pal": "Bomb Jack",
+    "jp": "No salio"
+  },
+  {
+    "id": 61,
+    "ntsc": "Star Wars",
+    "pal": "Star Wars",
+    "jp": "No salio"
+  },
+  {
+    "id": 62,
+    "ntsc": "Star Wars The Empire Strikes Back",
+    "pal": "Star Wars The Empire Strikes Back",
+    "jp": "No salio"
+  },
+  {
+    "id": 63,
+    "ntsc": "Super Star Wars Return of the Jedi",
+    "pal": "Super Star Wars Return of the Jedi",
+    "jp": "No salio"
+  },
+  {
+    "id": 64,
+    "ntsc": "Final Fantasy Legend",
+    "pal": "No salio",
+    "jp": "Makai Toushi SaGa"
+  },
+  {
+    "id": 65,
+    "ntsc": "Final Fantasy Legend 2",
+    "pal": "No salio",
+    "jp": "SaGa 2: Hihou Densetsu"
+  },
+  {
+    "id": 66,
+    "ntsc": "Final Fantasy Legend 3",
+    "pal": "No salio",
+    "jp": "SaGa 3: Jikuu no Hasha"
+  },
+  {
+    "id": 67,
+    "ntsc": "Final Fantasy Adventure",
+    "pal": "Mystic Quest",
+    "jp": "Seiken Densetsu: Final Fantasy Gaiden"
+  },
+  {
+    "id": 68,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Minesweeper"
+  },
+  {
+    "id": 69,
+    "ntsc": "No salio",
+    "pal": "Blues Brothers Jukebox Adventure",
+    "jp": "No salio"
+  },
+  {
+    "id": 70,
+    "ntsc": "Blues Brothers",
+    "pal": "Blues Brothers",
+    "jp": "No salio"
+  },
+  {
+    "id": 71,
+    "ntsc": "Golf",
+    "pal": "Golf",
+    "jp": "Golf"
+  },
+  {
+    "id": 72,
+    "ntsc": "Tennis",
+    "pal": "Tennis",
+    "jp": "Tennis"
+  },
+  {
+    "id": 73,
+    "ntsc": "Jimmy Connors Tennis",
+    "pal": "Jimmy Connor's Tennis",
+    "jp": "Jimmy Connors no Pro Tennis Tour"
+  },
+  {
+    "id": 74,
+    "ntsc": "Top Rank Tennis",
+    "pal": "Top Ranking Tennis",
+    "jp": "No salio"
+  },
+  {
+    "id": 75,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Kininkou Maroku ONI"
+  },
+  {
+    "id": 76,
+    "ntsc": "Jurassic Park",
+    "pal": "Jurassic Park",
+    "jp": "No salio"
+  },
+  {
+    "id": 77,
+    "ntsc": "Lost World Jurassic Park",
+    "pal": "Lost World: Jurassic Park",
+    "jp": "No salio"
+  },
+  {
+    "id": 78,
+    "ntsc": "Jurassic Park Part 2: The Chaos Continues",
+    "pal": "Jurassic Park Part 2: The Chaos Continues",
+    "jp": "No salio"
+  },
+  {
+    "id": 79,
+    "ntsc": "Paperboy",
+    "pal": "Paperboy",
+    "jp": "No salio"
+  },
+  {
+    "id": 80,
+    "ntsc": "Paperboy 2",
+    "pal": "Paperboy 2",
+    "jp": "No salio"
+  },
+  {
+    "id": 81,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Sagaia"
+  },
+  {
+    "id": 82,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Yu-Gi-Oh! Duel Monsters"
+  },
+  {
+    "id": 83,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Kaiju Oh Godzilla"
+  },
+  {
+    "id": 84,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "SD Gundam Gaiden Lacroan' Heroes"
+  },
+  {
+    "id": 85,
+    "ntsc": "Ninja Gaiden Shadow",
+    "pal": "Shadow Warriors: Ninja Gaiden",
+    "jp": "Ninja Ryukenden GB: Matenrou Kessen"
+  },
+  {
+    "id": 86,
+    "ntsc": "No salio",
+    "pal": "Hammerin' Harry",
+    "jp": "Daiku no Gen-san: Ghost Building Company"
+  },
+  {
+    "id": 87,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Daiku no Gen-San: Robot Teikoku no Yabou"
+  },
+  {
+    "id": 88,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pachinko CR Daiku no Gen-San GB"
+  },
+  {
+    "id": 89,
+    "ntsc": "No salio",
+    "pal": "Tintin in Tibet",
+    "jp": "No salio"
+  },
+  {
+    "id": 90,
+    "ntsc": "Killer Instinct",
+    "pal": "Killer Instinct",
+    "jp": "No salio"
+  },
+  {
+    "id": 91,
+    "ntsc": "No salio",
+    "pal": "Lucky Luke",
+    "jp": "No salio"
+  },
+  {
+    "id": 92,
+    "ntsc": "No salio",
+    "pal": "Asterix",
+    "jp": "No salio"
+  },
+  {
+    "id": 93,
+    "ntsc": "No salio",
+    "pal": "Asterix & Obelix",
+    "jp": "No salio"
+  },
+  {
+    "id": 94,
+    "ntsc": "No salio",
+    "pal": "Waterworld",
+    "jp": "No salio"
+  },
+  {
+    "id": 95,
+    "ntsc": "Batman the Video Game",
+    "pal": "Batman: The Video Game",
+    "jp": "Batman"
+  },
+  {
+    "id": 96,
+    "ntsc": "Batman: The Animated Series",
+    "pal": "Batman: The Animated Series",
+    "jp": "No salio"
+  },
+  {
+    "id": 97,
+    "ntsc": "Batman Forever",
+    "pal": "Batman Forever",
+    "jp": "Batman Forever"
+  },
+  {
+    "id": 98,
+    "ntsc": "Batman: Return of the Joker",
+    "pal": "Batman: Return of the Joker",
+    "jp": "Batman Return Of The Joker"
+  },
+  {
+    "id": 99,
+    "ntsc": "Fortress of Fear",
+    "pal": "Fortress of Fear",
+    "jp": "No salio"
+  },
+  {
+    "id": 100,
+    "ntsc": "Street Fighter II",
+    "pal": "Street Fighter II",
+    "jp": "Street Fighter II"
+  },
+  {
+    "id": 101,
+    "ntsc": "Space Invaders",
+    "pal": "Space Invaders",
+    "jp": "Space Invaders"
+  },
+  {
+    "id": 102,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Battle City"
+  },
+  {
+    "id": 103,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "America Oudan Ultra Quiz"
+  },
+  {
+    "id": 104,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "America Oudan Ultra Quiz Part 2"
+  },
+  {
+    "id": 105,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "America Oudan Ultra Quiz Part 3: Champion Taikai"
+  },
+  {
+    "id": 106,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "America Oudan Ultra Quiz Part 4"
+  },
+  {
+    "id": 107,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ranma 1/2: Kakugeki Mondou"
+  },
+  {
+    "id": 108,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ranma 1/2: Netsuretsu Kakutouhen"
+  },
+  {
+    "id": 109,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Sailor Moon Welcome Nakayoshi Park"
+  },
+  {
+    "id": 110,
+    "ntsc": "No salio",
+    "pal": "Parodius",
+    "jp": "Parodius Da"
+  },
+  {
+    "id": 111,
+    "ntsc": "Pac-Man",
+    "pal": "Pac-Man",
+    "jp": "Pac-Man"
+  },
+  {
+    "id": 112,
+    "ntsc": "Ms. Pac-Man",
+    "pal": "Ms. Pac-Man",
+    "jp": "No salio"
+  },
+  {
+    "id": 113,
+    "ntsc": "Pac-in-Time",
+    "pal": "Pac-In-Time",
+    "jp": "Pac-In-Time"
+  },
+  {
+    "id": 114,
+    "ntsc": "Pac-Attack",
+    "pal": "Pac-Panic",
+    "jp": "Pac-Panic"
+  },
+  {
+    "id": 115,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Captain Tsubasa VS"
+  },
+  {
+    "id": 116,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Captain Tsubasa J: Zenkoku Seiha he no Chousen"
+  },
+  {
+    "id": 117,
+    "ntsc": "Gargoyle's Quest",
+    "pal": "Gargoyle's Quest",
+    "jp": "Red Arremer: Makai-Mura Gaiden"
+  },
+  {
+    "id": 118,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Gargoyle's Quest II: The Demon Darkness"
+  },
+  {
+    "id": 119,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Dragon Ball Z: Goku Gekitouden"
+  },
+  {
+    "id": 120,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Dragon Ball Z: Goku Hishouden"
+  },
+  {
+    "id": 121,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Saint Seiya Paradise"
+  },
+  {
+    "id": 122,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Puyo Puyo"
+  },
+  {
+    "id": 123,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Puyo Puyo 2"
+  },
+  {
+    "id": 124,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Crayon Shin-Chan 3: Ora no Gokigen Athletic"
+  },
+  {
+    "id": 125,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Crayon Shin-chan 4: Ora no Itazura Daihenshin"
+  },
+  {
+    "id": 126,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ultraman Club: Teki Kaijuu o Hakken Seyo"
+  },
+  {
+    "id": 127,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Doraemon: Taiketsu Himitsu Dogu"
+  },
+  {
+    "id": 128,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Doraemon no Study Boy 3: Ku Ku Master"
+  },
+  {
+    "id": 129,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Doraemon No Study Boy 6: Gakushou Kanji Master 1006"
+  },
+  {
+    "id": 130,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Doraemon 2: Animal Wakusei Densetsu"
+  },
+  {
+    "id": 131,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Doraemon no Game Boy de Asobouyo Deluxe 10"
+  },
+  {
+    "id": 132,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Doraemon Kart"
+  },
+  {
+    "id": 133,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Chibi Maruko-chan 2: Deluxe Maruko World"
+  },
+  {
+    "id": 134,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "G-Arms Operation Gundam"
+  },
+  {
+    "id": 135,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Downtown Nekketsu Koushinkyoku: Dokodemo Daiundoukai"
+  },
+  {
+    "id": 136,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Initial D Gaiden"
+  },
+  {
+    "id": 137,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Jungle no Ouja Tar-chan"
+  },
+  {
+    "id": 138,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Kizuchida Quiz da Gen-San Da"
+  },
+  {
+    "id": 139,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ninja Spirit"
+  },
+  {
+    "id": 140,
+    "ntsc": "Lock 'n Chase",
+    "pal": "Lock 'n Chase",
+    "jp": "Lock 'n Chase"
+  },
+  {
+    "id": 141,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Battle of Kingdom"
+  },
+  {
+    "id": 142,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Booby Boys"
+  },
+  {
+    "id": 143,
+    "ntsc": "Flipull",
+    "pal": "No salio",
+    "jp": "Flipull"
+  },
+  {
+    "id": 144,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Peetan"
+  },
+  {
+    "id": 145,
+    "ntsc": "Alleyway",
+    "pal": "Alleyway",
+    "jp": "Alleyway"
+  },
+  {
+    "id": 146,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shikakui Atama O Maru Kusuru: Keisan No Tatsujin"
+  },
+  {
+    "id": 147,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shikakui Atama O Maru Kusuru: Nanmon No Ka"
+  },
+  {
+    "id": 148,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shikakui Atama o Maru Kusuru: Kokugo Battle-hen"
+  },
+  {
+    "id": 149,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shikakui Atama O Maru Kusuru: Joushiki No Ka"
+  },
+  {
+    "id": 150,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shikakui Atama O Maru Kusuru: Kanji No Tatsujin"
+  },
+  {
+    "id": 151,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shikakui Atama o Maru Kusuru: Zukei no Tatsujin"
+  },
+  {
+    "id": 152,
+    "ntsc": "FIFA International Soccer",
+    "pal": "FIFA International Soccer",
+    "jp": "No salio"
+  },
+  {
+    "id": 153,
+    "ntsc": "FIFA Soccer '96",
+    "pal": "FIFA Soccer 96",
+    "jp": "No salio"
+  },
+  {
+    "id": 154,
+    "ntsc": "FIFA Soccer 97",
+    "pal": "FIFA 97",
+    "jp": "No salio"
+  },
+  {
+    "id": 155,
+    "ntsc": "FIFA: Road To World Cup 98",
+    "pal": "FIFA Road to World Cup 98",
+    "jp": "No salio"
+  },
+  {
+    "id": 156,
+    "ntsc": "RoboCop",
+    "pal": "RoboCop",
+    "jp": "RoboCop"
+  },
+  {
+    "id": 157,
+    "ntsc": "RoboCop 2",
+    "pal": "RoboCop 2",
+    "jp": "Robocop 2"
+  },
+  {
+    "id": 158,
+    "ntsc": "Robocop vs The Terminator",
+    "pal": "RoboCop Versus The Terminator",
+    "jp": "No salio"
+  },
+  {
+    "id": 159,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ultraman Ball"
+  },
+  {
+    "id": 160,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Cult Master Ultraman ni Miserarete"
+  },
+  {
+    "id": 161,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ultraman"
+  },
+  {
+    "id": 162,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Fatal Fury 2"
+  },
+  {
+    "id": 163,
+    "ntsc": "Power Mission",
+    "pal": "No salio",
+    "jp": "Power Mission"
+  },
+  {
+    "id": 164,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Uchuu Senkan Yamato"
+  },
+  {
+    "id": 165,
+    "ntsc": "Elite Soccer",
+    "pal": "Soccer",
+    "jp": "World Cup Striker"
+  },
+  {
+    "id": 166,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Double Yakuman"
+  },
+  {
+    "id": 167,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Kenyuu Densetsu Yaiba"
+  },
+  {
+    "id": 168,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Zoids Densetsu"
+  },
+  {
+    "id": 169,
+    "ntsc": "Shanghai",
+    "pal": "No salio",
+    "jp": "Shanghai"
+  },
+  {
+    "id": 170,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "San Goku Shi"
+  },
+  {
+    "id": 171,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "TinyONE"
+  },
+  {
+    "id": 172,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Kandume Monsters"
+  },
+  {
+    "id": 173,
+    "ntsc": "No salio",
+    "pal": "Football International",
+    "jp": "Soccer"
+  },
+  {
+    "id": 174,
+    "ntsc": "International Superstar Soccer",
+    "pal": "International Superstar Soccer",
+    "jp": "World Soccer GB"
+  },
+  {
+    "id": 175,
+    "ntsc": "Super Kick Off",
+    "pal": "Super Kick Off",
+    "jp": "Pro Soccer"
+  },
+  {
+    "id": 176,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "J.League Fighting Soccer: The King Of Ace Strikers"
+  },
+  {
+    "id": 177,
+    "ntsc": "Nintendo World Cup",
+    "pal": "Nintendo World Cup",
+    "jp": "Nekketsu Koukou Soccer Bu: World Cup Hen"
+  },
+  {
+    "id": 178,
+    "ntsc": "Soccer Mania",
+    "pal": "No salio",
+    "jp": "Soccer Boy"
+  },
+  {
+    "id": 179,
+    "ntsc": "No salio",
+    "pal": "Matthias Sammer Soccer",
+    "jp": "J.League Big Wave Soccer"
+  },
+  {
+    "id": 180,
+    "ntsc": "No salio",
+    "pal": "Magnetic Soccer",
+    "jp": "No salio"
+  },
+  {
+    "id": 181,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "J. League: Winning Goal"
+  },
+  {
+    "id": 182,
+    "ntsc": "No salio",
+    "pal": "Sensible Soccer: European Champions",
+    "jp": "No salio"
+  },
+  {
+    "id": 183,
+    "ntsc": "World Cup 98",
+    "pal": "World Cup 98",
+    "jp": "No salio"
+  },
+  {
+    "id": 184,
+    "ntsc": "World Cup USA '94",
+    "pal": "World Cup USA '94",
+    "jp": "World Cup USA '94"
+  },
+  {
+    "id": 185,
+    "ntsc": "Tetris Attack",
+    "pal": "Tetris Attack",
+    "jp": "Yoshi no Panepon"
+  },
+  {
+    "id": 186,
+    "ntsc": "Tetris Blast",
+    "pal": "Tetris Blast",
+    "jp": "Super Bombliss"
+  },
+  {
+    "id": 187,
+    "ntsc": "Tetris Plus",
+    "pal": "Tetris Plus",
+    "jp": "Tetris Plus"
+  },
+  {
+    "id": 188,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Konami GB Collection Vol. 1"
+  },
+  {
+    "id": 189,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Konami GB Collection Vol. 2"
+  },
+  {
+    "id": 190,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Konami GB Collection Vol. 3"
+  },
+  {
+    "id": 191,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Konami GB Collection Vol. 4"
+  },
+  {
+    "id": 192,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Final Reverse"
+  },
+  {
+    "id": 193,
+    "ntsc": "Tamagotchi",
+    "pal": "Tamagotchi",
+    "jp": "Game de Hakken: Tamagotchi"
+  },
+  {
+    "id": 194,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Tokyo Disneyland: Mickey no Cinderella Shiro Mystery Tour"
+  },
+  {
+    "id": 195,
+    "ntsc": "Yoshi's Cookie",
+    "pal": "Yoshi's Cookie",
+    "jp": "Yoshi's Cookie"
+  },
+  {
+    "id": 196,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Chikyuu Kaihougun ZAS"
+  },
+  {
+    "id": 197,
+    "ntsc": "Aerostar",
+    "pal": "Aerostar",
+    "jp": "Aerostar"
+  },
+  {
+    "id": 198,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Tokyo Disneyland: Mickey no Cinderella Shiro Mystery Tour"
+  },
+  {
+    "id": 199,
+    "ntsc": "Bugs Bunny Crazy Castle",
+    "pal": "Bugs Bunny Crazy Castle",
+    "jp": "Mickey Mouse"
+  },
+  {
+    "id": 200,
+    "ntsc": "Bugs Bunny Crazy Castle 2",
+    "pal": "Mickey Mouse",
+    "jp": "Mickey Mouse II"
+  },
+  {
+    "id": 201,
+    "ntsc": "Mickey Mouse Magic Wands",
+    "pal": "Mickey Mouse: Magic Wands",
+    "jp": "Mickey Mouse V: Mahou no Stick"
+  },
+  {
+    "id": 202,
+    "ntsc": "Mickey's Dangerous Chase",
+    "pal": "Mickey's Dangerous Chase",
+    "jp": "Mickey's Dangerous Chase"
+  },
+  {
+    "id": 203,
+    "ntsc": "Mickey's Ultimate Challenge",
+    "pal": "Mickey's Ultimate Challenge",
+    "jp": "No salio"
+  },
+  {
+    "id": 204,
+    "ntsc": "Solomon's Club",
+    "pal": "Solomon's Club",
+    "jp": "Solomon's Club"
+  },
+  {
+    "id": 205,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Lunar Lander"
+  },
+  {
+    "id": 206,
+    "ntsc": "Milon's Secret Castle",
+    "pal": "Milon's Secret Castle",
+    "jp": "Milon's Secret Castle"
+  },
+  {
+    "id": 207,
+    "ntsc": "Mole Mania",
+    "pal": "Mole Mania",
+    "jp": "Mole Mania"
+  },
+  {
+    "id": 208,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Momotarou Collection"
+  },
+  {
+    "id": 209,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Money Idol Exchanger"
+  },
+  {
+    "id": 210,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Mr. Go No Baken Tekichuu Sube"
+  },
+  {
+    "id": 211,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nangoku Shounen Papuwa-kun"
+  },
+  {
+    "id": 212,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Magic Knight Rayearth"
+  },
+  {
+    "id": 213,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Mahoujin GuruGuru: Yuusha to Kukuri no Daibouken"
+  },
+  {
+    "id": 214,
+    "ntsc": "Mario's Picross",
+    "pal": "Mario's Picross",
+    "jp": "Mario's Picross"
+  },
+  {
+    "id": 215,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Marmalade Boy"
+  },
+  {
+    "id": 216,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Medarot Parts Collection 2"
+  },
+  {
+    "id": 217,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Medarot [Kabuto Version]"
+  },
+  {
+    "id": 218,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Megami Tensei Gaiden: Last Bible"
+  },
+  {
+    "id": 219,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Mikeneko Holmes no Kishidou"
+  },
+  {
+    "id": 220,
+    "ntsc": "Sumo Fighter",
+    "pal": "No salio",
+    "jp": "Sumo Fighter"
+  },
+  {
+    "id": 221,
+    "ntsc": "Yoshi",
+    "pal": "Mario & Yoshi",
+    "jp": "Yoshi's Egg"
+  },
+  {
+    "id": 222,
+    "ntsc": "Contra the Alien Wars",
+    "pal": "Probotector 2",
+    "jp": "Contra Spirits"
+  },
+  {
+    "id": 223,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Meitantei Conan: Chika Yuuenchi Satsujin Jiken"
+  },
+  {
+    "id": 224,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Capcom Quiz: Hatena? no Daibouken"
+  },
+  {
+    "id": 225,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Namco Gallery Vol. 3"
+  },
+  {
+    "id": 226,
+    "ntsc": "Revenge of the Gator",
+    "pal": "Pinball: Revenge of the 'Gator",
+    "jp": "Pinball: 66 Hiki no Wani Daikoushin"
+  },
+  {
+    "id": 227,
+    "ntsc": "Quarth",
+    "pal": "Quarth",
+    "jp": "Quarth"
+  },
+  {
+    "id": 228,
+    "ntsc": "Operation C",
+    "pal": "Probotector",
+    "jp": "Contra"
+  },
+  {
+    "id": 229,
+    "ntsc": "Ninja Taro",
+    "pal": "No salio",
+    "jp": "Sengoku Ninja-kun"
+  },
+  {
+    "id": 230,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Yu Yu Hakusho"
+  },
+  {
+    "id": 231,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Undercover Cops Gaiden"
+  },
+  {
+    "id": 232,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Velious Roland no Majuu"
+  },
+  {
+    "id": 233,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Volleyfire"
+  },
+  {
+    "id": 234,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Versus Hero: Kakutou Ou e no Michi"
+  },
+  {
+    "id": 235,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "The Shinri Game"
+  },
+  {
+    "id": 236,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Bionic Battler"
+  },
+  {
+    "id": 237,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Bakenou V3"
+  },
+  {
+    "id": 238,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Wizardry Gaiden 2: Curse of the Ancient Emperor"
+  },
+  {
+    "id": 239,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Wizardry Gaiden III: Scripture of the Dark"
+  },
+  {
+    "id": 240,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "World Bowling"
+  },
+  {
+    "id": 241,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Winner's Horse"
+  },
+  {
+    "id": 242,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Wizardry Gaiden I: The Suffering of the Queen"
+  },
+  {
+    "id": 243,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Bakuretsu Senshi Warrior"
+  },
+  {
+    "id": 244,
+    "ntsc": "No salio",
+    "pal": "World Beach Volley",
+    "jp": "World Beach Volley: 1991 GB Cup"
+  },
+  {
+    "id": 245,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pingu"
+  },
+  {
+    "id": 246,
+    "ntsc": "Ultima Runes of Virtue",
+    "pal": "No salio",
+    "jp": "Ultima"
+  },
+  {
+    "id": 247,
+    "ntsc": "Ultima Runes of Virtue II",
+    "pal": "No salio",
+    "jp": "Ultima II"
+  },
+  {
+    "id": 248,
+    "ntsc": "Choplifter II",
+    "pal": "Choplifter II",
+    "jp": "Choplifter II"
+  },
+  {
+    "id": 249,
+    "ntsc": "No salio",
+    "pal": "Choplifter III",
+    "jp": "No salio"
+  },
+  {
+    "id": 250,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Uno Small World"
+  },
+  {
+    "id": 251,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Yu Yu Hakusho Dai-Ni-Dan: Ankoku Bujutsu Kai Hen"
+  },
+  {
+    "id": 252,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shin SD Gundam Gaiden: Knight Gundam Story"
+  },
+  {
+    "id": 253,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Taiyo no Yusha Fighbird GB"
+  },
+  {
+    "id": 254,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Tenjin Kaisen 2"
+  },
+  {
+    "id": 255,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Trump Boy"
+  },
+  {
+    "id": 256,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Taikyoku Renju"
+  },
+  {
+    "id": 257,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Trump Boy II"
+  },
+  {
+    "id": 258,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Gerry Anderson's Thunderbirds"
+  },
+  {
+    "id": 259,
+    "ntsc": "Adventure Island II",
+    "pal": "Adventure Island II",
+    "jp": "Takahashi Meijin no Bouken Jima III"
+  },
+  {
+    "id": 260,
+    "ntsc": "Adventure Island",
+    "pal": "Adventure Island",
+    "jp": "Takahashi Meijin no Bouken Jima II"
+  },
+  {
+    "id": 261,
+    "ntsc": "Tiny Toon Adventures 2 Montana's Movie Madness",
+    "pal": "Tiny Toon Adventures 2 Montana's Movie Madness",
+    "jp": "Tiny Toon Adventures 2"
+  },
+  {
+    "id": 262,
+    "ntsc": "Blades of Steel",
+    "pal": "Blades of Steel",
+    "jp": "Konamic Ice Hockey"
+  },
+  {
+    "id": 263,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Puzznic"
+  },
+  {
+    "id": 264,
+    "ntsc": "Tasmania Story",
+    "pal": "No salio",
+    "jp": "Tasmania Monogatari"
+  },
+  {
+    "id": 265,
+    "ntsc": "Tail Gator",
+    "pal": "Tail Gator",
+    "jp": "Shippo De Bun"
+  },
+  {
+    "id": 266,
+    "ntsc": "Mercenary Force",
+    "pal": "Mercenary Force",
+    "jp": "Tenjin Kaisen"
+  },
+  {
+    "id": 267,
+    "ntsc": "Tecmo Bowl",
+    "pal": "No salio",
+    "jp": "Tecmo Bowl"
+  },
+  {
+    "id": 268,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Katsuba Yosou Keiba Kizoku EX '94"
+  },
+  {
+    "id": 269,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Quiz Sekai wa Show by Shoubai"
+  },
+  {
+    "id": 270,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pachinko Time"
+  },
+  {
+    "id": 271,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Painter Momopie"
+  },
+  {
+    "id": 272,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Parasol Henbee"
+  },
+  {
+    "id": 273,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Stadium"
+  },
+  {
+    "id": 274,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Hero Shuugou!! Pinball Party"
+  },
+  {
+    "id": 275,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Super Robot Taisen"
+  },
+  {
+    "id": 276,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Soldam"
+  },
+  {
+    "id": 277,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shikinjyo"
+  },
+  {
+    "id": 278,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ranma 1/2: Kakurenbo Death Match"
+  },
+  {
+    "id": 279,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shogi"
+  },
+  {
+    "id": 280,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ray-Thunder"
+  },
+  {
+    "id": 281,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pro Mahjong Kiwame"
+  },
+  {
+    "id": 282,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shikakui Atama wo Marukusuru Keisan Tatsujin"
+  },
+  {
+    "id": 283,
+    "ntsc": "Spy vs. Spy",
+    "pal": "Spy vs. Spy",
+    "jp": "Trappers Tengoku: Spy Vs Spy"
+  },
+  {
+    "id": 284,
+    "ntsc": "Spud's Adventure",
+    "pal": "No salio",
+    "jp": "Totsugeki! Valetions"
+  },
+  {
+    "id": 285,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "GB Genjin Land: Viva! Chikkun Oukoku"
+  },
+  {
+    "id": 286,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Racing Damashii"
+  },
+  {
+    "id": 287,
+    "ntsc": "R-Type",
+    "pal": "R-Type",
+    "jp": "R-Type"
+  },
+  {
+    "id": 288,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Dirty Racing"
+  },
+  {
+    "id": 289,
+    "ntsc": "Bonk's Revenge",
+    "pal": "B.C. Kid 2",
+    "jp": "GB Genjin 2"
+  },
+  {
+    "id": 290,
+    "ntsc": "Radar Mission",
+    "pal": "Radar Mission",
+    "jp": "Radar Mission"
+  },
+  {
+    "id": 291,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Roadster"
+  },
+  {
+    "id": 292,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Solitaire"
+  },
+  {
+    "id": 293,
+    "ntsc": "Sword of Hope",
+    "pal": "Sword of Hope",
+    "jp": "Selection: Erabareshi Mono"
+  },
+  {
+    "id": 294,
+    "ntsc": "Boxxle",
+    "pal": "Boxxle",
+    "jp": "Sokoban"
+  },
+  {
+    "id": 295,
+    "ntsc": "Boxxle II",
+    "pal": "Boxxle II",
+    "jp": "Sokoban 2"
+  },
+  {
+    "id": 296,
+    "ntsc": "Ishido: The Way of Stones",
+    "pal": "No salio",
+    "jp": "Ishido: The Way of Stones"
+  },
+  {
+    "id": 297,
+    "ntsc": "Kung Fu Master",
+    "pal": "Kung Fu Master",
+    "jp": "Spartan X"
+  },
+  {
+    "id": 298,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Scotland Yard"
+  },
+  {
+    "id": 299,
+    "ntsc": "Avenging Spirit",
+    "pal": "Avenging Spirit",
+    "jp": "Phantasm"
+  },
+  {
+    "id": 300,
+    "ntsc": "Pipe Dream",
+    "pal": "No salio",
+    "jp": "Pipe Dream"
+  },
+  {
+    "id": 301,
+    "ntsc": "Power Racer",
+    "pal": "Power Racer",
+    "jp": "Head-On"
+  },
+  {
+    "id": 302,
+    "ntsc": "HAL Wrestling",
+    "pal": "No salio",
+    "jp": "Pro Wrestling"
+  },
+  {
+    "id": 303,
+    "ntsc": "Rescue of Princess Blobette",
+    "pal": "Rescue of Princess Blobette",
+    "jp": "Fushigi na Blobby: Princess Blob o Tsukue"
+  },
+  {
+    "id": 304,
+    "ntsc": "Daedalian Opus",
+    "pal": "No salio",
+    "jp": "Bouken! Puzzle Road"
+  },
+  {
+    "id": 305,
+    "ntsc": "No salio",
+    "pal": "Palamedes",
+    "jp": "Palamedes"
+  },
+  {
+    "id": 306,
+    "ntsc": "Q Billion",
+    "pal": "No salio",
+    "jp": "Q Billion"
+  },
+  {
+    "id": 307,
+    "ntsc": "No salio",
+    "pal": "Splitz",
+    "jp": "Splitz"
+  },
+  {
+    "id": 308,
+    "ntsc": "Rampart",
+    "pal": "Rampart",
+    "jp": "Rampart"
+  },
+  {
+    "id": 309,
+    "ntsc": "F1 Race",
+    "pal": "F1 Race",
+    "jp": "F1 Race"
+  },
+  {
+    "id": 310,
+    "ntsc": "Bonk's Adventure",
+    "pal": "B.C. Kid",
+    "jp": "GB Genjin"
+  },
+  {
+    "id": 311,
+    "ntsc": "Q*bert",
+    "pal": "Q*bert",
+    "jp": "Q*bert"
+  },
+  {
+    "id": 312,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Purikura Pocket"
+  },
+  {
+    "id": 313,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Power Pro GB"
+  },
+  {
+    "id": 314,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Koukou Nyuushideru Jun: Rika Anki Point 250"
+  },
+  {
+    "id": 315,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Kanjirou"
+  },
+  {
+    "id": 316,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Super Bombliss [Value Edition]"
+  },
+  {
+    "id": 317,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Eitango Target 1900"
+  },
+  {
+    "id": 318,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Trump Collection GB"
+  },
+  {
+    "id": 319,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Uno 2: Small World"
+  },
+  {
+    "id": 320,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Yu Yu Hakusho Dai 4 Tama: Makai Touitsu"
+  },
+  {
+    "id": 321,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Dino Breeder"
+  },
+  {
+    "id": 322,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Uchiiwai: Kyoudaijingi no Puzzle Game"
+  },
+  {
+    "id": 323,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Midori no Makibao"
+  },
+  {
+    "id": 324,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Love [CD Bundle]"
+  },
+  {
+    "id": 325,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Game of Life"
+  },
+  {
+    "id": 326,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Gegege no Kitarou: Youkai Souzoushu Arawaru"
+  },
+  {
+    "id": 327,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Kyoro-Chan"
+  },
+  {
+    "id": 328,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Mini-Yonku GB: Let's & Go"
+  },
+  {
+    "id": 329,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Medarot Parts Collection"
+  },
+  {
+    "id": 330,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Namco Gallery Vol. 2"
+  },
+  {
+    "id": 331,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Mini-4 Boy"
+  },
+  {
+    "id": 332,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Animal Breeder"
+  },
+  {
+    "id": 333,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Super Pachinko Taisen"
+  },
+  {
+    "id": 334,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Super Black Bass Pocket 2"
+  },
+  {
+    "id": 335,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Super Chinese Land 3"
+  },
+  {
+    "id": 336,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Tokyo Disneyland: Fantasy Tour"
+  },
+  {
+    "id": 337,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Meitantei Conan: Giwaku no Gouka Ressha"
+  },
+  {
+    "id": 338,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Super Chinese Fighter GB"
+  },
+  {
+    "id": 339,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Dai-2-Ji Super Robot Taisen G"
+  },
+  {
+    "id": 340,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Sanrio Uranai Party"
+  },
+  {
+    "id": 341,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Bomberman Collection"
+  },
+  {
+    "id": 342,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Kaeru no Tame ni Kane wa Naru"
+  },
+  {
+    "id": 343,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Sakigake Otokojuku"
+  },
+  {
+    "id": 344,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Purikura Pocket 2"
+  },
+  {
+    "id": 345,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Purikura Pocket 3"
+  },
+  {
+    "id": 346,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Kawa no Nushi Tsuri 3"
+  },
+  {
+    "id": 347,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Another Bible"
+  },
+  {
+    "id": 348,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Animal Breeder 2"
+  },
+  {
+    "id": 349,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Onigashima Pachinko-Ten"
+  },
+  {
+    "id": 350,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pachi-Slot Kids 2"
+  },
+  {
+    "id": 351,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "GB Basketball"
+  },
+  {
+    "id": 352,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Namco Classic"
+  },
+  {
+    "id": 353,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Tekichuu Rush"
+  },
+  {
+    "id": 354,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nanonote"
+  },
+  {
+    "id": 355,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Bikkuri Nekketsu Shin Kiroku! Dokodemo Kin Medal"
+  },
+  {
+    "id": 356,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Famista 3"
+  },
+  {
+    "id": 357,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pokonyan! Yume no Daibouken"
+  },
+  {
+    "id": 358,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Navy Blue 90"
+  },
+  {
+    "id": 359,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Navy Blue"
+  },
+  {
+    "id": 360,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nekketsu Koukou Dodge Ball-Bu"
+  },
+  {
+    "id": 361,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Karakuri Kengou Den Musashi Lord"
+  },
+  {
+    "id": 362,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Super Momotarou Dentetsu"
+  },
+  {
+    "id": 363,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Magical Taruruuto-kun 2: Raiba Zone Panic"
+  },
+  {
+    "id": 364,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Magical Taruruuto-kun"
+  },
+  {
+    "id": 365,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Momotarou Densetsu Gaiden"
+  },
+  {
+    "id": 366,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Yakuman"
+  },
+  {
+    "id": 367,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Maerchen Club"
+  },
+  {
+    "id": 368,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Monster Maker"
+  },
+  {
+    "id": 369,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Armored Police Metal Jack"
+  },
+  {
+    "id": 370,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Megami Tensei Gaiden: Last Bible II"
+  },
+  {
+    "id": 371,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Daisenryaku"
+  },
+  {
+    "id": 372,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Hong Kong"
+  },
+  {
+    "id": 373,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Jinsei Game Densetsu"
+  },
+  {
+    "id": 374,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Takeda Nobuhiro no Ace Striker"
+  },
+  {
+    "id": 375,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Jungle Wars"
+  },
+  {
+    "id": 376,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Downtown Special Kunio-kun's Historical Period Drama"
+  },
+  {
+    "id": 377,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Zen-Nihon Pro Wrestling Jet"
+  },
+  {
+    "id": 378,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Crayon Shin-Chan: Ora to Shiro wa Otomodachi da yo"
+  },
+  {
+    "id": 379,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Koi Wa Kakehiki"
+  },
+  {
+    "id": 380,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Koro Dice"
+  },
+  {
+    "id": 381,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Cave Noire"
+  },
+  {
+    "id": 382,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Masakari Densetsu: Kintarou Action-Hen"
+  },
+  {
+    "id": 383,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Kingyo Chuuihou! Wapiko no Waku Waku Stamp Rally"
+  },
+  {
+    "id": 384,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Kinnikuman The Dream Match"
+  },
+  {
+    "id": 385,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Little Master 2"
+  },
+  {
+    "id": 386,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Little Master"
+  },
+  {
+    "id": 387,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "The Kick Boxing"
+  },
+  {
+    "id": 388,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Chibi Maruko-Chan 3: Mezase! Game Taishou no Maki"
+  },
+  {
+    "id": 389,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Famista"
+  },
+  {
+    "id": 390,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Funny Field"
+  },
+  {
+    "id": 391,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Family Jockey 2: Meiba No Kettou"
+  },
+  {
+    "id": 392,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Momotaro Dengeki"
+  },
+  {
+    "id": 393,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ganbare Goemon: Sarawareta Ebisumaru"
+  },
+  {
+    "id": 394,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ginga"
+  },
+  {
+    "id": 395,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Jantaku Boy"
+  },
+  {
+    "id": 396,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Super Street Basketball"
+  },
+  {
+    "id": 397,
+    "ntsc": "No salio",
+    "pal": "Sunsoft Grand Prix",
+    "jp": "F1 Boy"
+  },
+  {
+    "id": 398,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Fleet Commander"
+  },
+  {
+    "id": 399,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Famista 2"
+  },
+  {
+    "id": 400,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Family Jockey"
+  },
+  {
+    "id": 401,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shin Nippon Pro Wrestling"
+  },
+  {
+    "id": 402,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nakajima Satoru Kanshu F-1 Hero GB '92"
+  },
+  {
+    "id": 403,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Tiny Toon Adventures 3"
+  },
+  {
+    "id": 404,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Tenchi o Kurau"
+  },
+  {
+    "id": 405,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nakajima Satoru F-1 Hero GB: World Championship '91"
+  },
+  {
+    "id": 406,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Dragon Slayer Gaiden: Nemuri no Oukan"
+  },
+  {
+    "id": 407,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Dragon Slayer"
+  },
+  {
+    "id": 408,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Konami Basketball"
+  },
+  {
+    "id": 409,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "DX Bakenou Z"
+  },
+  {
+    "id": 410,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Soreyuke!! Kid"
+  },
+  {
+    "id": 411,
+    "ntsc": "Boomer's Adventure in Asmik World",
+    "pal": "No salio",
+    "jp": "Boomer's Adventure in Asmik World"
+  },
+  {
+    "id": 412,
+    "ntsc": "Mystical Ninja Starring Goemon",
+    "pal": "Mystical Ninja Starring Goemon",
+    "jp": "Ganbare Goemon: Kurofune Tou no Nazo"
+  },
+  {
+    "id": 413,
+    "ntsc": "King of Fighters 95",
+    "pal": "King of Fighters 95",
+    "jp": "Nettou King of Fighters 95"
+  },
+  {
+    "id": 414,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Master Karateka"
+  },
+  {
+    "id": 415,
+    "ntsc": "No salio",
+    "pal": "Boulder Dash",
+    "jp": "Boulder Dash"
+  },
+  {
+    "id": 416,
+    "ntsc": "WildSnake",
+    "pal": "No salio",
+    "jp": "Super Snakey"
+  },
+  {
+    "id": 417,
+    "ntsc": "No salio",
+    "pal": "Pocket Bomberman",
+    "jp": "Pocket Bomberman"
+  },
+  {
+    "id": 418,
+    "ntsc": "Maru's Mission",
+    "pal": "No salio",
+    "jp": "Oira Jajamaru! Sekai Daibouken"
+  },
+  {
+    "id": 419,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Star Sweep"
+  },
+  {
+    "id": 420,
+    "ntsc": "Nemesis",
+    "pal": "Nemesis",
+    "jp": "Nemesis"
+  },
+  {
+    "id": 421,
+    "ntsc": "Gradius Interstellar Assault",
+    "pal": "Nemesis II",
+    "jp": "Nemesis II"
+  },
+  {
+    "id": 422,
+    "ntsc": "Hyper Lode Runner",
+    "pal": "Hyper Lode Runner: The Labyrinth of Doom",
+    "jp": "Hyper Lode Runner"
+  },
+  {
+    "id": 423,
+    "ntsc": "Klax",
+    "pal": "Klax",
+    "jp": "Klax"
+  },
+  {
+    "id": 424,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Urusei Yatsura: Miss Tomobiki o Sagase"
+  },
+  {
+    "id": 425,
+    "ntsc": "Serpent",
+    "pal": "No salio",
+    "jp": "Serpent"
+  },
+  {
+    "id": 426,
+    "ntsc": "Alien 3",
+    "pal": "Alien 3",
+    "jp": "Alien 3"
+  },
+  {
+    "id": 427,
+    "ntsc": "Motocross Maniacs",
+    "pal": "Motocross Maniacs",
+    "jp": "Motocross Maniacs"
+  },
+  {
+    "id": 428,
+    "ntsc": "Raging Fighter",
+    "pal": "Raging Fighter",
+    "jp": "Outburst"
+  },
+  {
+    "id": 429,
+    "ntsc": "Nobunaga's Ambition",
+    "pal": "No salio",
+    "jp": "Nobunaga no Yabou"
+  },
+  {
+    "id": 430,
+    "ntsc": "Monopoly",
+    "pal": "Monopoly",
+    "jp": "Monopoly"
+  },
+  {
+    "id": 431,
+    "ntsc": "Baseball",
+    "pal": "Baseball",
+    "jp": "Baseball"
+  },
+  {
+    "id": 432,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Blodia"
+  },
+  {
+    "id": 433,
+    "ntsc": "Bubble Ghost",
+    "pal": "Bubble Ghost",
+    "jp": "Bubble Ghost"
+  },
+  {
+    "id": 434,
+    "ntsc": "Blaster Master Boy",
+    "pal": "Blaster Master Jr.",
+    "jp": "Bomber King Scenario 2"
+  },
+  {
+    "id": 435,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Baseball Kids"
+  },
+  {
+    "id": 436,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Battle Pingpong"
+  },
+  {
+    "id": 437,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Migrain"
+  },
+  {
+    "id": 438,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Chibi Maruko-Chan 4: Korega Nippon Dayo! Oujisama"
+  },
+  {
+    "id": 439,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Cult Jump"
+  },
+  {
+    "id": 440,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Battle"
+  },
+  {
+    "id": 441,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Chacha-Maru Panic"
+  },
+  {
+    "id": 442,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Hiden Inyou Kikoho: Ca Da"
+  },
+  {
+    "id": 443,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shinseiki GPX Cyber Formula"
+  },
+  {
+    "id": 444,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Card Game"
+  },
+  {
+    "id": 445,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pachio-Kun Puzzle Castle"
+  },
+  {
+    "id": 446,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Chibi Maruko-Chan Okozukai Daisakusen"
+  },
+  {
+    "id": 447,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Crayon Shin-Chan 2: Ora to Wan Paku-Gokko Dazo"
+  },
+  {
+    "id": 448,
+    "ntsc": "Sanrio Carnival",
+    "pal": "No salio",
+    "jp": "Sanrio Carnival"
+  },
+  {
+    "id": 449,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Peke To Poko No Daruman Busters"
+  },
+  {
+    "id": 450,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Dodge Boy"
+  },
+  {
+    "id": 451,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ayakashi no Shiro"
+  },
+  {
+    "id": 452,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Oyatsu Quiz Mogumogu Q"
+  },
+  {
+    "id": 453,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Medarot [Kuwagata Version]"
+  },
+  {
+    "id": 454,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nipponshi Target 201"
+  },
+  {
+    "id": 455,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nectaris GB"
+  },
+  {
+    "id": 456,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Namco Gallery Vol. 1"
+  },
+  {
+    "id": 457,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ninku Dai-2-Dan: Ninku Sensou Hen"
+  },
+  {
+    "id": 458,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Picross 2"
+  },
+  {
+    "id": 459,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pachio-kun Game Gallery"
+  },
+  {
+    "id": 460,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Shogi"
+  },
+  {
+    "id": 461,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Hayaoshi Quiz: Ouza Ketteisen"
+  },
+  {
+    "id": 462,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Mahou Kishi Rayearth 2nd: The Missing Colors"
+  },
+  {
+    "id": 463,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nettou Real Bout Fatal Fury Special"
+  },
+  {
+    "id": 464,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Gurander Musashi RV"
+  },
+  {
+    "id": 465,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Asmik-kun World 2"
+  },
+  {
+    "id": 466,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Bitamina Okoku Monogatari"
+  },
+  {
+    "id": 467,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Taito Variety Pack"
+  },
+  {
+    "id": 468,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Chousoku Spinner"
+  },
+  {
+    "id": 469,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Aretha III"
+  },
+  {
+    "id": 470,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ippatsu Gyakuten: DX Bakenou"
+  },
+  {
+    "id": 471,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Sanrio Carnival 2"
+  },
+  {
+    "id": 472,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shin Keiba Kizoku Pocket Jockey"
+  },
+  {
+    "id": 473,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shogi Saikyou"
+  },
+  {
+    "id": 474,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Sunsoft Sound Boy"
+  },
+  {
+    "id": 475,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Super B-Daman Fighting Phoenix"
+  },
+  {
+    "id": 476,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Super Chinese Land 123"
+  },
+  {
+    "id": 477,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Super Momotarou Dentetsu II"
+  },
+  {
+    "id": 478,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Taiyou No Tenshi Marlowe: Ohanabatake Wa Dai-Panic"
+  },
+  {
+    "id": 479,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Tekkaman Blade"
+  },
+  {
+    "id": 480,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ponta to Hinako no Chindouchuu: Yuutou Hen"
+  },
+  {
+    "id": 481,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Mini-Yonku GB All Star Battle Max"
+  },
+  {
+    "id": 482,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Koukou Nyuushideru Jun: Chuugaku Eitango 1700"
+  },
+  {
+    "id": 483,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "After Burst"
+  },
+  {
+    "id": 484,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Battle Crusher"
+  },
+  {
+    "id": 485,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Bass Fishing"
+  },
+  {
+    "id": 486,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Mahjong"
+  },
+  {
+    "id": 487,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Block Kuzushi GB"
+  },
+  {
+    "id": 488,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Bakuchou Retrieve Master"
+  },
+  {
+    "id": 489,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Z-Kai Kyuukyoku no Eitango 1500"
+  },
+  {
+    "id": 490,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Color: Block"
+  },
+  {
+    "id": 491,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Chibi Maruko-Chan: Maruko Deluxe Gekijou"
+  },
+  {
+    "id": 492,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Collection Pocket GB"
+  },
+  {
+    "id": 493,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Koukou Nyuushideru Jun: Chuugaku Eijukugo 350"
+  },
+  {
+    "id": 494,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Momotarou Dentetsu Jr"
+  },
+  {
+    "id": 495,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Tower of Druaga"
+  },
+  {
+    "id": 496,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shikakui Atama o Maru Kusuru: Rika Battle-Hen"
+  },
+  {
+    "id": 497,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shikakui Atama O Maru Kusuru: Sansuu Battle-Hen"
+  },
+  {
+    "id": 498,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Fushigi no Dungeon: Fuurai no Shiren"
+  },
+  {
+    "id": 499,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Snoopy No Hajimete No Otsukai"
+  },
+  {
+    "id": 500,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Fishing Teacher"
+  },
+  {
+    "id": 501,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Kuusou Kagaku Sekai Gulliver Boy: Kuusou Kagaku Puzzle - Puritto Pon"
+  },
+  {
+    "id": 502,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Umi no Nushi Tsuri 2"
+  },
+  {
+    "id": 503,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Uoozu"
+  },
+  {
+    "id": 504,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Vattle Giuce"
+  },
+  {
+    "id": 505,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Tsuri Sensei"
+  },
+  {
+    "id": 506,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Turbo File GB"
+  },
+  {
+    "id": 507,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "SD Sengokuden 3: Chijo Saikyouhen"
+  },
+  {
+    "id": 508,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Oni V: Innin no Tsugumono"
+  },
+  {
+    "id": 509,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Aretha"
+  },
+  {
+    "id": 510,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shonen Ashibe Yuenchi Panic"
+  },
+  {
+    "id": 511,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Chachamaru Boukenki 3: Abyss no Tou"
+  },
+  {
+    "id": 512,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Aretha II"
+  },
+  {
+    "id": 513,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Keitai Keiba Eight Special"
+  },
+  {
+    "id": 514,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Velious II: Fukushuu no Jashin"
+  },
+  {
+    "id": 515,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "X Ekkusu"
+  },
+  {
+    "id": 516,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Mach Go Go Go"
+  },
+  {
+    "id": 517,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "SD Hiryu No Ken Gaiden"
+  },
+  {
+    "id": 518,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Mini-4 Boy II"
+  },
+  {
+    "id": 519,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Go! Go! Hitchhike"
+  },
+  {
+    "id": 520,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shikakui Atama O Maru Kusuru: Shakai Battle-Hen"
+  },
+  {
+    "id": 521,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Karamuchou no Daijiken"
+  },
+  {
+    "id": 522,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Konchuu Hakase Insect Dr"
+  },
+  {
+    "id": 523,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Momotarou Dengeki 2: Momotaro Thunderbolt"
+  },
+  {
+    "id": 524,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Soreyuke! Amida-kun"
+  },
+  {
+    "id": 525,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Monster Race Okawari"
+  },
+  {
+    "id": 526,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Mogu Mogu Gombo: Harukanaru Chou Ryouri Densetsu"
+  },
+  {
+    "id": 527,
+    "ntsc": "No salio",
+    "pal": "The Smurfs' Nightmare",
+    "jp": "No salio"
+  },
+  {
+    "id": 528,
+    "ntsc": "No salio",
+    "pal": "The Smurfs Travel The World",
+    "jp": "No salio"
+  },
+  {
+    "id": 529,
+    "ntsc": "Tom and Jerry",
+    "pal": "Tom & Jerry",
+    "jp": "Tom & Jerry"
+  },
+  {
+    "id": 530,
+    "ntsc": "Tom and Jerry Frantic Antics",
+    "pal": "Tom & Jerry 2: The Film",
+    "jp": "Tom And Jerry Part 2"
+  },
+  {
+    "id": 531,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "SD Gundam: SD Sengokuden: Kunitori Monogatari"
+  },
+  {
+    "id": 532,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "SD Hiryu No Ken Gaiden 2"
+  },
+  {
+    "id": 533,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "SD Lupin Sansei: Kinko Yaburi Daisakusen"
+  },
+  {
+    "id": 534,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "SD Sengokuden 2: Tenka Touitsu Hen"
+  },
+  {
+    "id": 535,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Same Game"
+  },
+  {
+    "id": 536,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Penguin Land"
+  },
+  {
+    "id": 537,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Penta Dragon"
+  },
+  {
+    "id": 538,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Densha"
+  },
+  {
+    "id": 539,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Family GB"
+  },
+  {
+    "id": 540,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pocket Love 2"
+  },
+  {
+    "id": 541,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Rock'N! Monster"
+  },
+  {
+    "id": 542,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ninku"
+  },
+  {
+    "id": 543,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nintama Rantaro Challenge Puzzle"
+  },
+  {
+    "id": 544,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nontan To Issho: Kurukuru Puzzle"
+  },
+  {
+    "id": 545,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Noobow"
+  },
+  {
+    "id": 546,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pachinko Saiyuuki"
+  },
+  {
+    "id": 547,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Panel No Ninja Kesamaru"
+  },
+  {
+    "id": 548,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Patlabor: The Mobile Police"
+  },
+  {
+    "id": 549,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Honoo no Toukyuuji: Dodge Danpei"
+  },
+  {
+    "id": 550,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ikari no Yousai 2"
+  },
+  {
+    "id": 551,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Itsudemo! Nyan to Wonderful"
+  },
+  {
+    "id": 552,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Kiteretsu Daihyakka: Bouken Ooedo Juraki"
+  },
+  {
+    "id": 553,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Koukiatsu Boy"
+  },
+  {
+    "id": 554,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nekojara Monogatari"
+  },
+  {
+    "id": 555,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nettou Samurai Spirits: Zankuro Musouken"
+  },
+  {
+    "id": 556,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Heisei Tensai Bakabon"
+  },
+  {
+    "id": 557,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Genjin Collection"
+  },
+  {
+    "id": 558,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Genjin Kotts"
+  },
+  {
+    "id": 559,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Go Go Ackman"
+  },
+  {
+    "id": 560,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Game Boy Wars"
+  },
+  {
+    "id": 561,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Game Boy Wars Turbo"
+  },
+  {
+    "id": 562,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Gamera"
+  },
+  {
+    "id": 563,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "GB Pachio-Kun 2"
+  },
+  {
+    "id": 564,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "GB Pachio-Kun 3"
+  },
+  {
+    "id": 565,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Chou Mashin Eiyuuden Wataru: Mazekko Monster"
+  },
+  {
+    "id": 566,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Chou Mashin Eiyuuden Wataru: Mazekko Monster 2"
+  },
+  {
+    "id": 567,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Daikaijuu Monogatari: Miracle of the Zone"
+  },
+  {
+    "id": 568,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Dino Breeder 2"
+  },
+  {
+    "id": 569,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Dungeon Land"
+  },
+  {
+    "id": 570,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Esparks"
+  },
+  {
+    "id": 571,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "G1 King! Hitsu No Yosouya"
+  },
+  {
+    "id": 572,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Bugs Bunny Collection"
+  },
+  {
+    "id": 573,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Game de Hakken!! Tamagotchi Osucchi to Mesucchi"
+  },
+  {
+    "id": 574,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Flappy Special"
+  },
+  {
+    "id": 575,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Momotarou Collection 2"
+  },
+  {
+    "id": 576,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Yu Yu Hakusho Dai 3 Tama: Makai no Tobira"
+  },
+  {
+    "id": 577,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "3-Fun Yosou Umaban Club"
+  },
+  {
+    "id": 578,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Aa Harimanada"
+  },
+  {
+    "id": 579,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Akazukin Chacha"
+  },
+  {
+    "id": 580,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Pri Pri: Primitive Princess"
+  },
+  {
+    "id": 581,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "God Medicine: Fantasy Sekai no Tanjou"
+  },
+  {
+    "id": 582,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "The Shutokou Racer"
+  },
+  {
+    "id": 583,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "F-1 Spirit"
+  },
+  {
+    "id": 584,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Monster Race"
+  },
+  {
+    "id": 585,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Aoki Densetsu Shoot"
+  },
+  {
+    "id": 586,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Astro Rabby"
+  },
+  {
+    "id": 587,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Banishing Racer"
+  },
+  {
+    "id": 588,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Battle Dodgeball"
+  },
+  {
+    "id": 589,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Bishoujo Senshi Sailor Moon"
+  },
+  {
+    "id": 590,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Bishoujo Senshi Sailor Moon R"
+  },
+  {
+    "id": 591,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Bomberman GB 3"
+  },
+  {
+    "id": 592,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Burning Paper"
+  },
+  {
+    "id": 593,
+    "ntsc": "Bomberman GB",
+    "pal": "Bomberman GB",
+    "jp": "Bomberman GB"
+  },
+  {
+    "id": 594,
+    "ntsc": "Wario Blast",
+    "pal": "Wario Blast",
+    "jp": "Bomberman GB 2"
+  },
+  {
+    "id": 595,
+    "ntsc": "Othello",
+    "pal": "Othello",
+    "jp": "Othello"
+  },
+  {
+    "id": 596,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Othello World"
+  },
+  {
+    "id": 597,
+    "ntsc": "T2 The Arcade Game",
+    "pal": "T2: The Arcade Game",
+    "jp": "T2 The Arcade Game"
+  },
+  {
+    "id": 598,
+    "ntsc": "Kwirk",
+    "pal": "Kwirk",
+    "jp": "Puzzle Boy"
+  },
+  {
+    "id": 599,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Chalvo 55"
+  },
+  {
+    "id": 600,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Ganso: Yancha-Maru"
+  },
+  {
+    "id": 601,
+    "ntsc": "Battletoads",
+    "pal": "Battletoads",
+    "jp": "Battletoads"
+  },
+  {
+    "id": 602,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Nettou The King of Fighters '96"
+  },
+  {
+    "id": 603,
+    "ntsc": "World Heroes 2 Jet",
+    "pal": "World Heroes 2 Jet",
+    "jp": "Nettou World Heroes 2 Jet"
+  },
+  {
+    "id": 604,
+    "ntsc": "Qix",
+    "pal": "Qix",
+    "jp": "Qix"
+  },
+  {
+    "id": 605,
+    "ntsc": "Solar Striker",
+    "pal": "Solar Striker",
+    "jp": "Solar Striker"
+  },
+  {
+    "id": 606,
+    "ntsc": "No salio",
+    "pal": "Pop'n TwinBee",
+    "jp": "TwinBee DA"
+  },
+  {
+    "id": 607,
+    "ntsc": "Battle Arena Toshinden",
+    "pal": "Battle Arena Toshinden",
+    "jp": "Nettou Toshinden"
+  },
+  {
+    "id": 608,
+    "ntsc": "Megalit",
+    "pal": "Megalit",
+    "jp": "Megalit"
+  },
+  {
+    "id": 609,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Sports Collection"
+  },
+  {
+    "id": 610,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Asmik-kun World"
+  },
+  {
+    "id": 611,
+    "ntsc": "Mysterium",
+    "pal": "No salio",
+    "jp": "Mysterium"
+  },
+  {
+    "id": 612,
+    "ntsc": "Monster Truck Wars",
+    "pal": "Monster Truck Wars",
+    "jp": "Monster Truck"
+  },
+  {
+    "id": 613,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Shisenshou: Match Mania"
+  },
+  {
+    "id": 614,
+    "ntsc": "Loopz",
+    "pal": "Loopz",
+    "jp": "Loopz"
+  },
+  {
+    "id": 615,
+    "ntsc": "No salio",
+    "pal": "Adventures of Lolo",
+    "jp": "Lolo no Daibouken"
+  },
+  {
+    "id": 616,
+    "ntsc": "Ultra Golf",
+    "pal": "Konami Golf",
+    "jp": "Konami Golf"
+  },
+  {
+    "id": 617,
+    "ntsc": "Jordan vs Bird One on One",
+    "pal": "Jordan vs. Bird: One on One",
+    "jp": "Michael Jordan One on One: Jordan vs. Bird"
+  },
+  {
+    "id": 618,
+    "ntsc": "Fortified Zone",
+    "pal": "Fortified Zone",
+    "jp": "Ikari no Yousai"
+  },
+  {
+    "id": 619,
+    "ntsc": "Hudson Hawk",
+    "pal": "No salio",
+    "jp": "Hudson Hawk"
+  },
+  {
+    "id": 620,
+    "ntsc": "Hatris",
+    "pal": "No salio",
+    "jp": "Hatris"
+  },
+  {
+    "id": 621,
+    "ntsc": "Chase HQ",
+    "pal": "Chase HQ",
+    "jp": "Taito Chase H.Q"
+  },
+  {
+    "id": 622,
+    "ntsc": "Super Chase HQ",
+    "pal": "Super Chase HQ",
+    "jp": "No salio"
+  },
+  {
+    "id": 623,
+    "ntsc": "Heiankyo Alien",
+    "pal": "No salio",
+    "jp": "Heiankyo Alien"
+  },
+  {
+    "id": 624,
+    "ntsc": "Burgertime Deluxe",
+    "pal": "BurgerTime Deluxe",
+    "jp": "BurgerTime Deluxe"
+  },
+  {
+    "id": 625,
+    "ntsc": "The Fidgetts",
+    "pal": "The Fidgetts",
+    "jp": "The Fidgetts"
+  },
+  {
+    "id": 626,
+    "ntsc": "4-in-1 Fun Pak",
+    "pal": "4-in-1 Fun Pak",
+    "jp": "4-in-1 Fun Pak"
+  },
+  {
+    "id": 627,
+    "ntsc": "4-in-1 Funpak: Volume II",
+    "pal": "4-in-1 Funpak: Volume II",
+    "jp": "No salio"
+  },
+  {
+    "id": 628,
+    "ntsc": "Atomic Punk",
+    "pal": "Dynablaster",
+    "jp": "Bomber Boy"
+  },
+  {
+    "id": 629,
+    "ntsc": "2 In 1: Flying Warriors / Fighting Simulator",
+    "pal": "Fighting Simulator: 2-in-1 Flying Warriors",
+    "jp": "Hiryu no Ken Gaiden"
+  },
+  {
+    "id": 630,
+    "ntsc": "Elevator Action",
+    "pal": "Elevator Action",
+    "jp": "Elevator Action"
+  },
+  {
+    "id": 631,
+    "ntsc": "Godzilla",
+    "pal": "Godzilla",
+    "jp": "Gojira-Kun Kaijuu Dai-Koushin"
+  },
+  {
+    "id": 632,
+    "ntsc": "Dragon's Lair: The Legend",
+    "pal": "Dragon's Lair: The Legend",
+    "jp": "Dragon's Lair: The Legend"
+  },
+  {
+    "id": 633,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Dragon Quest Monsters"
+  },
+  {
+    "id": 634,
+    "ntsc": "Dragonheart Fire & Steel",
+    "pal": "DragonHeart",
+    "jp": "No salio"
+  },
+  {
+    "id": 635,
+    "ntsc": "Arcade Classic 3: Galaga and Galaxian",
+    "pal": "Arcade Classic 3: Galaga and Galaxian",
+    "jp": "Galaga & Galaxian"
+  },
+  {
+    "id": 636,
+    "ntsc": "Bubble Bobble",
+    "pal": "Bubble Bobble",
+    "jp": "Bubble Bobble"
+  },
+  {
+    "id": 637,
+    "ntsc": "Bubble Bobble Part 2",
+    "pal": "Bubble Bobble Part 2",
+    "jp": "No salio"
+  },
+  {
+    "id": 638,
+    "ntsc": "Dead Heat Scramble",
+    "pal": "No salio",
+    "jp": "Dead Heat Scramble"
+  },
+  {
+    "id": 639,
+    "ntsc": "Caesars Palace",
+    "pal": "Caesars Palace",
+    "jp": "Caesars Palace"
+  },
+  {
+    "id": 640,
+    "ntsc": "Burai Fighter Deluxe",
+    "pal": "Burai Fighter Deluxe",
+    "jp": "Burai Fighter Deluxe"
+  },
+  {
+    "id": 641,
+    "ntsc": "No salio",
+    "pal": "Spirit of F-1",
+    "jp": "Aguri Suzuki F-1 Super Driving"
+  },
+  {
+    "id": 642,
+    "ntsc": "Ninja Boy",
+    "pal": "Ninja Boy",
+    "jp": "Super Chinese Land"
+  },
+  {
+    "id": 643,
+    "ntsc": "Ninja Boy 2",
+    "pal": "Ninja Boy 2",
+    "jp": "Super Chinese Land 2"
+  },
+  {
+    "id": 644,
+    "ntsc": "Great Greed",
+    "pal": "No salio",
+    "jp": "Great Greed"
+  },
+  {
+    "id": 645,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Gekitou Power Modeler"
+  },
+  {
+    "id": 646,
+    "ntsc": "Alien vs Predator",
+    "pal": "No salio",
+    "jp": "Alien Vs Predator"
+  },
+  {
+    "id": 647,
+    "ntsc": "WWF King of the Ring",
+    "pal": "WWF King of the Ring",
+    "jp": "WWF King Of The Ring"
+  },
+  {
+    "id": 648,
+    "ntsc": "WWF Superstars",
+    "pal": "WWF Superstars",
+    "jp": "WWF Superstars"
+  },
+  {
+    "id": 649,
+    "ntsc": "WWF Superstars 2",
+    "pal": "WWF Superstars 2",
+    "jp": "WWF Superstars 2"
+  },
+  {
+    "id": 650,
+    "ntsc": "Side Pocket",
+    "pal": "Side Pocket",
+    "jp": "Side Pocket"
+  },
+  {
+    "id": 651,
+    "ntsc": "Snow Bros",
+    "pal": "Snow Bros",
+    "jp": "Snow Bros"
+  },
+  {
+    "id": 652,
+    "ntsc": "Desert Strike Return to the Gulf",
+    "pal": "Desert Strike Return to the Gulf",
+    "jp": "No salio"
+  },
+  {
+    "id": 653,
+    "ntsc": "Jungle Strike",
+    "pal": "Jungle Strike",
+    "jp": "No salio"
+  },
+  {
+    "id": 654,
+    "ntsc": "Urban Strike",
+    "pal": "Urban Strike",
+    "jp": "No salio"
+  },
+  {
+    "id": 655,
+    "ntsc": "F-15 Strike Eagle",
+    "pal": "F-15 Strike Eagle",
+    "jp": "No salio"
+  },
+  {
+    "id": 656,
+    "ntsc": "Cosmo Tank",
+    "pal": "No salio",
+    "jp": "CosmoTank"
+  },
+  {
+    "id": 657,
+    "ntsc": "Malibu Beach Volleyball",
+    "pal": "No salio",
+    "jp": "Seaside Volley"
+  },
+  {
+    "id": 658,
+    "ntsc": "Samurai Shodown",
+    "pal": "Samurai Shodown",
+    "jp": "Samurai Spirits"
+  },
+  {
+    "id": 659,
+    "ntsc": "Zool Ninja of the Nth Dimension",
+    "pal": "Zool Ninja of the Nth Dimension",
+    "jp": "No salio"
+  },
+  {
+    "id": 660,
+    "ntsc": "Zoop",
+    "pal": "Zoop",
+    "jp": "No salio"
+  },
+  {
+    "id": 661,
+    "ntsc": "Gremlins 2",
+    "pal": "Gremlins 2",
+    "jp": "Gremlins 2"
+  },
+  {
+    "id": 662,
+    "ntsc": "Fastest Lap",
+    "pal": "Fastest Lap",
+    "jp": "No salio"
+  },
+  {
+    "id": 663,
+    "ntsc": "Harvest Moon",
+    "pal": "No salio",
+    "jp": "Harvest Moon"
+  },
+  {
+    "id": 664,
+    "ntsc": "Home Alone 2 Lost In New York",
+    "pal": "Home Alone 2: Lost in New York",
+    "jp": "No salio"
+  },
+  {
+    "id": 665,
+    "ntsc": "Dr. Franken",
+    "pal": "Dr. Franken",
+    "jp": "No salio"
+  },
+  {
+    "id": 666,
+    "ntsc": "Dr. Franken II",
+    "pal": "Dr. Franken II",
+    "jp": "No salio"
+  },
+  {
+    "id": 667,
+    "ntsc": "No salio",
+    "pal": "R-Type II",
+    "jp": "R-Type II"
+  },
+  {
+    "id": 668,
+    "ntsc": "No salio",
+    "pal": "Game Boy Gallery",
+    "jp": "Game Boy Gallery"
+  },
+  {
+    "id": 669,
+    "ntsc": "No salio",
+    "pal": "GameBoy Gallery 2",
+    "jp": "Game Boy Gallery 2"
+  },
+  {
+    "id": 670,
+    "ntsc": "Game and Watch Gallery",
+    "pal": "Game & Watch Gallery",
+    "jp": "No salio"
+  },
+  {
+    "id": 671,
+    "ntsc": "Fist of the North Star",
+    "pal": "No salio",
+    "jp": "Hokuto no Ken"
+  },
+  {
+    "id": 672,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "BattleSpace"
+  },
+  {
+    "id": 673,
+    "ntsc": "Bionic Commando",
+    "pal": "Bionic Commando",
+    "jp": "Bionic Commando"
+  },
+  {
+    "id": 674,
+    "ntsc": "NBA All-Star Challenge",
+    "pal": "NBA All-Star Challenge",
+    "jp": "No salio"
+  },
+  {
+    "id": 675,
+    "ntsc": "NBA All-Star Challenge 2",
+    "pal": "NBA All-Star Challenge 2",
+    "jp": "NBA All-Star Challenge 2"
+  },
+  {
+    "id": 676,
+    "ntsc": "NBA Jam",
+    "pal": "NBA Jam",
+    "jp": "No salio"
+  },
+  {
+    "id": 677,
+    "ntsc": "NBA Jam Tournament Edition",
+    "pal": "NBA Jam Tournament Edition",
+    "jp": "No salio"
+  },
+  {
+    "id": 678,
+    "ntsc": "NBA Live 96",
+    "pal": "NBA Live 96",
+    "jp": "No salio"
+  },
+  {
+    "id": 679,
+    "ntsc": "NFL Quarterback Club",
+    "pal": "NFL Quarterback Club",
+    "jp": "No salio"
+  },
+  {
+    "id": 680,
+    "ntsc": "NFL Quarterback Club 96",
+    "pal": "NFL Quarterback Club 96",
+    "jp": "No salio"
+  },
+  {
+    "id": 681,
+    "ntsc": "NFL Quarterback Club 2",
+    "pal": "NFL Quarterback Club II",
+    "jp": "NFL Quarterback Club '95"
+  },
+  {
+    "id": 682,
+    "ntsc": "NFL Football",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 683,
+    "ntsc": "NHL 96",
+    "pal": "NHL 96",
+    "jp": "No salio"
+  },
+  {
+    "id": 684,
+    "ntsc": "NHL Hockey 95",
+    "pal": "NHL Hockey 95",
+    "jp": "No salio"
+  },
+  {
+    "id": 685,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "World Ice Hockey"
+  },
+  {
+    "id": 686,
+    "ntsc": "No salio",
+    "pal": "Pinball Deluxe",
+    "jp": "No salio"
+  },
+  {
+    "id": 687,
+    "ntsc": "Pinball Dreams",
+    "pal": "Pinball Dreams",
+    "jp": "No salio"
+  },
+  {
+    "id": 688,
+    "ntsc": "Pinball Fantasies",
+    "pal": "Pinball Fantasies",
+    "jp": "No salio"
+  },
+  {
+    "id": 689,
+    "ntsc": "No salio",
+    "pal": "Pinball Mania",
+    "jp": "No salio"
+  },
+  {
+    "id": 690,
+    "ntsc": "Battle Unit Zeoth",
+    "pal": "Battle Unit Zeoth",
+    "jp": "Battle Unit Zeoth"
+  },
+  {
+    "id": 691,
+    "ntsc": "Altered Space",
+    "pal": "Altered Space",
+    "jp": "Altered Space"
+  },
+  {
+    "id": 692,
+    "ntsc": "Oddworld Adventures",
+    "pal": "Oddworld Adventures",
+    "jp": "No salio"
+  },
+  {
+    "id": 693,
+    "ntsc": "Speedy Gonzales",
+    "pal": "Speedy Gonzales",
+    "jp": "No salio"
+  },
+  {
+    "id": 694,
+    "ntsc": "Aladdin",
+    "pal": "Aladdin",
+    "jp": "No salio"
+  },
+  {
+    "id": 695,
+    "ntsc": "Arcade Classic 2: Centipede and Millipede",
+    "pal": "Arcade Classic 2: Centipede and Millipede",
+    "jp": "No salio"
+  },
+  {
+    "id": 696,
+    "ntsc": "Arcade Classic 4: Defender and Joust",
+    "pal": "Arcade Classic 4: Defender and Joust",
+    "jp": "No salio"
+  },
+  {
+    "id": 697,
+    "ntsc": "Arcade Classic: Asteroids and Missile Command",
+    "pal": "Arcade Classic: Asteroids and Missile Command",
+    "jp": "No salio"
+  },
+  {
+    "id": 698,
+    "ntsc": "Arcade Classic: Super Breakout and Battlezone",
+    "pal": "Arcade Classics: Super Breakout and Battlezone",
+    "jp": "No salio"
+  },
+  {
+    "id": 699,
+    "ntsc": "Bubsy II",
+    "pal": "Bubsy II",
+    "jp": "No salio"
+  },
+  {
+    "id": 700,
+    "ntsc": "Attack of the Killer Tomatoes",
+    "pal": "Attack of the Killer Tomatoes",
+    "jp": "No salio"
+  },
+  {
+    "id": 701,
+    "ntsc": "Lemmings",
+    "pal": "Lemmings",
+    "jp": "No salio"
+  },
+  {
+    "id": 702,
+    "ntsc": "No salio",
+    "pal": "Lemmings 2: The Tribes",
+    "jp": "No salio"
+  },
+  {
+    "id": 703,
+    "ntsc": "Adventures of Star Saver",
+    "pal": "Adventures of Star Saver",
+    "jp": "Rubble Saver"
+  },
+  {
+    "id": 704,
+    "ntsc": "No salio",
+    "pal": "King of the Zoo",
+    "jp": "Penguin Kun Wars VS"
+  },
+  {
+    "id": 705,
+    "ntsc": "No salio",
+    "pal": "No salio",
+    "jp": "Tamagotchi 2"
+  },
+  {
+    "id": 706,
+    "ntsc": "Heavyweight Championship Boxing",
+    "pal": "No salio",
+    "jp": "Boxing"
+  },
+  {
+    "id": 707,
+    "ntsc": "Bust-a-Move 2 Arcade Edition",
+    "pal": "Bust-A-Move 2: Arcade Edition",
+    "jp": "Puzzle Bobble GB"
+  },
+  {
+    "id": 708,
+    "ntsc": "Tiny Toon Adventures Babs' Big Break",
+    "pal": "Tiny Toon Adventures Babs' Big Break",
+    "jp": "Tiny Toon Adventures"
+  },
+  {
+    "id": 709,
+    "ntsc": "Snoopy's Magic Show",
+    "pal": "Snoopy's Magic Show",
+    "jp": "Snoopy Magic Show"
+  },
+  {
+    "id": 710,
+    "ntsc": "WCW The Main Event",
+    "pal": "WCW The Main Event",
+    "jp": "No salio"
+  },
+  {
+    "id": 711,
+    "ntsc": "WWF Raw",
+    "pal": "WWF Raw",
+    "jp": "No salio"
+  },
+  {
+    "id": 712,
+    "ntsc": "WWF Warzone",
+    "pal": "WWF War Zone",
+    "jp": "No salio"
+  },
+  {
+    "id": 713,
+    "ntsc": "Wheel of Fortune",
+    "pal": "Wheel Of Fortune",
+    "jp": "No salio"
+  },
+  {
+    "id": 714,
+    "ntsc": "Winter Olympic Games Lillehammer 94",
+    "pal": "Winter Gold",
+    "jp": "No salio"
+  },
+  {
+    "id": 715,
+    "ntsc": "Xenon 2",
+    "pal": "Xenon 2 Megablast",
+    "jp": "No salio"
+  },
+  {
+    "id": 716,
+    "ntsc": "Yogi Bear's Gold Rush",
+    "pal": "Yogi Bear's Goldrush",
+    "jp": "No salio"
+  },
+  {
+    "id": 717,
+    "ntsc": "Zen Intergalactic Ninja",
+    "pal": "Zen Intergalactic Ninja",
+    "jp": "No salio"
+  },
+  {
+    "id": 718,
+    "ntsc": "No salio",
+    "pal": "Light Max",
+    "jp": "No salio"
+  },
+  {
+    "id": 719,
+    "ntsc": "No salio",
+    "pal": "Ottos Ottifanten: Baby Brunos's Nightmare",
+    "jp": "No salio"
+  },
+  {
+    "id": 720,
+    "ntsc": "Goal",
+    "pal": "Goal",
+    "jp": "No salio"
+  },
+  {
+    "id": 721,
+    "ntsc": "Titus the Fox",
+    "pal": "Titus the Fox",
+    "jp": "No salio"
+  },
+  {
+    "id": 722,
+    "ntsc": "No salio",
+    "pal": "Beethoven",
+    "jp": "No salio"
+  },
+  {
+    "id": 723,
+    "ntsc": "No salio",
+    "pal": "Max",
+    "jp": "No salio"
+  },
+  {
+    "id": 724,
+    "ntsc": "Madden 95",
+    "pal": "Madden '95",
+    "jp": "No salio"
+  },
+  {
+    "id": 725,
+    "ntsc": "Madden 96",
+    "pal": "Madden '96",
+    "jp": "No salio"
+  },
+  {
+    "id": 726,
+    "ntsc": "Madden 97",
+    "pal": "",
+    "jp": "No salio"
+  },
+  {
+    "id": 727,
+    "ntsc": "Bart Simpson's Escape from Camp Deadly",
+    "pal": "Bart Simpson's Escape from Camp Deadly",
+    "jp": "No salio"
+  },
+  {
+    "id": 728,
+    "ntsc": "Tip Off",
+    "pal": "Tip Off",
+    "jp": "No salio"
+  },
+  {
+    "id": 729,
+    "ntsc": "Top Gun: Guts and Glory",
+    "pal": "Top Gun: Guts and Glory",
+    "jp": "No salio"
+  },
+  {
+    "id": 730,
+    "ntsc": "Total Carnage",
+    "pal": "Total Carnage",
+    "jp": "No salio"
+  },
+  {
+    "id": 731,
+    "ntsc": "Toy Story",
+    "pal": "Toy Story",
+    "jp": "No salio"
+  },
+  {
+    "id": 732,
+    "ntsc": "Track Meet",
+    "pal": "Track Meet",
+    "jp": "Track Meet - Mezase! Barcelona"
+  },
+  {
+    "id": 733,
+    "ntsc": "Trax",
+    "pal": "Trax",
+    "jp": "No salio"
+  },
+  {
+    "id": 734,
+    "ntsc": "Tumble Pop",
+    "pal": "Tumble Pop",
+    "jp": "No salio"
+  },
+  {
+    "id": 735,
+    "ntsc": "Turok Battle of the Bionosaurs",
+    "pal": "Turok Battle of the Bionosaurs",
+    "jp": "No salio"
+  },
+  {
+    "id": 736,
+    "ntsc": "Turrican",
+    "pal": "Turrican",
+    "jp": "No salio"
+  },
+  {
+    "id": 737,
+    "ntsc": "No salio",
+    "pal": "Un Indien Dans La Ville",
+    "jp": "No salio"
+  },
+  {
+    "id": 738,
+    "ntsc": "Universal Soldier",
+    "pal": "Universal Soldier",
+    "jp": "No salio"
+  },
+  {
+    "id": 739,
+    "ntsc": "No salio",
+    "pal": "V-Rally Championship Edition",
+    "jp": "No salio"
+  },
+  {
+    "id": 740,
+    "ntsc": "Vegas Stakes",
+    "pal": "Vegas Stakes",
+    "jp": "No salio"
+  },
+  {
+    "id": 741,
+    "ntsc": "Centipede",
+    "pal": "Centipede",
+    "jp": "No salio"
+  },
+  {
+    "id": 742,
+    "ntsc": "Kingdom Crusade",
+    "pal": "Legend of Prince Valiant",
+    "jp": "No salio"
+  },
+  {
+    "id": 743,
+    "ntsc": "007 James Bond",
+    "pal": "007 James Bond",
+    "jp": "No salio"
+  },
+  {
+    "id": 744,
+    "ntsc": "Addams Family",
+    "pal": "Addams Family",
+    "jp": "No salio"
+  },
+  {
+    "id": 745,
+    "ntsc": "Addams Family Pugsley's Scavenger Hunt",
+    "pal": "Addams Family Pugsley's Scavenger Hunt",
+    "jp": "No salio"
+  },
+  {
+    "id": 746,
+    "ntsc": "Amazing Penguin",
+    "pal": "Amazing Penguin",
+    "jp": "No salio"
+  },
+  {
+    "id": 747,
+    "ntsc": "Amazing Spiderman",
+    "pal": "Amazing Spiderman",
+    "jp": "No salio"
+  },
+  {
+    "id": 748,
+    "ntsc": "Animaniacs",
+    "pal": "Animaniacs",
+    "jp": "No salio"
+  },
+  {
+    "id": 749,
+    "ntsc": "Alfred Chicken",
+    "pal": "Alfred Chicken",
+    "jp": "No salio"
+  },
+  {
+    "id": 750,
+    "ntsc": "Asteroids",
+    "pal": "Asteroids",
+    "jp": "No salio"
+  },
+  {
+    "id": 751,
+    "ntsc": "Balloon Kid",
+    "pal": "Balloon Kid",
+    "jp": "No salio"
+  },
+  {
+    "id": 752,
+    "ntsc": "Barbie Game Girl",
+    "pal": "Barbie: Game Girl",
+    "jp": "No salio"
+  },
+  {
+    "id": 753,
+    "ntsc": "Battletoads in Ragnarok's World",
+    "pal": "Battletoads in Ragnarok's World",
+    "jp": "No salio"
+  },
+  {
+    "id": 754,
+    "ntsc": "Battleship",
+    "pal": "Battleship",
+    "jp": "No salio"
+  },
+  {
+    "id": 755,
+    "ntsc": "Beavis and Butthead",
+    "pal": "Beavis and Butt-head",
+    "jp": "No salio"
+  },
+  {
+    "id": 756,
+    "ntsc": "Castelian",
+    "pal": "Castelian",
+    "jp": "No salio"
+  },
+  {
+    "id": 757,
+    "ntsc": "Casino FunPak",
+    "pal": "Casino FunPak",
+    "jp": "No salio"
+  },
+  {
+    "id": 758,
+    "ntsc": "Casper",
+    "pal": "Casper",
+    "jp": "No salio"
+  },
+  {
+    "id": 759,
+    "ntsc": "Gauntlet II",
+    "pal": "Gauntlet II",
+    "jp": "No salio"
+  },
+  {
+    "id": 760,
+    "ntsc": "Chessmaster",
+    "pal": "Chessmaster",
+    "jp": "Chessmaster"
+  },
+  {
+    "id": 761,
+    "ntsc": "Earthworm Jim",
+    "pal": "Earthworm Jim",
+    "jp": "No salio"
+  },
+  {
+    "id": 762,
+    "ntsc": "Chuck Rock",
+    "pal": "Chuck Rock",
+    "jp": "No salio"
+  },
+  {
+    "id": 763,
+    "ntsc": "Cliffhanger",
+    "pal": "Cliffhanger",
+    "jp": "No salio"
+  },
+  {
+    "id": 764,
+    "ntsc": "Cool Spot",
+    "pal": "Cool Spot",
+    "jp": "No salio"
+  },
+  {
+    "id": 765,
+    "ntsc": "Cool World",
+    "pal": "Cool World",
+    "jp": "No salio"
+  },
+  {
+    "id": 766,
+    "ntsc": "The Jungle Book",
+    "pal": "Jungle Book",
+    "jp": "No salio"
+  },
+  {
+    "id": 767,
+    "ntsc": "Worms",
+    "pal": "Worms",
+    "jp": "No salio"
+  },
+  {
+    "id": 768,
+    "ntsc": "Spiderman 2",
+    "pal": "Spiderman 2",
+    "jp": "No salio"
+  },
+  {
+    "id": 769,
+    "ntsc": "Spiderman 3",
+    "pal": "Spiderman 3",
+    "jp": "No salio"
+  },
+  {
+    "id": 770,
+    "ntsc": "Spiderman and the X-Men: Arcade's Revenge",
+    "pal": "Spiderman and the X-Men: Arcade's Revenge",
+    "jp": "No salio"
+  },
+  {
+    "id": 771,
+    "ntsc": "Hook",
+    "pal": "Hook",
+    "jp": "No salio"
+  },
+  {
+    "id": 772,
+    "ntsc": "No salio",
+    "pal": "Hugo",
+    "jp": "No salio"
+  },
+  {
+    "id": 773,
+    "ntsc": "No salio",
+    "pal": "Hugo 2",
+    "jp": "No salio"
+  },
+  {
+    "id": 774,
+    "ntsc": "Hunchback of Notre Dame",
+    "pal": "Hunchback of Notre Dame",
+    "jp": "No salio"
+  },
+  {
+    "id": 775,
+    "ntsc": "Hunt for Red October",
+    "pal": "Hunt for Red October",
+    "jp": "No salio"
+  },
+  {
+    "id": 776,
+    "ntsc": "Hyperkin Square",
+    "pal": "Hyperdunk",
+    "jp": "No salio"
+  },
+  {
+    "id": 777,
+    "ntsc": "TaleSpin",
+    "pal": "TaleSpin",
+    "jp": "No salio"
+  },
+  {
+    "id": 778,
+    "ntsc": "Tarzan Lord of the Jungle",
+    "pal": "Tarzan Lord of the Jungle",
+    "jp": "No salio"
+  },
+  {
+    "id": 779,
+    "ntsc": "Taz-Mania",
+    "pal": "Taz-Mania",
+    "jp": "No salio"
+  },
+  {
+    "id": 780,
+    "ntsc": "Terminator 2 Judgment Day",
+    "pal": "Terminator 2 Judgment Day",
+    "jp": "No salio"
+  },
+  {
+    "id": 781,
+    "ntsc": "Tesserae",
+    "pal": "Tesserae",
+    "jp": "No salio"
+  },
+  {
+    "id": 782,
+    "ntsc": "The Flash",
+    "pal": "The Flash",
+    "jp": "No salio"
+  },
+  {
+    "id": 783,
+    "ntsc": "The Lion King",
+    "pal": "The Lion King",
+    "jp": "No salio"
+  },
+  {
+    "id": 784,
+    "ntsc": "The Ren & Stimpy Show Veediots",
+    "pal": "The Ren & Stimpy Show Veediots",
+    "jp": "No salio"
+  },
+  {
+    "id": 785,
+    "ntsc": "The Simpsons Bart and the Beanstalk",
+    "pal": "The Simpsons Bart and the Beanstalk",
+    "jp": "No salio"
+  },
+  {
+    "id": 786,
+    "ntsc": "The Simpsons Bart vs the Juggernauts",
+    "pal": "The Simpsons Bart vs. Juggernauts",
+    "jp": "No salio"
+  },
+  {
+    "id": 787,
+    "ntsc": "Tintin Le Temple du Soleil",
+    "pal": "Tintin Le Temple du Soleil",
+    "jp": "No salio"
+  },
+  {
+    "id": 788,
+    "ntsc": "Tintin: Prisoners of the Sun",
+    "pal": "Tintin: Prisoners of the Sun",
+    "jp": "No salio"
+  },
+  {
+    "id": 789,
+    "ntsc": "Tiny Toon Adventures Wacky Sports",
+    "pal": "Tiny Toon Adventures Wacky Sports",
+    "jp": "No salio"
+  },
+  {
+    "id": 790,
+    "ntsc": "Track & Field",
+    "pal": "Track & Field",
+    "jp": "No salio"
+  },
+  {
+    "id": 791,
+    "ntsc": "True Lies",
+    "pal": "True Lies",
+    "jp": "No salio"
+  },
+  {
+    "id": 792,
+    "ntsc": "Wave Race",
+    "pal": "Wave Race",
+    "jp": "No salio"
+  },
+  {
+    "id": 793,
+    "ntsc": "Who Framed Roger Rabbit",
+    "pal": "Who Framed Roger Rabbit",
+    "jp": "No salio"
+  },
+  {
+    "id": 794,
+    "ntsc": "The Humans",
+    "pal": "Humans",
+    "jp": "No salio"
+  },
+  {
+    "id": 795,
+    "ntsc": "Taz Mania 2",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 796,
+    "ntsc": "No salio",
+    "pal": "Spirou",
+    "jp": "No salio"
+  },
+  {
+    "id": 797,
+    "ntsc": "Spot the Video Game",
+    "pal": "Spot the Video Game",
+    "jp": "No salio"
+  },
+  {
+    "id": 798,
+    "ntsc": "Stargate",
+    "pal": "Stargate",
+    "jp": "No salio"
+  },
+  {
+    "id": 799,
+    "ntsc": "StarHawk",
+    "pal": "Starhawk",
+    "jp": "No salio"
+  },
+  {
+    "id": 800,
+    "ntsc": "Street Racer",
+    "pal": "Street Racer",
+    "jp": "No salio"
+  },
+  {
+    "id": 801,
+    "ntsc": "Days of Thunder",
+    "pal": "Days of Thunder",
+    "jp": "No salio"
+  },
+  {
+    "id": 802,
+    "ntsc": "Super Battletank",
+    "pal": "Super Battletank",
+    "jp": "No salio"
+  },
+  {
+    "id": 803,
+    "ntsc": "Super Hunchback",
+    "pal": "Super Hunchback",
+    "jp": "No salio"
+  },
+  {
+    "id": 804,
+    "ntsc": "No salio",
+    "pal": "Super James Pond",
+    "jp": "No salio"
+  },
+  {
+    "id": 805,
+    "ntsc": "Super Off Road",
+    "pal": "Super Off Road",
+    "jp": "No salio"
+  },
+  {
+    "id": 806,
+    "ntsc": "Super R.C. Pro-Am",
+    "pal": "Super R.C. Pro-Am",
+    "jp": "No salio"
+  },
+  {
+    "id": 807,
+    "ntsc": "Superman",
+    "pal": "Superman",
+    "jp": "No salio"
+  },
+  {
+    "id": 808,
+    "ntsc": "Swamp Thing",
+    "pal": "Swamp Thing",
+    "jp": "No salio"
+  },
+  {
+    "id": 809,
+    "ntsc": "Cutthroat Island",
+    "pal": "Cutthroat Island",
+    "jp": "No salio"
+  },
+  {
+    "id": 810,
+    "ntsc": "Ferrari Grand Prix Challenge",
+    "pal": "Ferrari Grand Prix Challenge",
+    "jp": "No salio"
+  },
+  {
+    "id": 811,
+    "ntsc": "Micro Machines",
+    "pal": "Micro Machines",
+    "jp": "No salio"
+  },
+  {
+    "id": 812,
+    "ntsc": "Mighty Morphin Power Rangers",
+    "pal": "Mighty Morphin Power Rangers",
+    "jp": "No salio"
+  },
+  {
+    "id": 813,
+    "ntsc": "Mighty Morphin Power Rangers: The Movie",
+    "pal": "Mighty Morphin Power Rangers: The Movie",
+    "jp": "No salio"
+  },
+  {
+    "id": 814,
+    "ntsc": "No salio",
+    "pal": "Micro Machines 2: Turbo Tournament",
+    "jp": "No salio"
+  },
+  {
+    "id": 815,
+    "ntsc": "Mr. Do!",
+    "pal": "Mr. Do",
+    "jp": "No salio"
+  },
+  {
+    "id": 816,
+    "ntsc": "Berlitz French Translator",
+    "pal": "Berlitz French Translator",
+    "jp": "No salio"
+  },
+  {
+    "id": 817,
+    "ntsc": "Berlitz Spanish Translator",
+    "pal": "Berlitz Spanish Translator",
+    "jp": "No salio"
+  },
+  {
+    "id": 818,
+    "ntsc": "Best of the Best Championship Karate",
+    "pal": "Best of the Best: Championship Karate",
+    "jp": "No salio"
+  },
+  {
+    "id": 819,
+    "ntsc": "Bill and Ted's Excellent Adventure",
+    "pal": "Bill & Ted's Excellent Game Boy Adventure: A Bogus Journey",
+    "jp": "No salio"
+  },
+  {
+    "id": 820,
+    "ntsc": "Brain Drain",
+    "pal": "Brain Drain",
+    "jp": "No salio"
+  },
+  {
+    "id": 821,
+    "ntsc": "Brainbender",
+    "pal": "Brainbender",
+    "jp": "No salio"
+  },
+  {
+    "id": 822,
+    "ntsc": "Bram Stoker's Dracula",
+    "pal": "Bram Stoker's Dracula",
+    "jp": "No salio"
+  },
+  {
+    "id": 823,
+    "ntsc": "Daffy Duck",
+    "pal": "Daffy Duck",
+    "jp": "No salio"
+  },
+  {
+    "id": 824,
+    "ntsc": "Darkwing Duck",
+    "pal": "Darkwing Duck",
+    "jp": "No salio"
+  },
+  {
+    "id": 825,
+    "ntsc": "F1 Pole Position",
+    "pal": "F1 Pole Position",
+    "jp": "No salio"
+  },
+  {
+    "id": 826,
+    "ntsc": "Flintstones King Rock Treasure Island",
+    "pal": "Flintstones: King Rock Treasure Island",
+    "jp": "No salio"
+  },
+  {
+    "id": 827,
+    "ntsc": "Hercules",
+    "pal": "Hercules",
+    "jp": "No salio"
+  },
+  {
+    "id": 828,
+    "ntsc": "Hit the Ice",
+    "pal": "Hit the Ice",
+    "jp": "No salio"
+  },
+  {
+    "id": 829,
+    "ntsc": "Home Alone",
+    "pal": "Home Alone",
+    "jp": "No salio"
+  },
+  {
+    "id": 830,
+    "ntsc": "Incredible Crash Dummies",
+    "pal": "Incredible Crash Dummies",
+    "jp": "No salio"
+  },
+  {
+    "id": 831,
+    "ntsc": "Indiana Jones Last Crusade",
+    "pal": "Indiana Jones and the Last Crusade",
+    "jp": "No salio"
+  },
+  {
+    "id": 832,
+    "ntsc": "Iron Man X-O Manowar in Heavy Metal",
+    "pal": "Iron Man X-O Manowar in Heavy Metal",
+    "jp": "No salio"
+  },
+  {
+    "id": 833,
+    "ntsc": "Itchy and Scratchy Miniature Golf Madness",
+    "pal": "Itchy & Scratchy Miniature Golf Madness",
+    "jp": "No salio"
+  },
+  {
+    "id": 834,
+    "ntsc": "Jack Nicklaus Golf",
+    "pal": "Jack Nicklaus Golf",
+    "jp": "No salio"
+  },
+  {
+    "id": 835,
+    "ntsc": "Pagemaster",
+    "pal": "Pagemaster",
+    "jp": "No salio"
+  },
+  {
+    "id": 836,
+    "ntsc": "Beetlejuice",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 837,
+    "ntsc": "Bases Loaded",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 838,
+    "ntsc": "No salio",
+    "pal": "Alien Olympics",
+    "jp": "No salio"
+  },
+  {
+    "id": 839,
+    "ntsc": "We're Back A Dinosaur Story",
+    "pal": "Baby T-Rex",
+    "jp": "No salio"
+  },
+  {
+    "id": 840,
+    "ntsc": "No salio",
+    "pal": "Battle of Olympus",
+    "jp": "No salio"
+  },
+  {
+    "id": 841,
+    "ntsc": "No salio",
+    "pal": "Bust-a-Move 3 DX",
+    "jp": "No salio"
+  },
+  {
+    "id": 842,
+    "ntsc": "No salio",
+    "pal": "Castle Quest",
+    "jp": "No salio"
+  },
+  {
+    "id": 843,
+    "ntsc": "No salio",
+    "pal": "Cool Hand",
+    "jp": "No salio"
+  },
+  {
+    "id": 844,
+    "ntsc": "Dennis the Menace",
+    "pal": "Dennis the Menace",
+    "jp": "No salio"
+  },
+  {
+    "id": 845,
+    "ntsc": "Primal Rage",
+    "pal": "Primal Rage",
+    "jp": "No salio"
+  },
+  {
+    "id": 846,
+    "ntsc": "No salio",
+    "pal": "Dropzone",
+    "jp": "No salio"
+  },
+  {
+    "id": 847,
+    "ntsc": "No salio",
+    "pal": "Fire Fighter",
+    "jp": "No salio"
+  },
+  {
+    "id": 848,
+    "ntsc": "No salio",
+    "pal": "Franky, Joe & Dirk: On The Tiles",
+    "jp": "No salio"
+  },
+  {
+    "id": 849,
+    "ntsc": "No salio",
+    "pal": "Golf Classic",
+    "jp": "No salio"
+  },
+  {
+    "id": 850,
+    "ntsc": "No salio",
+    "pal": "InfoGenius Systems - Personal Organizer with Phone Book",
+    "jp": "No salio"
+  },
+  {
+    "id": 851,
+    "ntsc": "No salio",
+    "pal": "Jelly Boy",
+    "jp": "No salio"
+  },
+  {
+    "id": 852,
+    "ntsc": "No salio",
+    "pal": "Joe & Mac: Caveman Ninja",
+    "jp": "No salio"
+  },
+  {
+    "id": 853,
+    "ntsc": "No salio",
+    "pal": "King of Fighters, The - Heat of Battle",
+    "jp": "No salio"
+  },
+  {
+    "id": 854,
+    "ntsc": "The Smurfs",
+    "pal": "Smurfs",
+    "jp": "No salio"
+  },
+  {
+    "id": 855,
+    "ntsc": "No salio",
+    "pal": "Smurfs 3: Smurfs' Nightmare",
+    "jp": "No salio"
+  },
+  {
+    "id": 856,
+    "ntsc": "George Foreman's KO Boxing",
+    "pal": "George Foreman's KO Boxing",
+    "jp": "No salio"
+  },
+  {
+    "id": 857,
+    "ntsc": "SeaQuest DSV",
+    "pal": "SeaQuest DSV",
+    "jp": "No salio"
+  },
+  {
+    "id": 858,
+    "ntsc": "No salio",
+    "pal": "Lawnmower Man",
+    "jp": "No salio"
+  },
+  {
+    "id": 859,
+    "ntsc": "No salio",
+    "pal": "McDonaldland",
+    "jp": "No salio"
+  },
+  {
+    "id": 860,
+    "ntsc": "No salio",
+    "pal": "Monster Max",
+    "jp": "No salio"
+  },
+  {
+    "id": 861,
+    "ntsc": "No salio",
+    "pal": "Montezuma's Return!",
+    "jp": "No salio"
+  },
+  {
+    "id": 862,
+    "ntsc": "No salio",
+    "pal": "Mr. Nutz",
+    "jp": "No salio"
+  },
+  {
+    "id": 863,
+    "ntsc": "Nigel Mansell's World Championship Racing",
+    "pal": "Nigel Mansell's World Championship Racing",
+    "jp": "No salio"
+  },
+  {
+    "id": 864,
+    "ntsc": "No salio",
+    "pal": "Pang",
+    "jp": "No salio"
+  },
+  {
+    "id": 865,
+    "ntsc": "No salio",
+    "pal": "Parasol Stars: Rainbow Islands II",
+    "jp": "No salio"
+  },
+  {
+    "id": 866,
+    "ntsc": "No salio",
+    "pal": "Phantom Air Mission",
+    "jp": "No salio"
+  },
+  {
+    "id": 867,
+    "ntsc": "No salio",
+    "pal": "Populous",
+    "jp": "No salio"
+  },
+  {
+    "id": 868,
+    "ntsc": "No salio",
+    "pal": "Reservoir Rat",
+    "jp": "No salio"
+  },
+  {
+    "id": 869,
+    "ntsc": "No salio",
+    "pal": "Sea Battle",
+    "jp": "No salio"
+  },
+  {
+    "id": 870,
+    "ntsc": "No salio",
+    "pal": "Rodland",
+    "jp": "No salio"
+  },
+  {
+    "id": 871,
+    "ntsc": "No salio",
+    "pal": "Pop Up",
+    "jp": "No salio"
+  },
+  {
+    "id": 872,
+    "ntsc": "Small Soldiers",
+    "pal": "Small Soldiers",
+    "jp": "No salio"
+  },
+  {
+    "id": 873,
+    "ntsc": "Sneaky Snakes",
+    "pal": "Sneaky Snakes",
+    "jp": "No salio"
+  },
+  {
+    "id": 874,
+    "ntsc": "Solitaire Fun Pak",
+    "pal": "Solitaire FunPak",
+    "jp": "No salio"
+  },
+  {
+    "id": 875,
+    "ntsc": "Spanky's Quest",
+    "pal": "Spanky's Quest",
+    "jp": "No salio"
+  },
+  {
+    "id": 876,
+    "ntsc": "Speedball 2",
+    "pal": "Speedball 2",
+    "jp": "No salio"
+  },
+  {
+    "id": 877,
+    "ntsc": "Skate or Die Bad n Rad",
+    "pal": "Skate or Die: Bad 'N Rad",
+    "jp": "No salio"
+  },
+  {
+    "id": 878,
+    "ntsc": "Skate or Die: Tour de Thrash",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 879,
+    "ntsc": "Road Rash",
+    "pal": "Road Rash",
+    "jp": "No salio"
+  },
+  {
+    "id": 880,
+    "ntsc": "Robin Hood Prince of Thieves",
+    "pal": "Robin Hood Prince of Thieves",
+    "jp": "No salio"
+  },
+  {
+    "id": 881,
+    "ntsc": "PGA European Tour",
+    "pal": "PGA European Tour",
+    "jp": "No salio"
+  },
+  {
+    "id": 882,
+    "ntsc": "PGA Tour 96",
+    "pal": "PGA Tour 96",
+    "jp": "No salio"
+  },
+  {
+    "id": 883,
+    "ntsc": "Pinocchio",
+    "pal": "Pinocchio",
+    "jp": "No salio"
+  },
+  {
+    "id": 884,
+    "ntsc": "Dig Dug",
+    "pal": "Dig Dug",
+    "jp": "No salio"
+  },
+  {
+    "id": 885,
+    "ntsc": "Dexterity",
+    "pal": "Dexterity",
+    "jp": "No salio"
+  },
+  {
+    "id": 886,
+    "ntsc": "Felix the Cat",
+    "pal": "Felix the Cat",
+    "jp": "No salio"
+  },
+  {
+    "id": 887,
+    "ntsc": "Foreman for Real",
+    "pal": "Foreman for Real",
+    "jp": "No salio"
+  },
+  {
+    "id": 888,
+    "ntsc": "The Jetsons Robot Panic",
+    "pal": "Jetsons: Robot Panic",
+    "jp": "No salio"
+  },
+  {
+    "id": 889,
+    "ntsc": "Lamborghini American Challenge",
+    "pal": "Lamborghini American Challenge",
+    "jp": "No salio"
+  },
+  {
+    "id": 890,
+    "ntsc": "Last Action Hero",
+    "pal": "Last Action Hero",
+    "jp": "No salio"
+  },
+  {
+    "id": 891,
+    "ntsc": "Lethal Weapon",
+    "pal": "Lethal Weapon",
+    "jp": "No salio"
+  },
+  {
+    "id": 892,
+    "ntsc": "Looney Tunes",
+    "pal": "Looney Tunes",
+    "jp": "No salio"
+  },
+  {
+    "id": 893,
+    "ntsc": "Looney Tunes 2: Tasmanian Devil in Island Chase",
+    "pal": "Looney Tunes 2: Tasmanian Devil in Island Chase",
+    "jp": "No salio"
+  },
+  {
+    "id": 894,
+    "ntsc": "Fish Dude",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 895,
+    "ntsc": "Navy Seals",
+    "pal": "Navy SEALs",
+    "jp": "No salio"
+  },
+  {
+    "id": 896,
+    "ntsc": "No salio",
+    "pal": "Agro Soar",
+    "jp": "No salio"
+  },
+  {
+    "id": 897,
+    "ntsc": "No salio",
+    "pal": "Bamse",
+    "jp": "No salio"
+  },
+  {
+    "id": 898,
+    "ntsc": "No salio",
+    "pal": "Die Maus",
+    "jp": "No salio"
+  },
+  {
+    "id": 899,
+    "ntsc": "Mulan",
+    "pal": "Mulan",
+    "jp": "No salio"
+  },
+  {
+    "id": 900,
+    "ntsc": "Muhammad Ali Heavyweight Boxing",
+    "pal": "Muhammad Ali Heavyweight Boxing",
+    "jp": "No salio"
+  },
+  {
+    "id": 901,
+    "ntsc": "Pit-Fighter",
+    "pal": "Pit-Fighter",
+    "jp": "No salio"
+  },
+  {
+    "id": 902,
+    "ntsc": "Prophecy of the Viking Child",
+    "pal": "Prophecy:The Viking Child",
+    "jp": "No salio"
+  },
+  {
+    "id": 903,
+    "ntsc": "Riddick Bowe Boxing",
+    "pal": "Riddick Bowe Boxing",
+    "jp": "No salio"
+  },
+  {
+    "id": 904,
+    "ntsc": "Race Drivin",
+    "pal": "Race Drivin",
+    "jp": "No salio"
+  },
+  {
+    "id": 905,
+    "ntsc": "Race Days",
+    "pal": "Race Days",
+    "jp": "No salio"
+  },
+  {
+    "id": 906,
+    "ntsc": "No salio",
+    "pal": "Lucle",
+    "jp": "Lucle"
+  },
+  {
+    "id": 907,
+    "ntsc": "No salio",
+    "pal": "Glucksrad",
+    "jp": "No salio"
+  },
+  {
+    "id": 908,
+    "ntsc": "Judge Dredd",
+    "pal": "Judge Dredd",
+    "jp": "No salio"
+  },
+  {
+    "id": 909,
+    "ntsc": "Prehistorik Man",
+    "pal": "Prehistorik Man",
+    "jp": "No salio"
+  },
+  {
+    "id": 910,
+    "ntsc": "No salio",
+    "pal": "Out to Lunch",
+    "jp": "No salio"
+  },
+  {
+    "id": 911,
+    "ntsc": "Olympic Summer Games",
+    "pal": "Olympic Summer Games: Atlanta 1996",
+    "jp": "No salio"
+  },
+  {
+    "id": 912,
+    "ntsc": "Nail n Scale",
+    "pal": "Nail 'n' Scale",
+    "jp": "No salio"
+  },
+  {
+    "id": 913,
+    "ntsc": "Missile Command",
+    "pal": "Missile Command",
+    "jp": "No salio"
+  },
+  {
+    "id": 914,
+    "ntsc": "Little Mermaid",
+    "pal": "Little Mermaid",
+    "jp": "No salio"
+  },
+  {
+    "id": 915,
+    "ntsc": "Flintstones the Movie",
+    "pal": "Flintstones",
+    "jp": "No salio"
+  },
+  {
+    "id": 916,
+    "ntsc": "Krusty's Fun House",
+    "pal": "Krusty's Fun House",
+    "jp": "No salio"
+  },
+  {
+    "id": 917,
+    "ntsc": "No salio",
+    "pal": "Litti's Summer Sports",
+    "jp": "No salio"
+  },
+  {
+    "id": 918,
+    "ntsc": "Gear Works",
+    "pal": "Gear Works",
+    "jp": "No salio"
+  },
+  {
+    "id": 919,
+    "ntsc": "Ken Griffey Jr Presents Major League Baseball",
+    "pal": "Ken Griffey Jr. Presents Major League Baseball",
+    "jp": "No salio"
+  },
+  {
+    "id": 920,
+    "ntsc": "Kid Icarus Of Myths and Monsters",
+    "pal": "Kid Icarus: Of Myths and Monsters",
+    "jp": "No salio"
+  },
+  {
+    "id": 921,
+    "ntsc": "Frank Thomas Big Hurt Baseball",
+    "pal": "Frank Thomas Big Hurt Baseball",
+    "jp": "No salio"
+  },
+  {
+    "id": 922,
+    "ntsc": "Wordtris",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 923,
+    "ntsc": "Wordzap",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 924,
+    "ntsc": "World Bowling",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 925,
+    "ntsc": "World Circuit Series",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 926,
+    "ntsc": "The Punisher",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 927,
+    "ntsc": "Bill Elliott's NASCAR Fast Tracks",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 928,
+    "ntsc": "All-Star Baseball 99",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 929,
+    "ntsc": "Super Breakout",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 930,
+    "ntsc": "Battle Bull",
+    "pal": "No salio",
+    "jp": "Battle Bull"
+  },
+  {
+    "id": 931,
+    "ntsc": "Boggle Plus",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 932,
+    "ntsc": "Bo Jackson: Two Games in One",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 933,
+    "ntsc": "New Chessmaster",
+    "pal": "New Chessmaster",
+    "jp": "New Chessmaster"
+  },
+  {
+    "id": 934,
+    "ntsc": "NIV Bible and Lost Levels of Joshua",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 935,
+    "ntsc": "Joshua: The Battle of Jericho",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 936,
+    "ntsc": "Pyramids of Ra",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 937,
+    "ntsc": "The Rugrats Movie",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 938,
+    "ntsc": "Frogger",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 939,
+    "ntsc": "Shaq Fu",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 940,
+    "ntsc": "Jeopardy",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 941,
+    "ntsc": "Jeopardy Platinum Edition",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 942,
+    "ntsc": "Jeopardy Sports Edition",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 943,
+    "ntsc": "Jeopardy Teen Tournament",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 944,
+    "ntsc": "Marble Madness",
+    "pal": "Marble Madness",
+    "jp": "No salio"
+  },
+  {
+    "id": 945,
+    "ntsc": "Darkman",
+    "pal": "Darkman",
+    "jp": "No salio"
+  },
+  {
+    "id": 946,
+    "ntsc": "Cyraid",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 947,
+    "ntsc": "Crystal Quest",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 948,
+    "ntsc": "Dick Tracy",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 949,
+    "ntsc": "Game of Harmony",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 950,
+    "ntsc": "Penguin Wars",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 951,
+    "ntsc": "Spot the Cool Adventure",
+    "pal": "No salio",
+    "jp": "Spot the Cool Adventure"
+  },
+  {
+    "id": 952,
+    "ntsc": "Metal Masters",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 953,
+    "ntsc": "Miner 2049er",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 954,
+    "ntsc": "Mouse Trap Hotel",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 955,
+    "ntsc": "Maui Mallard in Cold Shadow",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 956,
+    "ntsc": "Wayne's World",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 957,
+    "ntsc": "Maiden Of The Dark",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 958,
+    "ntsc": "In Your Face",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 959,
+    "ntsc": "Captain America and the Avengers",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 960,
+    "ntsc": "Championship Pool",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 961,
+    "ntsc": "College Slam",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 962,
+    "ntsc": "Extra Bases",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 963,
+    "ntsc": "Mr. Chin's Gourmet Paradise",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 964,
+    "ntsc": "Square Deal",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 965,
+    "ntsc": "Super Scrabble",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 966,
+    "ntsc": "Rolan's Curse",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 967,
+    "ntsc": "Rolan's Curse 2",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 968,
+    "ntsc": "Sports Illustrated for Kids the Ultimate Triple Dare",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 969,
+    "ntsc": "Sports Illustrated Golf Classic",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 970,
+    "ntsc": "Lazlo's Leap",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 971,
+    "ntsc": "Legend of the River King",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 972,
+    "ntsc": "Knight Quest",
+    "pal": "No salio",
+    "jp": "Knight Quest"
+  },
+  {
+    "id": 973,
+    "ntsc": "Jeep Jamboree",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 974,
+    "ntsc": "King James Bible",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 975,
+    "ntsc": "High Stakes",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 976,
+    "ntsc": "InfoGenius: Spell Checker and Calculator",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 977,
+    "ntsc": "Sword of Hope II",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 978,
+    "ntsc": "Panel Action Bingo",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 979,
+    "ntsc": "Stop that Roach",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 980,
+    "ntsc": "Go Go Tank",
+    "pal": "No salio",
+    "jp": "Go Go Tank"
+  },
+  {
+    "id": 981,
+    "ntsc": "Getaway: High Speed II",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 982,
+    "ntsc": "Joe and Mac",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 983,
+    "ntsc": "Out of Gas",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 984,
+    "ntsc": "Ring Rage",
+    "pal": "No salio",
+    "jp": "Ring Rage"
+  },
+  {
+    "id": 985,
+    "ntsc": "Roger Clemens' MVP Baseball",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 986,
+    "ntsc": "Ren & Stimpy Space Cadet Adventures",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 987,
+    "ntsc": "Play Action Football",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 988,
+    "ntsc": "Spiritual Warfare",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 989,
+    "ntsc": "Gameshark",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 990,
+    "ntsc": "Sports Illustrated Championship Football & Baseball",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 991,
+    "ntsc": "Double Dribble 5 on 5",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 992,
+    "ntsc": "Exodus: Journey to the Promised Land",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 993,
+    "ntsc": "The Adventures of Rocky and Bullwinkle and Friends",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 994,
+    "ntsc": "Faceball 2000",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 995,
+    "ntsc": "Torpedo Range",
+    "pal": "No salio",
+    "jp": "Torpedo Range"
+  },
+  {
+    "id": 996,
+    "ntsc": "Black Bass Lure Fishing",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 997,
+    "ntsc": "Toxic Crusaders",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 998,
+    "ntsc": "BreakThru",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 999,
+    "ntsc": "Super Black Bass",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 1000,
+    "ntsc": "Buster Bros",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 1001,
+    "ntsc": "Cool Ball",
+    "pal": "No salio",
+    "jp": "No salio"
+  },
+  {
+    "id": 1002,
+    "ntsc": "Turn And Burn The F-14 Dogfight Simulator",
+    "pal": "No salio",
+    "jp": "No salio"
+  }
+]

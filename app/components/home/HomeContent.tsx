@@ -3,7 +3,7 @@
 import { useMemo } from "react";
 import Link from "next/link";
 import Logo from "../Logo";
-import { about, articles, developed, samaruc, serials, videos, machines, games } from "../../lib/data";
+import { about, articles, developed, samaruc, videos, machines, games } from "../../lib/data";
 import {
   ALL,
   decadeOptions,
@@ -116,10 +116,10 @@ export default function HomeContent() {
               Desarrollos
             </a>
             <Link
-              href="/placas"
+              href="/gameboy"
               className="text-ink/70 transition-colors hover:text-neon"
             >
-              Serials
+              Game Boy
             </Link>
           </nav>
         </div>
@@ -215,8 +215,8 @@ export default function HomeContent() {
         <p className="font-retro text-lg text-ink/50">
           RETROCUEVA · mi colección · {machines.length} equipos · {games.length}{" "}
           juegos ·{" "}
-          <Link href="/placas" className="transition-colors hover:text-neon">
-            {serials.length} números de serie
+          <Link href="/gameboy" className="transition-colors hover:text-neon">
+            base de datos Game Boy
           </Link>
         </p>
       </footer>

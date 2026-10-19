@@ -10,7 +10,9 @@ import {
   gamesOnPlatform,
   getGame,
   machinesForPlatform,
+  normalize,
 } from "../../lib/data";
+import { isNoRelease, romsetEntryFor } from "../../lib/gameboy";
 import Logo from "../../components/Logo";
 
 export const instant = false;
@@ -47,6 +49,10 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
   const siblings = gamesOnPlatform(game.platform, game.id);
   const machinesForGame = machinesForPlatform(game.platform);
   const mentions = articlesMentioning(game.title);
+  const romEntry =
+    normalize(game.platform) === "game boy"
+      ? romsetEntryFor(game.title)
+      : undefined;
 
   const specs = [
     { label: "Plataforma", value: game.platform },
@@ -168,6 +174,42 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
             </p>
           </div>
         </section>
+
+        {romEntry && (
+          <section className="mt-12">
+            <h2 className="font-pixel text-[11px] text-ink/80">
+              <span style={{ color }}>▾</span> Títulos por región
+            </h2>
+            <div className="mt-4 grid grid-cols-1 gap-px overflow-hidden border-2 border-white/10 bg-white/10 sm:grid-cols-3">
+              {[
+                { label: "USA (NTSC)", value: romEntry.ntsc },
+                { label: "Europa (PAL)", value: romEntry.pal },
+                { label: "Japón", value: romEntry.jp },
+              ].map((row) => (
+                <div key={row.label} className="bg-[#0b0e1d] p-5">
+                  <p className="font-retro text-base tracking-widest text-ink/40">
+                    {row.label}
+                  </p>
+                  <p
+                    className={
+                      isNoRelease(row.value)
+                        ? "mt-1 font-retro text-xl text-ink/30"
+                        : "mt-1 font-retro text-xl text-ink"
+                    }
+                  >
+                    {isNoRelease(row.value) ? "no salió" : row.value}
+                  </p>
+                </div>
+              ))}
+            </div>
+            <p className="mt-4 font-retro text-base text-ink/50">
+              Títulos del romset de Game Boy ·{" "}
+              <Link href="/gameboy" className="transition-colors hover:text-neon">
+                base de datos Game Boy
+              </Link>
+            </p>
+          </section>
+        )}
 
         {siblings.length > 0 && (
           <section className="mt-12">
