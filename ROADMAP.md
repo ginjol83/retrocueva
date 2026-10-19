@@ -24,11 +24,12 @@ Leyenda: `[x]` hecho · `[~]` en curso · `[ ]` pendiente · `[–]` descartado 
 - [x] **1.1 Lookup de número de serie Game Boy DMG** desde `doc/bd (1).json` (10 rangos `serial_ini`/`serial_end` → mainboard, CPU, VRAM, WRAM, LCD/power/jack, `made_in`, tornillos, año). Buscador en `/base-de-datos/placas` (la sección de seriales se pivoto a solo GB; `/placas` y `/gameboy` redirigen).
 - [x] **1.2** Importar `doc/gb_romset_tabla_equiv.xlsx` (1002 juegos: títulos USA/EUR/JAP, "No salio" = no publicado). Buscador en `/base-de-datos/juegos` + títulos por región en fichas de juego GB.
 - [x] **1.3** Importar `doc/serials.xls.xlsx` (12 unidades propias con revisión observada). Regenerables con `npm run import:gb`.
-- [ ] **1.4** Ampliar colección real (C64, ZX Spectrum, NES, Atari 2600, Amstrad CPC, BBC Micro…).
-- [ ] **1.5** Más vídeos + metadatos (`channel`, `duration`).
-- [ ] **1.6** Rellenar seriales pendientes (Portátil 486) y añadir más.
-- [ ] **1.7** Enlazar `link` de desarrollos y Samaruc a sus repos.
-- [ ] **1.8** Sección "Taller" usando `public/taller/*`.
+- [x] **1.4 Ficha de juego del romset** en `/base-de-datos/juegos/[id]` (1002 fichas con títulos por región, carátulas y capturas emparejadas por título desde libretro-thumbnails vía jsDelivr: 61,9% con carátula y 90,8% con capturas). Regenerable con `npm run import:gb:images`.
+- [ ] **1.5** Ampliar colección real (C64, ZX Spectrum, NES, Atari 2600, Amstrad CPC, BBC Micro…).
+- [ ] **1.6** Más vídeos + metadatos (`channel`, `duration`).
+- [ ] **1.7** Rellenar seriales pendientes (Portátil 486) y añadir más.
+- [ ] **1.8** Enlazar `link` de desarrollos y Samaruc a sus repos.
+- [ ] **1.9** Sección "Taller" usando `public/taller/*`.
 
 ---
 
@@ -70,7 +71,7 @@ Leyenda: `[x]` hecho · `[~]` en curso · `[ ]` pendiente · `[–]` descartado 
 
 ## Decisiones de diseño
 
-- **Base de datos** (oct. 2026): la sección de seriales se pivoto a solo Game Boy y se dividió en secciones propias bajo `/base-de-datos` (hub + buscador de placa `/placas`, buscador de juego `/juegos`, unidades verificadas `/unidades` y envío de serial `/enviar-serial`, este último abierto a cualquier máquina vía Instagram). Regla: **si el serial es de una unidad propia, manda la revisión observada**; los rangos de `bd (1).json` quedan como referencia comunitaria (hay conflictos GH documentados en la UI). `/placas` (ruta antigua) y `/gameboy` redirigen (308); los 3 seriales no-GB siguen en `db/serials.json` + `/api/serials`, fuera de la UI, como semilla de la futura BD multi-máquina. Datos regenerables desde `doc/` con `npm run import:gb`.
+- **Base de datos** (oct. 2026): la sección de seriales se pivoto a solo Game Boy y se dividió en secciones propias bajo `/base-de-datos` (hub + buscador de placa `/placas`, buscador de juego `/juegos`, unidades verificadas `/unidades` y envío de serial `/enviar-serial`, este último abierto a cualquier máquina vía Instagram). Cada juego del romset tiene ficha propia en `/base-de-datos/juegos/[id]` con carátula y capturas cuando existen (imágenes emparejadas por título contra libretro-thumbnails, servidas desde jsDelivr; verificado que las capturas son nativas 160×144). Regla: **si el serial es de una unidad propia, manda la revisión observada**; los rangos de `bd (1).json` quedan como referencia comunitaria (hay conflictos GH documentados en la UI). `/placas` (ruta antigua) y `/gameboy` redirigen (308); los 3 seriales no-GB siguen en `db/serials.json` + `/api/serials`, fuera de la UI, como semilla de la futura BD multi-máquina. Datos regenerables desde `doc/` con `npm run import:gb`.
 
 - **Estado en la URL** (Fase 2): se sincroniza con `history.replaceState` desde componentes cliente (hook `useUrlState`), sin `useSearchParams`, para que la home siga prerenderizada íntegra (SEO) y no aparezcan avisos de Suspense. El filtrado sigue en cliente porque los datos ya viajan en el bundle; el filtrado en servidor se hará al migrar a BD (Fase 5).
 - **Next 16 / Cache Components**: las fichas dinámicas usan `generateStaticParams` y `export const instant = false` (son estáticas; se descarta la validación de navegación instantánea).

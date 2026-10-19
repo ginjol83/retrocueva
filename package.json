@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "import:gb": "node scripts/import-gb-data.mjs"
+    "import:gb": "node scripts/import-gb-data.mjs",
+    "import:gb:images": "node scripts/import-gb-images.mjs"
   },
   "dependencies": {
     "next": "16.4.1",

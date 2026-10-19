@@ -1,7 +1,8 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import { gbRomset, isNoRelease, searchRomset } from "../../lib/gameboy";
+import Link from "next/link";
+import { gbRomset, isNoRelease, searchRomset, type GbRomEntry } from "../../lib/gameboy";
 import Highlight from "../Highlight";
 
 const MAX_ROWS = 100;
@@ -12,11 +13,16 @@ export default function RomsetTable() {
   const rows = useMemo(() => searchRomset(trimmed), [trimmed]);
   const shown = rows.slice(0, MAX_ROWS);
 
-  const cell = (title: string) =>
+  const cell = (entry: GbRomEntry, title: string) =>
     isNoRelease(title) ? (
       <span className="text-ink/30">no salió</span>
     ) : (
-      <Highlight text={title} query={trimmed} />
+      <Link
+        href={`/base-de-datos/juegos/${entry.id}`}
+        className="underline decoration-white/20 underline-offset-4 transition-colors hover:text-neon hover:decoration-neon"
+      >
+        <Highlight text={title} query={trimmed} />
+      </Link>
     );
 
   return (
@@ -94,13 +100,13 @@ export default function RomsetTable() {
                       {entry.id}
                     </td>
                     <td className="px-4 py-3 font-retro text-lg text-ink/90">
-                      {cell(entry.ntsc)}
+                      {cell(entry, entry.ntsc)}
                     </td>
                     <td className="px-4 py-3 font-retro text-lg text-ink/90">
-                      {cell(entry.pal)}
+                      {cell(entry, entry.pal)}
                     </td>
                     <td className="px-4 py-3 font-retro text-lg text-ink/90">
-                      {cell(entry.jp)}
+                      {cell(entry, entry.jp)}
                     </td>
                   </tr>
                 ))}

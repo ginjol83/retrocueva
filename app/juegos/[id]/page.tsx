@@ -210,6 +210,17 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
               >
                 buscador de juego
               </Link>
+              {romEntry && (
+                <>
+                  {" · "}
+                  <Link
+                    href={`/base-de-datos/juegos/${romEntry.id}`}
+                    className="transition-colors hover:text-neon"
+                  >
+                    ficha #{romEntry.id} con carátula y capturas
+                  </Link>
+                </>
+              )}
             </p>
           </section>
         )}
