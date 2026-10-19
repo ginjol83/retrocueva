@@ -17,6 +17,15 @@
     "NES / Famicom"
   ],
   "stack": ["Java 17", "JavaFX", "Maven", "GBDK-2020", "Z88DK", "CC65", "devkitSMS"],
+  "logo": "/samaruc/favicon.png",
+  "screenshots": [
+    {
+      "src": "/samaruc/CapturaSamaruc1.png",
+      "alt": "Captura de pantalla del IDE Samaruc con un proyecto abierto",
+      "width": 1919,
+      "height": 1027
+    }
+  ],
   "sections": [
     {
       "heading": "Qué es Samaruc",

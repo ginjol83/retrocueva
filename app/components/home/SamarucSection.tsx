@@ -112,9 +112,20 @@ export default function SamarucSection({ project = samaruc }: { project?: Projec
 
       <div className="retro-card" style={{ "--accent": ACCENT } as CSSProperties}>
         <div className="screen h-28 px-6">
-          <span className="font-pixel text-xl sm:text-2xl" style={{ color: "var(--accent)" }}>
-            SAMARUC
-          </span>
+          <div className="flex items-center gap-4">
+            {project.logo && (
+              <Image
+                src={project.logo}
+                alt={`Logo de ${project.name}`}
+                width={1024}
+                height={1024}
+                className="h-16 w-16 border border-white/20 object-cover sm:h-20 sm:w-20"
+              />
+            )}
+            <span className="font-pixel text-xl sm:text-2xl" style={{ color: "var(--accent)" }}>
+              {project.name.toUpperCase()}
+            </span>
+          </div>
           <span className="badge">{project.version}</span>
         </div>
 
@@ -177,15 +188,26 @@ export default function SamarucSection({ project = samaruc }: { project?: Projec
                     key={shot.src}
                     className="border-2 border-white/10 bg-black/40"
                   >
-                    <div className="relative aspect-video w-full">
+                    {shot.width && shot.height ? (
                       <Image
                         src={shot.src}
                         alt={shot.alt}
-                        fill
+                        width={shot.width}
+                        height={shot.height}
                         sizes="(max-width: 640px) 100vw, 50vw"
-                        className="object-cover"
+                        className="h-auto w-full"
                       />
-                    </div>
+                    ) : (
+                      <div className="relative aspect-video w-full">
+                        <Image
+                          src={shot.src}
+                          alt={shot.alt}
+                          fill
+                          sizes="(max-width: 640px) 100vw, 50vw"
+                          className="object-cover"
+                        />
+                      </div>
+                    )}
                     {shot.caption && (
                       <figcaption className="border-t border-white/10 px-3 py-2 font-retro text-base text-ink/50">
                         {shot.caption}

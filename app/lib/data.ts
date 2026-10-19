@@ -97,6 +97,8 @@ export interface ProjectScreenshot {
   src: string;
   alt: string;
   caption?: string;
+  width?: number;
+  height?: number;
 }
 
 export interface Project {
@@ -111,6 +113,7 @@ export interface Project {
   stack: string[];
   sections: ProjectSection[];
   screenshots?: ProjectScreenshot[];
+  logo?: string;
   link?: string;
 }
 
