@@ -10,8 +10,9 @@ export default function VideosSection({ data = videos }: { data?: Video[] }) {
   const [playing, setPlaying] = useState<string | null>(null);
 
   return (
-    <section id="videos" className="scroll-mt-24 border-t border-white/10 py-14">
+    <section className="border-t border-white/10 py-14">
       <SectionTitle
+        as="h1"
         title="Vídeos"
         count={data.length}
         noun={data.length === 1 ? "vídeo" : "vídeos"}

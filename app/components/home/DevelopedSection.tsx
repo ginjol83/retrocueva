@@ -8,11 +8,8 @@ export default function DevelopedSection({
   data?: DevelopedGame[];
 }) {
   return (
-    <section
-      id="desarrollos"
-      className="scroll-mt-24 border-t border-white/10 py-14"
-    >
-      <SectionTitle title="Juegos desarrollados" count={data.length} />
+    <section className="border-t border-white/10 py-14">
+      <SectionTitle title="Juegos desarrollados" as="h1" count={data.length} />
       {data.length === 0 ? (
         <EmptyState message="Todavía no hay desarrollos publicados." />
       ) : (

@@ -66,7 +66,7 @@ export default async function ArticlePage(props: PageProps<"/articulos/[id]">) {
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
           <Logo />
           <Link
-            href="/#articulos"
+            href="/articulos"
             className="font-retro text-lg text-ink/70 transition-colors hover:text-neon"
           >
             ← Volver a artículos

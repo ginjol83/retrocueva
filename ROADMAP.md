@@ -11,7 +11,7 @@ Leyenda: `[x]` hecho · `[~]` en curso · `[ ]` pendiente · `[–]` descartado 
 
 - **Stack**: Next.js 16.4.1 (App Router, Turbopack, `cacheComponents`, `partialPrefetching`), React 19, Tailwind 4, TypeScript.
 - **Datos**: JSON en `db/` importados en `app/lib/data.ts` (3 equipos, 3 juegos, 1 artículo, 1 vídeo, 4 desarrollos) + `db/gameboy/` (10 rangos DMG, 12 unidades propias, 1002 equivalencias de romset).
-- **Páginas**: `/` (colección + editorial), `/base-de-datos` (hub con buscador de placa, buscador de juego, unidades verificadas y envío de serial), fichas `/maquinas/[id]`, `/juegos/[id]`, `/articulos/[id]`. `/placas` y `/gameboy` redirigen a `/base-de-datos`.
+- **Páginas**: `/` (portada con hero, estadísticas, buscador y accesos), `/coleccion` (hardware + software con filtros), `/maquinas` y `/juegos` (listados filtrados), `/quienes-somos`, `/articulos`, `/videos`, `/samaruc`, `/desarrollos`, `/base-de-datos` (hub con buscador de placa, buscador de juego, unidades verificadas y envío de serial) y fichas `/maquinas/[id]`, `/juegos/[id]`, `/articulos/[id]`. `/placas` y `/gameboy` redirigen a `/base-de-datos`.
 - **API**: listas y detalle en `/api/{games,machines,serials,articles,videos,developed}`; listas con `?q=`, `?page=`/`?perPage=` y cabecera `Cache-Control`.
 - **Ya hecho**: búsqueda global, filtros (plataforma/género/fabricante/década/orden), estado en URL, relación máquina↔juegos por `platforms`, tabla interactiva de serials, split de la home en componentes, API con `?q=`/paginación/`Cache-Control`, SEO (metadata/OG/sitemap/robots/manifest/JSON-LD), `not-found`/`error`, a11y.
 - **Despliegue**: producción en Vercel → <https://retrocueva.vercel.app> (integración git: cada push a `main` redespliega). Falta `NEXT_PUBLIC_SITE_URL` y dominio propio (4.19).
@@ -35,12 +35,13 @@ Leyenda: `[x]` hecho · `[~]` en curso · `[ ]` pendiente · `[–]` descartado 
 
 ## Fase 2 — Funcionalidad  `[x]`
 
-- [x] **2.8 Búsqueda y filtros en la URL** (compartible). Query params `q`, `platform`, `genre` en `/`; `q`, `equipo`, `orden` en `/placas`.
+- [x] **2.8 Búsqueda y filtros en la URL** (compartible). Query params `q` en `/`; `platform`, `genre`, `fab`, `decada`, `orden` en `/coleccion`, `/maquinas` y `/juegos`; `q`, `equipo`, `orden` en `/placas`.
 - [x] **2.9 Filtros de hardware** por fabricante y década + orden de colección (nombre/año).
 - [x] **2.10 Enlaces cruzados**: máquina → sus seriales en `/placas`; juego → equipos de su plataforma; artículos ↔ juegos.
 - [x] **2.11 API**: `videos/[id]`, `?q=`, paginación y cabeceras de caché (`Cache-Control`).
 - [x] **2.12 UX de búsqueda**: resaltado de coincidencias, atajo `/` para enfocar, historial en `localStorage`.
 - [x] **2.13** Silenciar aviso `instant-shell-url-data` en `/maquinas/[id]`, `/juegos/[id]`, `/articulos/[id]`.
+- [x] **2.14 Cada sección del menú en su propia ruta**: `/coleccion`, `/maquinas`, `/juegos`, `/quienes-somos`, `/articulos`, `/videos`, `/samaruc` y `/desarrollos`; la home queda como portada con buscador y accesos. Cabecera y pie compartidos (`SiteHeader`/`SiteFooter`/`PageShell`) con enlace activo según ruta.
 
 ---
 
@@ -74,6 +75,7 @@ Leyenda: `[x]` hecho · `[~]` en curso · `[ ]` pendiente · `[–]` descartado 
 - **Base de datos** (oct. 2026): la sección de seriales se pivoto a solo Game Boy y se dividió en secciones propias bajo `/base-de-datos` (hub + buscador de placa `/placas`, buscador de juego `/juegos`, unidades verificadas `/unidades` y envío de serial `/enviar-serial`, este último abierto a cualquier máquina vía Instagram). Cada juego del romset tiene ficha propia en `/base-de-datos/juegos/[id]` con carátula y capturas cuando existen (imágenes emparejadas por título contra libretro-thumbnails, servidas desde jsDelivr; verificado que las capturas son nativas 160×144). Regla: **si el serial es de una unidad propia, manda la revisión observada**; los rangos de `bd (1).json` quedan como referencia comunitaria (hay conflictos GH documentados en la UI). `/placas` (ruta antigua) y `/gameboy` redirigen (308); los 3 seriales no-GB siguen en `db/serials.json` + `/api/serials`, fuera de la UI, como semilla de la futura BD multi-máquina. Datos regenerables desde `doc/` con `npm run import:gb`.
 
 - **Estado en la URL** (Fase 2): se sincroniza con `history.replaceState` desde componentes cliente (hook `useUrlState`), sin `useSearchParams`, para que la home siga prerenderizada íntegra (SEO) y no aparezcan avisos de Suspense. El filtrado sigue en cliente porque los datos ya viajan en el bundle; el filtrado en servidor se hará al migrar a BD (Fase 5).
+- **Arquitectura de páginas** (oct. 2026): cada elemento del menú superior es una ruta propia (nada de anclas en la portada). La portada conserva hero, estadísticas, buscador global y tarjetas de acceso; la colección vive en `/coleccion` con sublistados `/maquinas` y `/juegos` (mismos filtros vía `useUrlState`). Las antiguas secciones de la home (`AboutSection`, `ArticlesSection`, `VideosSection`, `SamarucSection`, `DevelopedSection`) se reutilizan como páginas dentro de `PageShell`; los títulos pasan a `h1` con `SectionTitle as="h1"`.
 - **Next 16 / Cache Components**: las fichas dinámicas usan `generateStaticParams` y `export const instant = false` (son estáticas; se descarta la validación de navegación instantánea).
 - **Búsqueda**: `searchAll()` en `app/lib/search.ts` cubre hardware, software, artículos, desarrollos y serials.
 - **Relación máquina↔juegos**: por `Machine.platforms: string[]` (no por nombre), con `machinePlatforms()` y `gamesForMachine()`.

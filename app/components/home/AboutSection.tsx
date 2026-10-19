@@ -5,11 +5,8 @@ import { SectionTitle } from "./SectionBits";
 
 export default function AboutSection({ data = about }: { data?: About }) {
   return (
-    <section
-      id="quienes-somos"
-      className="scroll-mt-24 border-t border-white/10 py-14"
-    >
-      <SectionTitle title="Quiénes somos" />
+    <section className="border-t border-white/10 py-14">
+      <SectionTitle title="Quiénes somos" as="h1" />
 
       <div className="grid gap-8 lg:grid-cols-2">
         <div>

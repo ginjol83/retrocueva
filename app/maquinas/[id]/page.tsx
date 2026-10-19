@@ -75,7 +75,7 @@ export default async function MachinePage(props: PageProps<"/maquinas/[id]">) {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Logo />
           <Link
-            href="/#hardware"
+            href="/maquinas"
             className="font-retro text-lg text-ink/70 transition-colors hover:text-neon"
           >
             ← Volver al hardware

@@ -9,8 +9,9 @@ export default function ArticlesSection({
   data?: Article[];
 }) {
   return (
-    <section id="articulos" className="scroll-mt-24 border-t border-white/10 py-14">
+    <section className="border-t border-white/10 py-14">
       <SectionTitle
+        as="h1"
         title="Artículos en revistas"
         count={data.length}
         noun={data.length === 1 ? "artículo" : "artículos"}

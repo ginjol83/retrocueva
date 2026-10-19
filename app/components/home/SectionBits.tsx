@@ -2,16 +2,19 @@ export function SectionTitle({
   title,
   count,
   noun = "registros",
+  as = "h2",
 }: {
   title: string;
   count?: number;
   noun?: string;
+  as?: "h1" | "h2";
 }) {
+  const Heading = as;
   return (
     <div className="mb-8 flex items-center gap-4">
-      <h2 className="font-pixel text-sm text-ink sm:text-base">
+      <Heading className="font-pixel text-sm text-ink sm:text-base">
         <span className="text-neon">/</span> {title}
-      </h2>
+      </Heading>
       <span className="h-px flex-1 bg-gradient-to-r from-neon/50 to-transparent" />
       {count !== undefined && (
         <span className="font-retro text-lg text-ink/40">
@@ -26,16 +29,19 @@ export function SubsectionTitle({
   title,
   count,
   items,
+  as = "h3",
 }: {
   title: string;
   count: number;
   items: string;
+  as?: "h2" | "h3";
 }) {
+  const Heading = as;
   return (
     <div className="mb-6 flex items-center gap-3">
-      <h3 className="font-pixel text-[11px] text-ink/85">
+      <Heading className="font-pixel text-[11px] text-ink/85">
         <span className="text-neon">■</span> {title}
-      </h3>
+      </Heading>
       <span className="h-px flex-1 bg-gradient-to-r from-white/25 to-transparent" />
       <span className="font-retro text-base text-ink/40">
         {count} {items}

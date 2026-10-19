@@ -99,11 +99,11 @@ function Block({ block }: { block: ProjectBlock }) {
 
 export default function SamarucSection({ project = samaruc }: { project?: Project }) {
   return (
-    <section id="samaruc" className="scroll-mt-24 border-t border-white/10 py-14">
+    <section className="border-t border-white/10 py-14">
       <div className="mb-8 flex items-center gap-4">
-        <h2 className="font-pixel text-sm text-ink sm:text-base">
+        <h1 className="font-pixel text-sm text-ink sm:text-base">
           <span className="text-neon">/</span> Samaruc
-        </h2>
+        </h1>
         <span className="h-px flex-1 bg-gradient-to-r from-neon/50 to-transparent" />
         <span className="font-retro text-lg text-ink/40">
           {project.platforms.length} plataformas
@@ -131,9 +131,9 @@ export default function SamarucSection({ project = samaruc }: { project?: Projec
 
         <article className="p-6 lg:p-8">
           <div className="flex flex-wrap items-start justify-between gap-4">
-            <h3 className="max-w-3xl font-pixel text-base leading-8 text-ink sm:text-lg md:text-xl">
+            <h2 className="max-w-3xl font-pixel text-base leading-8 text-ink sm:text-lg md:text-xl">
               {project.title}
-            </h3>
+            </h2>
             {project.link && (
               <a
                 href={project.link}
@@ -168,9 +168,9 @@ export default function SamarucSection({ project = samaruc }: { project?: Projec
 
           {project.sections.map((section) => (
             <section key={section.heading} className="mt-8">
-              <h4 className="font-pixel text-[12px] leading-6 text-ink sm:text-sm">
+              <h3 className="font-pixel text-[12px] leading-6 text-ink sm:text-sm">
                 <span style={{ color: ACCENT }}>/</span> {section.heading}
-              </h4>
+              </h3>
               {section.blocks.map((block, blockIndex) => (
                 <Block key={blockIndex} block={block} />
               ))}
@@ -179,9 +179,9 @@ export default function SamarucSection({ project = samaruc }: { project?: Projec
 
           {project.screenshots && project.screenshots.length > 0 && (
             <section className="mt-8">
-              <h4 className="font-pixel text-[12px] leading-6 text-ink sm:text-sm">
+              <h3 className="font-pixel text-[12px] leading-6 text-ink sm:text-sm">
                 <span style={{ color: ACCENT }}>/</span> Capturas de pantalla
-              </h4>
+              </h3>
               <div className="mt-4 grid gap-4 sm:grid-cols-2">
                 {project.screenshots.map((shot) => (
                   <figure
