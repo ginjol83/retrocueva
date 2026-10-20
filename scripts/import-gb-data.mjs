@@ -133,3 +133,15 @@ const write = (name, data) => {
 write("serial-ranges.json", ranges);
 write("units.json", units);
 write("romset.json", romset);
+writeFileSync(
+  join(outDir, "counts.json"),
+  `${JSON.stringify(
+    { ranges: ranges.length, units: units.length, romset: romset.length },
+    null,
+    2,
+  )}\n`,
+  "utf8",
+);
+console.log(
+  `counts.json: ${ranges.length} rangos · ${units.length} unidades · ${romset.length} juegos`,
+);

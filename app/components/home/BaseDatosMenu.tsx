@@ -2,12 +2,12 @@
 
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import { gbRomset, gbUnits } from "../../lib/gameboy";
+import { GB_ROMSET_COUNT, GB_UNITS_COUNT } from "../../lib/counts";
 
 const items = [
   { label: "Buscador de placa", href: "/base-de-datos/placas" },
-  { label: "Buscador de juego", href: "/base-de-datos/juegos", count: gbRomset.length },
-  { label: "Unidades verificadas", href: "/base-de-datos/unidades", count: gbUnits.length },
+  { label: "Buscador de juego", href: "/base-de-datos/juegos", count: GB_ROMSET_COUNT },
+  { label: "Unidades verificadas", href: "/base-de-datos/unidades", count: GB_UNITS_COUNT },
   { label: "Envía tu serial", href: "/base-de-datos/enviar-serial" },
 ];
 

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import RomsetTable from "../../components/gameboy/RomsetTable";
-import { gbRomset } from "../../lib/gameboy";
+import { GB_ROMSET_COUNT } from "../../lib/counts";
 
 export const metadata: Metadata = {
   title: "Buscador de juego",
@@ -34,7 +34,7 @@ export default function JuegosPage() {
         <p className="max-w-3xl text-base leading-relaxed text-ink/80">
           Un mismo juego salió con nombres distintos según el mercado: Mega Man
           en USA, Rockman en Japón, Tetris 2 en Europa y Tetris Flash en
-          Japón. Este buscador recorre {gbRomset.length} juegos del romset de
+          Japón. Este buscador recorre {GB_ROMSET_COUNT} juegos del romset de
           Game Boy y localiza cualquier edición por el título que conozcas,
           mostrando cómo se llamó en las tres regiones.
         </p>

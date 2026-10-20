@@ -1,36 +1,64 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RETROCUEVA
 
-## Getting Started
+Web personal sobre **informática retro**: la colección física de Andrés Giménez documentada ficha a ficha (número de serie, estado, especificaciones y ubicación), más una base de datos de Game Boy DMG y proyectos de desarrollo de 8 bits.
 
-First, run the development server:
+En producción: <https://retrocueva.vercel.app> · Repo: `ginjol83/retrocueva`
+
+## Stack
+
+- **Next.js 16** (App Router, Turbopack, `cacheComponents`, `partialPrefetching`) + **React 19**
+- **TypeScript** estricto · **Tailwind CSS 4** (configuración vía CSS, sin `tailwind.config`)
+- Datos en **JSON** (`db/`) importados como módulos — sin base de datos externa
+- Despliegue en **Vercel** (cada push a `main` redespliega)
+
+## Desarrollo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev        # http://localhost:3000
+npm run build      # build de producción
+npm run lint       # ESLint (flat config)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Copia `.env.example` a `.env.local` (o define la variable en Vercel):
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+NEXT_PUBLIC_SITE_URL=https://retrocueva.vercel.app
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estructura
 
-## Learn More
+```
+app/                  # App Router
+├── components/       # SiteHeader, SiteFooter, PageShell, home/*, gameboy/*
+├── lib/              # data.ts, gameboy.ts, search.ts, collection.ts, site.ts…
+├── api/              # API REST de solo lectura (?q=, ?page=, ?perPage=)
+├── base-de-datos/    # Hub GB: placas, juegos (romset), unidades, enviar-serial
+├── maquinas/         # Colección de hardware + fichas [id]
+├── articulos/        # Artículos + fichas [id]
+└── …                 # coleccion, juegos, videos, samaruc, desarrollos, quienes-somos
+db/                   # Datos JSON (machines, games, articles, gameboy/*…)
+doc/                  # Fuentes de datos (XLSX, JSON) para regenerar db/
+public/               # Imágenes de la colección
+scripts/              # Importadores desde doc/
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Regenerar datos de Game Boy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Los datos de `db/gameboy/` se regeneran desde `doc/`:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run import:gb          # serial-ranges.json, units.json, romset.json (+ counts.json)
+npm run import:gb:images   # images.json (carátulas/capturas desde libretro-thumbnails)
+```
 
-## Deploy on Vercel
+## API
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`GET /api/{games,machines,serials,articles,videos,developed}` con detalle en `/api/.../[id]`, y `GET /api/gameboy/{romset,serials}`. Listados con `?q=` (búsqueda), `?page=` / `?perPage=` (máx. 100) y cabeceras `Cache-Control`.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Notas de arquitectura
+
+- El estado de los filtros vive en la URL (`useUrlState`, sin `useSearchParams`) para mantener la home prerenderizada.
+- Las fichas dinámicas usan `generateStaticParams` + `export const instant = false` (convención Next 16 con `cacheComponents`).
+- El recuento del romset/unidades se sirve desde `db/gameboy/counts.json` para no arrastrar los 1002 registros al bundle del cliente.
+- Ver `ROADMAP.md` para el estado y los pasos pendientes.

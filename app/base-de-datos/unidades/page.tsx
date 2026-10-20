@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import UnitsTable from "../../components/gameboy/UnitsTable";
-import { gbUnits } from "../../lib/gameboy";
+import { GB_UNITS_COUNT } from "../../lib/counts";
 
 export const metadata: Metadata = {
   title: "Unidades verificadas",
@@ -56,7 +56,7 @@ export default function UnidadesPage() {
           >
             buscador de placa
           </Link>
-          . {gbUnits.length} unidades verificadas y contando.
+          . {GB_UNITS_COUNT} unidades verificadas y contando.
         </p>
       </section>
     </main>

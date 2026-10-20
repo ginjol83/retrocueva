@@ -1,4 +1,3 @@
-import romsetData from "../../db/gameboy/romset.json";
 import rangesData from "../../db/gameboy/serial-ranges.json";
 import unitsData from "../../db/gameboy/units.json";
 
@@ -26,13 +25,6 @@ export interface GbUnit {
   serial: string;
 }
 
-export interface GbRomEntry {
-  id: number;
-  ntsc: string;
-  pal: string;
-  jp: string;
-}
-
 export interface SerialResolution {
   found: boolean;
   conflict: boolean;
@@ -42,7 +34,6 @@ export interface SerialResolution {
 
 export const gbRanges = rangesData as GbSerialRange[];
 export const gbUnits = unitsData as GbUnit[];
-export const gbRomset = romsetData as GbRomEntry[];
 
 const PREFIXES = ["GH", "GM", "G"];
 
@@ -51,9 +42,6 @@ export const normalizeSerial = (value: string): string =>
 
 export const stripAccents = (value: string): string =>
   value.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-
-export const isNoRelease = (value: string): boolean =>
-  /^no sali/i.test(value.trim());
 
 export function parseSerial(
   input: string,
@@ -97,27 +85,4 @@ export function resolveSerial(input: string): SerialResolution {
     unit,
     range: range ?? undefined,
   };
-}
-
-export function searchRomset(query: string): GbRomEntry[] {
-  const needle = stripAccents(query.trim().toLowerCase());
-  if (!needle) return [];
-  return gbRomset.filter((entry) =>
-    [entry.ntsc, entry.pal, entry.jp].some((title) =>
-      stripAccents(title.toLowerCase()).includes(needle),
-    ),
-  );
-}
-
-export function romsetEntryFor(title: string): GbRomEntry | undefined {
-  const needle = stripAccents(title.trim().toLowerCase());
-  if (needle.length < 3) return undefined;
-  const titles = (entry: GbRomEntry) =>
-    [entry.ntsc, entry.pal, entry.jp].map((item) =>
-      stripAccents(item.toLowerCase()),
-    );
-  return (
-    gbRomset.find((entry) => titles(entry).some((item) => item === needle)) ??
-    gbRomset.find((entry) => titles(entry).some((item) => item.includes(needle)))
-  );
 }

@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
-import { gbRomset, isNoRelease, searchRomset, type GbRomEntry } from "../../lib/gameboy";
+import { gbRomset, isNoRelease, searchRomset, type GbRomEntry } from "../../lib/gameboy-romset";
 import Highlight from "../Highlight";
 
 const MAX_ROWS = 100;

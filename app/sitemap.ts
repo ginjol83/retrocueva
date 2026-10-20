@@ -1,10 +1,12 @@
 import type { MetadataRoute } from "next";
 import { articles, games, machines } from "./lib/data";
-import { gbRomset } from "./lib/gameboy";
+import { gbRomset } from "./lib/gameboy-romset";
 import { SITE_URL } from "./lib/site";
 
+const LAST_UPDATE = new Date("2026-10-19");
+
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
+  const lastModified = LAST_UPDATE;
 
   const staticRoutes: MetadataRoute.Sitemap = [
     {

@@ -1,7 +1,11 @@
 import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { gbRanges, gbRomset, gbUnits } from "../lib/gameboy";
+import {
+  GB_RANGES_COUNT,
+  GB_ROMSET_COUNT,
+  GB_UNITS_COUNT,
+} from "../lib/counts";
 
 export const metadata: Metadata = {
   title: "Base de datos",
@@ -52,9 +56,9 @@ const sections = [
 
 export default function BaseDeDatosPage() {
   const stats = [
-    { value: gbRanges.length, label: "Rangos DMG" },
-    { value: gbUnits.length, label: "Unidades verificadas" },
-    { value: gbRomset.length, label: "Juegos (romset)" },
+    { value: GB_RANGES_COUNT, label: "Rangos DMG" },
+    { value: GB_UNITS_COUNT, label: "Unidades verificadas" },
+    { value: GB_ROMSET_COUNT, label: "Juegos (romset)" },
   ];
 
   return (

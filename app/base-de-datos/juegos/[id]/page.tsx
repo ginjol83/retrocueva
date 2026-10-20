@@ -2,12 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { gbRomset, isNoRelease } from "../../../lib/gameboy";
+import { gbRomset, isNoRelease } from "../../../lib/gameboy-romset";
 import {
   gbImagesCoverage,
   gbImagesSource,
   imagesFor,
 } from "../../../lib/gameboy-images";
+
+export const instant = false;
 
 export function generateStaticParams() {
   return gbRomset.map((entry) => ({ id: String(entry.id) }));

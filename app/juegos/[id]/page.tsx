@@ -12,8 +12,9 @@ import {
   machinesForPlatform,
   normalize,
 } from "../../lib/data";
-import { isNoRelease, romsetEntryFor } from "../../lib/gameboy";
-import Logo from "../../components/Logo";
+import { isNoRelease, romsetEntryFor } from "../../lib/gameboy-romset";
+import SiteFooter from "../../components/SiteFooter";
+import SiteHeader from "../../components/SiteHeader";
 
 export const instant = false;
 
@@ -74,20 +75,16 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
       className="min-h-dvh"
       style={{ "--accent": color } as CSSProperties}
     >
-      <header className="sticky top-0 z-40 border-b border-white/10 bg-[#05060f]/80 backdrop-blur">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
-          <Logo />
-          <Link
-            href="/juegos"
-            className="font-retro text-lg text-ink/70 transition-colors hover:text-neon"
-          >
-            ← Volver al software
-          </Link>
-        </div>
-      </header>
+      <SiteHeader />
 
       <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
-        <p className="font-retro text-lg tracking-widest text-ink/40">
+        <Link
+          href="/juegos"
+          className="font-retro text-lg text-ink/70 transition-colors hover:text-neon"
+        >
+          ← Volver al software
+        </Link>
+        <p className="mt-4 font-retro text-lg tracking-widest text-ink/40">
           COLECCIÓN / SOFTWARE /{" "}
           <span style={{ color }}>{game.title.toUpperCase()}</span>
         </p>
@@ -310,11 +307,7 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
         )}
       </main>
 
-      <footer className="mt-10 border-t border-white/10 px-6 py-10 text-center">
-        <p className="font-retro text-lg text-ink/50">
-          RETROCUEVA · software · {game.title}
-        </p>
-      </footer>
+      <SiteFooter />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 import { json, parseListQuery, shapeList } from "../../../lib/api";
-import { gbRomset, stripAccents } from "../../../lib/gameboy";
+import { stripAccents } from "../../../lib/gameboy";
+import { gbRomset } from "../../../lib/gameboy-romset";
 
 export async function GET(request: Request) {
   const query = parseListQuery(request, 50);
