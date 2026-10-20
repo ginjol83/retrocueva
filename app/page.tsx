@@ -1,6 +1,7 @@
 import { SITE_URL } from "./lib/site";
 import HomeContent from "./components/home/HomeContent";
 import { games, machines } from "./lib/data";
+import { jsonLd } from "./lib/seo";
 
 export default function Home() {
   const itemListElement = [
@@ -31,12 +32,12 @@ export default function Home() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
+          __html: jsonLd({
             "@context": "https://schema.org",
             "@type": "ItemList",
             name: "Colección Retrocueva",
             itemListElement,
-          }).replace(/</g, "\\u003c"),
+          }),
         }}
       />
       <HomeContent />

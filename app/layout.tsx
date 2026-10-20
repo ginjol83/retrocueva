@@ -7,6 +7,7 @@ import {
   SITE_TITLE,
   SITE_URL,
 } from "./lib/site";
+import { jsonLd } from "./lib/seo";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -88,6 +89,38 @@ export const viewport: Viewport = {
   colorScheme: "dark",
 };
 
+const siteLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organizacion`,
+      name: SITE_NAME,
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/logo/logo.png`,
+      },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#sitio`,
+      name: SITE_NAME,
+      url: SITE_URL,
+      inLanguage: SITE_LOCALE,
+      publisher: { "@id": `${SITE_URL}/#organizacion` },
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `${SITE_URL}/base-de-datos/juegos?q={search_term_string}`,
+        },
+        "query-input": "required name=search_term_string",
+      },
+    },
+  ],
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
@@ -96,6 +129,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${pressStart.variable} ${vt323.variable} h-full antialiased`}
     >
       <body className="min-h-full">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: jsonLd(siteLd) }}
+        />
         <a href="#contenido" className="skip-link">
           Saltar al contenido
         </a>

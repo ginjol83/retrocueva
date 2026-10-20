@@ -6,6 +6,7 @@ import {
   GB_ROMSET_COUNT,
   GB_UNITS_COUNT,
 } from "../lib/counts";
+import { breadcrumbLd } from "../lib/seo";
 
 export const metadata: Metadata = {
   title: "Base de datos",
@@ -63,6 +64,15 @@ export default function BaseDeDatosPage() {
 
   return (
     <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: breadcrumbLd([
+            { name: "RETROCUEVA", path: "/" },
+            { name: "Base de datos", path: "/base-de-datos" },
+          ]),
+        }}
+      />
       <p className="font-retro text-lg tracking-widest text-ink/40">
         RETROCUEVA / <span className="text-neon">BASE DE DATOS</span>
       </p>

@@ -12,7 +12,11 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 const API = "https://api.github.com";
-const CDN = "https://cdn.jsdelivr.net/gh/libretro/libretro-thumbnails@master";
+// Commit congelado de libretro/libretro-thumbnails (rama master): así una
+// eventual renombrada upstream no rompe las 1600+ URLs del CDN de golpe.
+// Actualizar solo con cuidado: verificar antes que las rutas siguen existiendo.
+const LIBRETRO_SHA = "5e5b12fa7bb0f98e98aa4d0dffb784735639ea84";
+const CDN = `https://cdn.jsdelivr.net/gh/libretro/libretro-thumbnails@${LIBRETRO_SHA}`;
 const SYSTEM_DIR = "Nintendo - Game Boy";
 const FOLDERS = ["Named_Boxarts", "Named_Snaps"];
 

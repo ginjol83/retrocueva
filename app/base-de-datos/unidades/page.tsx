@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import UnitsTable from "../../components/gameboy/UnitsTable";
 import { GB_UNITS_COUNT } from "../../lib/counts";
+import { breadcrumbLd } from "../../lib/seo";
 
 export const metadata: Metadata = {
   title: "Unidades verificadas",
@@ -18,6 +19,16 @@ export const metadata: Metadata = {
 export default function UnidadesPage() {
   return (
     <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: breadcrumbLd([
+            { name: "RETROCUEVA", path: "/" },
+            { name: "Base de datos", path: "/base-de-datos" },
+            { name: "Unidades verificadas", path: "/base-de-datos/unidades" },
+          ]),
+        }}
+      />
       <p className="font-retro text-lg tracking-widest text-ink/40">
         RETROCUEVA /{" "}
         <Link href="/base-de-datos" className="transition-colors hover:text-neon">

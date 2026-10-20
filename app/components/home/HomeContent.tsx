@@ -4,6 +4,7 @@ import { useMemo } from "react";
 import type { CSSProperties } from "react";
 import Link from "next/link";
 import { accent, articles, developed, games, machines, videos } from "../../lib/data";
+import { GB_ROMSET_COUNT } from "../../lib/counts";
 import { genreOptions } from "../../lib/collection";
 import { searchAll } from "../../lib/search";
 import { useUrlState } from "../../lib/use-url-state";
@@ -25,7 +26,7 @@ const ACCESS = [
   {
     href: "/base-de-datos",
     title: "Base de datos",
-    meta: "Game Boy",
+    meta: `Game Boy · ${GB_ROMSET_COUNT} juegos`,
     description: "Placas, romset y unidades verificadas de Game Boy.",
   },
   {
@@ -86,6 +87,9 @@ export default function HomeContent() {
         </p>
         <h1 className="neon-title font-pixel text-xl leading-[1.9] text-ink sm:text-2xl md:text-3xl">
           RETRO<span className="text-neon">CUEVA</span>
+          <span className="block font-retro text-base leading-8 tracking-widest text-ink/60 sm:text-lg">
+            Informática retro: ordenadores, consolas y juegos
+          </span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-ink/70">
           Mi colección de informática retro: ordenadores, consolas y juegos que
@@ -99,6 +103,12 @@ export default function HomeContent() {
             className="border-2 border-neon bg-neon/10 px-5 py-2.5 font-retro text-lg text-neon transition-all hover:bg-neon hover:text-black"
           >
             Ver la colección
+          </Link>
+          <Link
+            href="/base-de-datos/juegos"
+            className="border-2 border-white/20 px-5 py-2.5 font-retro text-lg text-ink transition-all hover:border-neon hover:text-neon"
+          >
+            Buscar juegos de Game Boy
           </Link>
           <Link
             href="/desarrollos"

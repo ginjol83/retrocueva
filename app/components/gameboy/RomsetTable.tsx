@@ -1,14 +1,19 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useMemo } from "react";
 import Link from "next/link";
 import { gbRomset, isNoRelease, searchRomset, type GbRomEntry } from "../../lib/gameboy-romset";
+import { useUrlState } from "../../lib/use-url-state";
 import Highlight from "../Highlight";
 
 const MAX_ROWS = 100;
+const DEFAULTS = { q: "" };
 
 export default function RomsetTable() {
-  const [query, setQuery] = useState("");
+  const { state, setValues } = useUrlState(DEFAULTS);
+  const query = state.q;
+  const setQuery = (value: string) => setValues({ q: value });
+
   const trimmed = query.trim();
   const rows = useMemo(() => searchRomset(trimmed), [trimmed]);
   const shown = rows.slice(0, MAX_ROWS);

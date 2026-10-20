@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import SerialLookup from "../../components/gameboy/SerialLookup";
+import { breadcrumbLd } from "../../lib/seo";
 
 export const metadata: Metadata = {
   title: "Buscador de placa",
@@ -17,6 +18,16 @@ export const metadata: Metadata = {
 export default function PlacasPage() {
   return (
     <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: breadcrumbLd([
+            { name: "RETROCUEVA", path: "/" },
+            { name: "Base de datos", path: "/base-de-datos" },
+            { name: "Buscador de placa", path: "/base-de-datos/placas" },
+          ]),
+        }}
+      />
       <p className="font-retro text-lg tracking-widest text-ink/40">
         RETROCUEVA /{" "}
         <Link href="/base-de-datos" className="transition-colors hover:text-neon">

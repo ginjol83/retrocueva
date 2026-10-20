@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { breadcrumbLd, jsonLd } from "../../lib/seo";
 
 export const metadata: Metadata = {
   title: "Envía tu serial",
@@ -33,8 +34,36 @@ const steps = [
 ];
 
 export default function EnviarSerialPage() {
+  const howToLd = jsonLd({
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "Cómo verificar la revisión de placa de una Game Boy DMG",
+    description:
+      "Qué datos enviar para verificar el número de serie de una Game Boy DMG y averiguar su revisión de placa.",
+    step: steps.map((step, index) => ({
+      "@type": "HowToStep",
+      position: index + 1,
+      name: step.label,
+      text: step.value,
+    })),
+  });
+
   return (
     <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: howToLd }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: breadcrumbLd([
+            { name: "RETROCUEVA", path: "/" },
+            { name: "Base de datos", path: "/base-de-datos" },
+            { name: "Envía tu serial", path: "/base-de-datos/enviar-serial" },
+          ]),
+        }}
+      />
       <p className="font-retro text-lg tracking-widest text-ink/40">
         RETROCUEVA /{" "}
         <Link href="/base-de-datos" className="transition-colors hover:text-neon">

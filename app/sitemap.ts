@@ -1,6 +1,8 @@
 import type { MetadataRoute } from "next";
 import { articles, games, machines } from "./lib/data";
 import { gbRomset } from "./lib/gameboy-romset";
+import { ROMSET_LETTERS } from "./lib/gameboy-letters";
+import { isThinGbEntry } from "./lib/seo";
 import { SITE_URL } from "./lib/site";
 
 const LAST_UPDATE = new Date("2026-10-19");
@@ -93,6 +95,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.4,
     },
+    ...ROMSET_LETTERS.map((letter) => ({
+      url: `${SITE_URL}/base-de-datos/juegos/indice/${letter}`,
+      lastModified,
+      changeFrequency: "monthly" as const,
+      priority: 0.5,
+    })),
   ];
 
   const detailRoutes: MetadataRoute.Sitemap = [
@@ -116,12 +124,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
         changeFrequency: "yearly" as const,
         priority: 0.7,
       })),
-    ...gbRomset.map((entry) => ({
-      url: `${SITE_URL}/base-de-datos/juegos/${entry.id}`,
-      lastModified,
-      changeFrequency: "yearly" as const,
-      priority: 0.4,
-    })),
+    ...gbRomset
+      .filter((entry) => !isThinGbEntry(entry))
+      .map((entry) => ({
+        url: `${SITE_URL}/base-de-datos/juegos/${entry.id}`,
+        lastModified,
+        changeFrequency: "yearly" as const,
+        priority: 0.4,
+      })),
   ];
 
   return [...staticRoutes, ...detailRoutes];

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { accent, articles, entitiesMentionedIn, getArticle } from "../../lib/data";
+import { jsonLd } from "../../lib/seo";
 import { SITE_URL } from "../../lib/site";
 import SiteFooter from "../../components/SiteFooter";
 import SiteHeader from "../../components/SiteHeader";
@@ -50,7 +51,7 @@ export default async function ArticlePage(props: PageProps<"/articulos/[id]">) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
+          __html: jsonLd({
             "@context": "https://schema.org",
             "@type": "Article",
             headline: article.title,
@@ -60,7 +61,7 @@ export default async function ArticlePage(props: PageProps<"/articulos/[id]">) {
             datePublished: article.year ? `${article.year}-01-01` : undefined,
             image: article.cover ? `${SITE_URL}${article.cover}` : undefined,
             mainEntityOfPage: `${SITE_URL}/articulos/${article.id}`,
-          }).replace(/</g, "\\u003c"),
+          }),
         }}
       />
       <SiteHeader />

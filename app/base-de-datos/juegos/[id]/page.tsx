@@ -8,6 +8,12 @@ import {
   gbImagesSource,
   imagesFor,
 } from "../../../lib/gameboy-images";
+import {
+  breadcrumbLd,
+  gbFichaDescription,
+  isThinGbEntry,
+  jsonLd,
+} from "../../../lib/seo";
 
 export const instant = false;
 
@@ -28,8 +34,6 @@ function primaryTitle(ntsc: string, pal: string, jp: string): string {
   return ntsc;
 }
 
-const fmt = (value: string) => (isNoRelease(value) ? "no publicado" : `«${value}»`);
-
 export async function generateMetadata(
   props: PageProps<"/base-de-datos/juegos/[id]">,
 ): Promise<Metadata> {
@@ -39,14 +43,14 @@ export async function generateMetadata(
 
   const title = primaryTitle(entry.ntsc, entry.pal, entry.jp);
   const cover = imagesFor(entry.id)?.covers?.[0];
-  const description =
-    `«${title}» en Game Boy: USA ${fmt(entry.ntsc)}, Europa ${fmt(entry.pal)}, ` +
-    `Japón ${fmt(entry.jp)} — con carátula y capturas cuando están disponibles.`;
+  const description = gbFichaDescription(entry);
+  const thin = isThinGbEntry(entry);
 
   return {
     title: `${title} · Ficha Game Boy`,
     description,
     alternates: { canonical: `/base-de-datos/juegos/${entry.id}` },
+    ...(thin ? { robots: { index: false, follow: true } } : {}),
     openGraph: {
       title: `${title} · Ficha Game Boy`,
       description,
@@ -88,7 +92,7 @@ export default async function RomsetGamePage(
     { label: "Capturas", value: snaps.length > 0 ? String(snaps.length) : "No" },
   ];
 
-  const jsonLd = {
+  const videoGameLd = {
     "@context": "https://schema.org",
     "@type": "VideoGame",
     name: title,
@@ -100,11 +104,22 @@ export default async function RomsetGamePage(
     image: cover?.url,
   };
 
+  const breadcrumb = breadcrumbLd([
+    { name: "RETROCUEVA", path: "/" },
+    { name: "Base de datos", path: "/base-de-datos" },
+    { name: "Buscador de juego", path: "/base-de-datos/juegos" },
+    { name: title, path: `/base-de-datos/juegos/${entry.id}` },
+  ]);
+
   return (
     <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLd(videoGameLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
 
       <p className="font-retro text-lg tracking-widest text-ink/40">
