@@ -58,7 +58,7 @@ Leyenda: `[x]` hecho · `[~]` en curso · `[ ]` pendiente · `[–]` descartado 
 ## Fase 4 — Despliegue y operación  `[~]`
 
 - [~] **4.19** Desplegar (Vercel o self-host) + dominio y `metadataBase` real. *Desplegado en Vercel (oct. 2026); pendiente `NEXT_PUBLIC_SITE_URL` en el panel y dominio propio.*
-- [ ] **4.20** Limpieza: SVG de create-next-app, `doc/serials.xls` (0 bytes), README boilerplate y `Readme.txt` duplicado.
+- [x] **4.20** Limpieza: SVG de create-next-app, `doc/serials.xls` (0 bytes), README boilerplate y `Readme.txt` duplicado.
 - [x] **4.21** `data-scroll-behavior="smooth"` en `<html>` (elimina warning de Next 16).
 
 ---
