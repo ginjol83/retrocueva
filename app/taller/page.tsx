@@ -37,10 +37,13 @@ export default function TallerPage() {
           {section?.title ?? "Taller"}
         </h1>
 
-        <p className="mt-5 max-w-3xl text-base leading-relaxed text-ink/80">
-          {section?.description ??
-            "Zona de trabajo para reparación, pruebas y restauración de equipos retro."}
-        </p>
+        <div className="mt-6 max-w-4xl space-y-4 text-base leading-relaxed text-ink/80">
+          {(section?.description ?? "")
+            .split("\n\n")
+            .map((paragraph, index) => (
+              <p key={index}>{paragraph}</p>
+            ))}
+        </div>
 
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {section?.images.map((image) => (
