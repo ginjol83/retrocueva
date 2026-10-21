@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function PlacasPage() {
   return (
-    <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
+    <main id="contenido" tabIndex={-1} className="mx-auto max-w-6xl px-6 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -28,7 +28,7 @@ export default function PlacasPage() {
           ]),
         }}
       />
-      <p className="font-retro text-lg tracking-widest text-ink/40">
+      <p className="font-retro text-lg tracking-widest text-ink/60">
         RETROCUEVA /{" "}
         <Link href="/base-de-datos" className="transition-colors hover:text-neon">
           BASE DE DATOS
@@ -86,7 +86,7 @@ export default function PlacasPage() {
 
       <section className="mt-8">
         <SerialLookup />
-        <p className="mt-5 border-l-2 border-neon/50 pl-4 font-retro text-base text-ink/50">
+        <p className="mt-5 border-l-2 border-neon/50 pl-4 font-retro text-base text-ink/60">
           ¿No es una Game Boy?{" "}
           <Link
             href="/base-de-datos/enviar-serial"

@@ -71,7 +71,7 @@ function ChipRow({
   if (options.length === 0) return null;
   return (
     <div className="flex flex-wrap items-center gap-2">
-      <span className="mr-2 font-retro text-base tracking-widest text-ink/40">
+      <span className="mr-2 font-retro text-base tracking-widest text-ink/60">
         {label}
       </span>
       <Chip active={value === ALL} onClick={() => onSelect(ALL)}>
@@ -176,7 +176,7 @@ export default function CollectionView({ mode }: { mode: CollectionMode }) {
         />
 
         <div className="flex flex-wrap items-center gap-3 border-t border-white/10 pt-3">
-          <label className="flex items-center gap-2 font-retro text-base text-ink/40">
+          <label className="flex items-center gap-2 font-retro text-base text-ink/60">
             Orden
             <select
               value={sort}
@@ -194,7 +194,7 @@ export default function CollectionView({ mode }: { mode: CollectionMode }) {
             <button
               type="button"
               onClick={reset}
-              className="ml-auto font-retro text-base text-ink/40 underline transition-colors hover:text-neon"
+              className="ml-auto font-retro text-base text-ink/60 underline transition-colors hover:text-neon"
             >
               Limpiar filtros
             </button>

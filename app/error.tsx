@@ -17,6 +17,7 @@ export default function Error({
   return (
     <main
       id="contenido"
+      tabIndex={-1}
       className="mx-auto flex min-h-dvh max-w-3xl flex-col items-center justify-center gap-6 px-6 py-16 text-center"
     >
       <p className="font-pixel text-5xl text-amber neon-title">ERROR</p>
@@ -28,7 +29,7 @@ export default function Error({
         intentarlo de nuevo; si el problema continúa, vuelve al inicio.
       </p>
       {error.digest ? (
-        <p className="font-retro text-base text-ink/40">
+        <p className="font-retro text-base text-ink/60">
           Código de referencia: {error.digest}
         </p>
       ) : null}

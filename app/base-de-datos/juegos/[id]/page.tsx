@@ -112,7 +112,7 @@ export default async function RomsetGamePage(
   ]);
 
   return (
-    <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
+    <main id="contenido" tabIndex={-1} className="mx-auto max-w-6xl px-6 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLd(videoGameLd) }}
@@ -122,7 +122,7 @@ export default async function RomsetGamePage(
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
 
-      <p className="font-retro text-lg tracking-widest text-ink/40">
+      <p className="font-retro text-lg tracking-widest text-ink/60">
         RETROCUEVA /{" "}
         <Link
           href="/base-de-datos"
@@ -143,7 +143,7 @@ export default async function RomsetGamePage(
       <h1 className="mt-8 font-pixel text-base leading-8 text-ink sm:text-lg md:text-xl">
         {title}
       </h1>
-      <p className="mt-3 font-retro text-xl text-ink/50">
+      <p className="mt-3 font-retro text-xl text-ink/60">
         Romset Game Boy · entrada #{entry.id}
       </p>
 
@@ -162,8 +162,8 @@ export default async function RomsetGamePage(
             ) : (
               <div className="grid h-full place-items-center px-6 text-center">
                 <div>
-                  <p className="font-pixel text-6xl text-ink/20">N/A</p>
-                  <p className="mt-4 font-retro text-lg text-ink/50">
+                  <p className="font-pixel text-6xl text-ink/60">N/A</p>
+                  <p className="mt-4 font-retro text-lg text-ink/60">
                     Sin carátula disponible
                   </p>
                 </div>
@@ -206,13 +206,13 @@ export default async function RomsetGamePage(
           <div className="grid grid-cols-1 gap-px overflow-hidden border-2 border-white/10 bg-white/10 sm:grid-cols-3">
             {regions.map((region) => (
               <div key={region.label} className="bg-[#0b0e1d] p-5">
-                <p className="font-retro text-base tracking-widest text-ink/40">
+                <p className="font-retro text-base tracking-widest text-ink/60">
                   {region.label}
                 </p>
                 <p
                   className={
                     isNoRelease(region.value)
-                      ? "mt-1 font-retro text-xl text-ink/30"
+                      ? "mt-1 font-retro text-xl text-ink/60"
                       : "mt-1 font-retro text-xl text-ink"
                   }
                 >
@@ -225,7 +225,7 @@ export default async function RomsetGamePage(
           <dl className="mt-5 grid grid-cols-2 gap-px overflow-hidden border-2 border-white/10 bg-white/10 sm:grid-cols-4">
             {facts.map((fact) => (
               <div key={fact.label} className="bg-[#0b0e1d] p-4">
-                <dt className="font-retro text-base tracking-widest text-ink/40">
+                <dt className="font-retro text-base tracking-widest text-ink/60">
                   {fact.label}
                 </dt>
                 <dd className="mt-1 font-retro text-xl text-ink">{fact.value}</dd>
@@ -278,25 +278,25 @@ export default async function RomsetGamePage(
                       className="object-cover [image-rendering:pixelated]"
                     />
                   </div>
-                  <figcaption className="border-t border-white/10 px-3 py-2 font-retro text-base text-ink/50">
+                  <figcaption className="border-t border-white/10 px-3 py-2 font-retro text-base text-ink/60">
                     {snap.regionLabel}
                   </figcaption>
                 </figure>
               ))}
             </div>
-            <p className="mt-4 font-retro text-base text-ink/50">
+            <p className="mt-4 font-retro text-base text-ink/60">
               Captura del juego en ejecución a resolución nativa de Game Boy
               (160×144).
             </p>
           </>
         ) : (
-          <p className="mt-4 border-2 border-dashed border-white/15 px-6 py-10 text-center font-retro text-xl text-ink/50">
+          <p className="mt-4 border-2 border-dashed border-white/15 px-6 py-10 text-center font-retro text-xl text-ink/60">
             No hay capturas disponibles para este título.
           </p>
         )}
       </section>
 
-      <p className="mt-6 border-l-2 border-neon/50 pl-4 font-retro text-base leading-relaxed text-ink/50">
+      <p className="mt-6 border-l-2 border-neon/50 pl-4 font-retro text-base leading-relaxed text-ink/60">
         Imágenes de {gbImagesCoverage.withCover} carátulas y{" "}
         {gbImagesCoverage.withSnaps} capturas procedentes del proyecto{" "}
         <a

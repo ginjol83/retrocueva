@@ -66,14 +66,14 @@ export default async function ArticlePage(props: PageProps<"/articulos/[id]">) {
       />
       <SiteHeader />
 
-      <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
+      <main id="contenido" tabIndex={-1} className="mx-auto max-w-6xl px-6 py-12">
         <Link
           href="/articulos"
           className="font-retro text-lg text-ink/70 transition-colors hover:text-neon"
         >
           ← Volver a artículos
         </Link>
-        <p className="mt-4 font-retro text-lg tracking-widest text-ink/40">
+        <p className="mt-4 font-retro text-lg tracking-widest text-ink/60">
           {magazineName} / ARTÍCULOS /{" "}
           <span style={{ color }}>
             {article.magazine} {article.issue ?? ""}
@@ -185,7 +185,7 @@ export default async function ArticlePage(props: PageProps<"/articulos/[id]">) {
                         />
                       </div>
                       {block.caption && (
-                        <figcaption className="mt-2 font-retro text-base text-ink/45">
+                        <figcaption className="mt-2 font-retro text-base text-ink/60">
                           {block.caption}
                         </figcaption>
                       )}
@@ -205,7 +205,7 @@ export default async function ArticlePage(props: PageProps<"/articulos/[id]">) {
                 <dl className="mt-4 grid gap-2 font-retro text-lg">
                   {article.specs.map((row) => (
                     <div key={row.label} className="flex justify-between gap-4">
-                      <dt className="shrink-0 text-ink/45">{row.label}</dt>
+                      <dt className="shrink-0 text-ink/60">{row.label}</dt>
                       <dd className="text-right text-ink/90">{row.value}</dd>
                     </div>
                   ))}
@@ -248,7 +248,7 @@ export default async function ArticlePage(props: PageProps<"/articulos/[id]">) {
               <p className="font-retro text-xl text-ink/70">{article.credits}</p>
             )}
             {article.instagram && (
-              <p className="mt-1 font-retro text-lg text-ink/45">
+              <p className="mt-1 font-retro text-lg text-ink/60">
                 Instagram{" "}
                 <a
                   href={`https://instagram.com/${article.instagram.replace("@", "")}`}
@@ -281,10 +281,10 @@ export default async function ArticlePage(props: PageProps<"/articulos/[id]">) {
                       <span className="font-pixel text-[11px] leading-6 text-ink">
                         {machine.name}
                       </span>
-                      <span className="font-retro text-base text-ink/50">
+                      <span className="font-retro text-base text-ink/60">
                         {machine.manufacturer} · hardware
                       </span>
-                      <span className="ml-auto font-retro text-base text-ink/40">
+                      <span className="ml-auto font-retro text-base text-ink/60">
                         {machine.year}
                       </span>
                     </div>
@@ -302,10 +302,10 @@ export default async function ArticlePage(props: PageProps<"/articulos/[id]">) {
                       <span className="font-pixel text-[11px] leading-6 text-ink">
                         {game.title}
                       </span>
-                      <span className="font-retro text-base text-ink/50">
+                      <span className="font-retro text-base text-ink/60">
                         {game.platform} · software
                       </span>
-                      <span className="ml-auto font-retro text-base text-ink/40">
+                      <span className="ml-auto font-retro text-base text-ink/60">
                         {game.year}
                       </span>
                     </div>

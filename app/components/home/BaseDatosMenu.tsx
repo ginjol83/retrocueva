@@ -14,6 +14,7 @@ const items = [
 export default function BaseDatosMenu() {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!open) return;
@@ -21,7 +22,10 @@ export default function BaseDatosMenu() {
       if (!rootRef.current?.contains(event.target as Node)) setOpen(false);
     };
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        setOpen(false);
+        buttonRef.current?.focus();
+      }
     };
     document.addEventListener("mousedown", onPointerDown);
     document.addEventListener("keydown", onKeyDown);
@@ -34,8 +38,8 @@ export default function BaseDatosMenu() {
   return (
     <div ref={rootRef} className="relative">
       <button
+        ref={buttonRef}
         type="button"
-        aria-haspopup="true"
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
         className="flex items-center gap-1.5 text-ink/70 transition-colors hover:text-neon"
@@ -63,7 +67,7 @@ export default function BaseDatosMenu() {
             >
               <span>{item.label}</span>
               {"count" in item && (
-                <span className="text-ink/40">{item.count}</span>
+                <span className="text-ink/60">{item.count}</span>
               )}
             </Link>
           ))}

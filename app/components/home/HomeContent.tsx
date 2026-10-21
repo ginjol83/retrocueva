@@ -125,7 +125,7 @@ export default function HomeContent() {
               className="border-2 border-white/10 bg-white/[0.02] px-4 py-5"
             >
               <dd className="font-pixel text-lg text-neon">{s.value}</dd>
-              <dt className="mt-2 font-retro text-base tracking-widest text-ink/50">
+              <dt className="mt-2 font-retro text-base tracking-widest text-ink/60">
                 {s.label}
               </dt>
             </div>
@@ -142,7 +142,7 @@ export default function HomeContent() {
         </div>
       </div>
 
-      <main id="contenido" className="mx-auto max-w-6xl px-6">
+      <main id="contenido" tabIndex={-1} className="mx-auto max-w-6xl px-6">
         {results ? (
           <SearchResults results={results} query={query} />
         ) : (
@@ -163,13 +163,13 @@ export default function HomeContent() {
                   <p className="font-pixel text-[11px] leading-6 text-ink">
                     {item.title}
                   </p>
-                  <p className="mt-2 font-retro text-lg text-ink/50">
+                  <p className="mt-2 font-retro text-lg text-ink/60">
                     {item.meta}
                   </p>
                   <p className="mt-3 text-base leading-relaxed text-ink/70">
                     {item.description}
                   </p>
-                  <span className="mt-4 inline-flex items-center gap-2 font-retro text-base text-ink/50 transition-colors group-hover:text-[var(--accent)]">
+                  <span className="mt-4 inline-flex items-center gap-2 font-retro text-base text-ink/60 transition-colors group-hover:text-[var(--accent)]">
                     Entrar <span aria-hidden>→</span>
                   </span>
                 </Link>

@@ -68,7 +68,7 @@ export default async function LetterIndexPage(
   });
 
   return (
-    <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
+    <main id="contenido" tabIndex={-1} className="mx-auto max-w-6xl px-6 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: itemListLd }}
@@ -78,7 +78,7 @@ export default async function LetterIndexPage(
         dangerouslySetInnerHTML={{ __html: breadcrumb(letra) }}
       />
 
-      <p className="font-retro text-lg tracking-widest text-ink/40">
+      <p className="font-retro text-lg tracking-widest text-ink/60">
         RETROCUEVA /{" "}
         <Link href="/base-de-datos" className="transition-colors hover:text-neon">
           BASE DE DATOS
@@ -143,11 +143,11 @@ export default async function LetterIndexPage(
               >
                 {title}
               </Link>{" "}
-              <span className="font-retro text-base text-ink/50">
+              <span className="font-retro text-base text-ink/60">
                 #{entry.id}
               </span>
               {alternatives.length > 0 && (
-                <span className="font-retro text-base text-ink/40">
+                <span className="font-retro text-base text-ink/60">
                   {" "}
                   = {alternatives.map((region) => region.value).join(" / ")}
                 </span>

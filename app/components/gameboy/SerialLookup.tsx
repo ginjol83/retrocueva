@@ -13,7 +13,7 @@ const DEFAULTS = { serial: "" };
 function Field({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <dt className="font-retro text-base tracking-widest text-ink/40">
+      <dt className="font-retro text-base tracking-widest text-ink/60">
         {label}
       </dt>
       <dd className="mt-0.5 font-retro text-lg text-ink/90">{value || "—"}</dd>
@@ -38,7 +38,7 @@ function UnitCard({ unit }: { unit: GbUnit }) {
 function RangeCard({ range }: { range: GbSerialRange }) {
   return (
     <div className="border-2 border-white/10 bg-[#0b0e1d] p-5">
-      <p className="font-retro text-base tracking-widest text-ink/40">
+      <p className="font-retro text-base tracking-widest text-ink/60">
         Rango de fábrica · {range.serialChar}
         {range.serialIni} – {range.serialChar}
         {range.serialEnd}
@@ -77,7 +77,7 @@ export default function SerialLookup() {
     <div>
       <form onSubmit={submit} className="flex flex-wrap items-center gap-3">
         <label className="relative block w-full md:w-96">
-          <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 font-retro text-lg text-ink/40">
+          <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 font-retro text-lg text-ink/60">
             &gt;
           </span>
           <input
@@ -85,7 +85,7 @@ export default function SerialLookup() {
             onChange={(event) => setValues({ serial: event.target.value })}
             placeholder="Ej.: GH3783310, G01310831…"
             aria-label="Número de serie de una Game Boy DMG"
-            className="w-full border-2 border-white/15 bg-black/40 py-2 pl-8 pr-4 font-retro text-lg uppercase text-ink outline-none transition-colors placeholder:normal-case placeholder:text-ink/30 focus:border-neon"
+            className="w-full border-2 border-white/15 bg-black/40 py-2 pl-8 pr-4 font-retro text-lg uppercase text-ink outline-none transition-colors placeholder:normal-case placeholder:text-ink/60 focus:border-neon"
           />
         </label>
         <button
@@ -98,7 +98,7 @@ export default function SerialLookup() {
           <button
             type="button"
             onClick={() => setValues({ serial: "" })}
-            className="font-retro text-base text-ink/40 underline transition-colors hover:text-neon"
+            className="font-retro text-base text-ink/60 underline transition-colors hover:text-neon"
           >
             Limpiar
           </button>
@@ -107,14 +107,14 @@ export default function SerialLookup() {
 
       <div aria-live="polite" className="mt-6">
         {!result && (
-          <p className="border-2 border-dashed border-white/15 px-6 py-10 text-center font-retro text-xl text-ink/50">
+          <p className="border-2 border-dashed border-white/15 px-6 py-10 text-center font-retro text-xl text-ink/60">
             Introduce el número de serie de la etiqueta trasera de una Game Boy
             DMG para averiguar qué revisión de placa lleva.
           </p>
         )}
 
         {result && !result.found && (
-          <p className="border-2 border-dashed border-white/15 px-6 py-10 text-center font-retro text-xl text-ink/50">
+          <p className="border-2 border-dashed border-white/15 px-6 py-10 text-center font-retro text-xl text-ink/60">
             Ningún rango ni unidad propia coincide con «{serial}». Comprueba el
             formato: una letra (G, GH o GM) seguida de 7 u 8 dígitos, sin
             espacios.

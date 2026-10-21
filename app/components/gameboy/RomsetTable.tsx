@@ -20,7 +20,7 @@ export default function RomsetTable() {
 
   const cell = (entry: GbRomEntry, title: string) =>
     isNoRelease(title) ? (
-      <span className="text-ink/30">no salió</span>
+      <span className="text-ink/60">no salió</span>
     ) : (
       <Link
         href={`/base-de-datos/juegos/${entry.id}`}
@@ -34,7 +34,7 @@ export default function RomsetTable() {
     <div>
       <div className="mb-6 flex flex-wrap items-center gap-3 border-2 border-white/10 bg-white/[0.02] p-4">
         <label className="relative block w-full md:w-96">
-          <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 font-retro text-lg text-ink/40">
+          <span className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 font-retro text-lg text-ink/60">
             &gt;
           </span>
           <input
@@ -42,10 +42,10 @@ export default function RomsetTable() {
             onChange={(event) => setQuery(event.target.value)}
             placeholder="Buscar por cualquier título (USA, EUR o JAP)…"
             aria-label="Buscar en el romset de Game Boy"
-            className="w-full border-2 border-white/15 bg-black/40 py-2 pl-8 pr-4 font-retro text-lg text-ink outline-none transition-colors placeholder:text-ink/30 focus:border-neon"
+            className="w-full border-2 border-white/15 bg-black/40 py-2 pl-8 pr-4 font-retro text-lg text-ink outline-none transition-colors placeholder:text-ink/60 focus:border-neon"
           />
         </label>
-        <span aria-live="polite" className="font-retro text-base text-ink/40">
+        <span aria-live="polite" className="font-retro text-base text-ink/60">
           {trimmed
             ? `${rows.length} ${rows.length === 1 ? "coincidencia" : "coincidencias"} de ${gbRomset.length}`
             : `${gbRomset.length} juegos · USA · EUR · JAP`}
@@ -54,7 +54,7 @@ export default function RomsetTable() {
           <button
             type="button"
             onClick={() => setQuery("")}
-            className="font-retro text-base text-ink/40 underline transition-colors hover:text-neon"
+            className="font-retro text-base text-ink/60 underline transition-colors hover:text-neon"
           >
             Limpiar
           </button>
@@ -62,13 +62,13 @@ export default function RomsetTable() {
       </div>
 
       {!trimmed ? (
-        <p className="border-2 border-dashed border-white/15 px-6 py-14 text-center font-retro text-xl text-ink/50">
+        <p className="border-2 border-dashed border-white/15 px-6 py-14 text-center font-retro text-xl text-ink/60">
           Escribe un título para buscar entre {gbRomset.length} juegos: por
           ejemplo «Rockman» (el Mega Man japonés) o «Tetris Flash» (el Tetris 2
           europeo).
         </p>
       ) : rows.length === 0 ? (
-        <p className="border-2 border-dashed border-white/15 px-6 py-14 text-center font-retro text-xl text-ink/50">
+        <p className="border-2 border-dashed border-white/15 px-6 py-14 text-center font-retro text-xl text-ink/60">
           Ningún juego coincide con «{trimmed}».
         </p>
       ) : (
@@ -80,7 +80,7 @@ export default function RomsetTable() {
                 Europa (PAL) y Japón.
               </caption>
               <thead>
-                <tr className="border-b border-white/10 bg-white/[0.03] font-retro text-base tracking-widest text-ink/40">
+                <tr className="border-b border-white/10 bg-white/[0.03] font-retro text-base tracking-widest text-ink/60">
                   <th scope="col" className="px-4 py-3 font-normal">
                     id
                   </th>
@@ -101,7 +101,7 @@ export default function RomsetTable() {
                     key={entry.id}
                     className="border-b border-white/5 transition-colors last:border-b-0 hover:bg-white/[0.03]"
                   >
-                    <td className="px-4 py-3 font-retro text-base text-ink/40">
+                    <td className="px-4 py-3 font-retro text-base text-ink/60">
                       {entry.id}
                     </td>
                     <td className="px-4 py-3 font-retro text-lg text-ink/90">
@@ -119,7 +119,7 @@ export default function RomsetTable() {
             </table>
           </div>
           {rows.length > MAX_ROWS && (
-            <p className="mt-4 border-l-2 border-neon/50 pl-4 font-retro text-base text-ink/50">
+            <p className="mt-4 border-l-2 border-neon/50 pl-4 font-retro text-base text-ink/60">
               Mostrando los primeros {MAX_ROWS} de {rows.length} coincidencias:
               afina la búsqueda para ver menos.
             </p>

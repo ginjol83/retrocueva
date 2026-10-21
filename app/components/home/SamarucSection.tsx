@@ -67,7 +67,7 @@ function Block({ block }: { block: ProjectBlock }) {
     <div className="mt-5 overflow-x-auto border-2 border-white/10">
       <table className="w-full min-w-[36rem] border-collapse text-left">
         <thead>
-          <tr className="border-b border-white/10 bg-white/[0.03] font-retro text-base tracking-widest text-ink/40">
+          <tr className="border-b border-white/10 bg-white/[0.03] font-retro text-base tracking-widest text-ink/60">
             {block.headers.map((header) => (
               <th key={header} scope="col" className="px-4 py-3 font-normal">
                 {header}
@@ -105,7 +105,7 @@ export default function SamarucSection({ project = samaruc }: { project?: Projec
           <span className="text-neon">/</span> Samaruc
         </h1>
         <span className="h-px flex-1 bg-gradient-to-r from-neon/50 to-transparent" />
-        <span className="font-retro text-lg text-ink/40">
+        <span className="font-retro text-lg text-ink/60">
           {project.platforms.length} plataformas
         </span>
       </div>
@@ -209,7 +209,7 @@ export default function SamarucSection({ project = samaruc }: { project?: Projec
                       </div>
                     )}
                     {shot.caption && (
-                      <figcaption className="border-t border-white/10 px-3 py-2 font-retro text-base text-ink/50">
+                      <figcaption className="border-t border-white/10 px-3 py-2 font-retro text-base text-ink/60">
                         {shot.caption}
                       </figcaption>
                     )}
@@ -219,7 +219,7 @@ export default function SamarucSection({ project = samaruc }: { project?: Projec
             </section>
           )}
 
-          <p className="mt-8 font-retro text-base text-ink/40">
+          <p className="mt-8 font-retro text-base text-ink/60">
             {project.author} · {project.year} · {project.license}
           </p>
         </article>

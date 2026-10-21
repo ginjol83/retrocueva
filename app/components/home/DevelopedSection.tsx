@@ -41,7 +41,7 @@ function DevelopedCard({ item }: { item: DevelopedGame }) {
         <h3 className="font-pixel text-[12px] leading-6 text-ink">
           {item.title}
         </h3>
-        <p className="mt-2 font-retro text-lg text-ink/50">
+        <p className="mt-2 font-retro text-lg text-ink/60">
           {item.language} · {item.tools}
         </p>
         <p className="mt-3 flex-1 text-sm leading-relaxed text-ink/70">
@@ -52,7 +52,7 @@ function DevelopedCard({ item }: { item: DevelopedGame }) {
             href={item.link}
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 inline-flex items-center gap-2 font-retro text-base text-ink/50 transition-colors hover:text-[var(--accent)]"
+            className="mt-4 inline-flex items-center gap-2 font-retro text-base text-ink/60 transition-colors hover:text-[var(--accent)]"
           >
             Ver proyecto <span aria-hidden>↗</span>
           </a>

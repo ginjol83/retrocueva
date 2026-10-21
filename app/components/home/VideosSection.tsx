@@ -18,7 +18,7 @@ export default function VideosSection({ data = videos }: { data?: Video[] }) {
         noun={data.length === 1 ? "vídeo" : "vídeos"}
       />
       {data.length === 0 ? (
-        <p className="border-2 border-dashed border-white/15 px-6 py-14 text-center font-retro text-xl text-ink/50">
+        <p className="border-2 border-dashed border-white/15 px-6 py-14 text-center font-retro text-xl text-ink/60">
           Próximamente: vídeos de la colección y de mis proyectos.
         </p>
       ) : (
@@ -64,7 +64,7 @@ export default function VideosSection({ data = videos }: { data?: Video[] }) {
                 <h3 className="font-pixel text-[12px] leading-6 text-ink">
                   {video.title}
                 </h3>
-                <p className="mt-2 font-retro text-lg text-ink/50">
+                <p className="mt-2 font-retro text-lg text-ink/60">
                   {video.channel ?? "YouTube"}
                   {video.duration ? ` · ${video.duration}` : ""}
                 </p>

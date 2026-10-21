@@ -49,7 +49,7 @@ export default function EnviarSerialPage() {
   });
 
   return (
-    <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
+    <main id="contenido" tabIndex={-1} className="mx-auto max-w-6xl px-6 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: howToLd }}
@@ -64,7 +64,7 @@ export default function EnviarSerialPage() {
           ]),
         }}
       />
-      <p className="font-retro text-lg tracking-widest text-ink/40">
+      <p className="font-retro text-lg tracking-widest text-ink/60">
         RETROCUEVA /{" "}
         <Link href="/base-de-datos" className="transition-colors hover:text-neon">
           BASE DE DATOS
@@ -99,7 +99,7 @@ export default function EnviarSerialPage() {
                 key={step.label}
                 className="border-2 border-white/10 bg-white/[0.02] px-4 py-3"
               >
-                <dt className="font-retro text-base tracking-widest text-ink/45">
+                <dt className="font-retro text-base tracking-widest text-ink/60">
                   {step.label}
                 </dt>
                 <dd className="mt-1 text-base leading-relaxed text-ink/80">
@@ -131,7 +131,7 @@ export default function EnviarSerialPage() {
           >
             @tecnicgimenezing
           </a>
-          <p className="mt-4 font-retro text-base leading-relaxed text-ink/50">
+          <p className="mt-4 font-retro text-base leading-relaxed text-ink/60">
             Agradezco cada unidad: con cada placa la base de datos se parece
             más a cómo salieron de fábrica.
           </p>

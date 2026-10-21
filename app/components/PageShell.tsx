@@ -6,7 +6,7 @@ export default function PageShell({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-dvh">
       <SiteHeader />
-      <main id="contenido" className="mx-auto max-w-6xl px-6">
+      <main id="contenido" tabIndex={-1} className="mx-auto max-w-6xl px-6">
         {children}
       </main>
       <SiteFooter />

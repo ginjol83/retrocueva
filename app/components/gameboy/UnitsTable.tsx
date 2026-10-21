@@ -12,7 +12,7 @@ export default function UnitsTable() {
           y su número de serie.
         </caption>
         <thead>
-          <tr className="border-b border-white/10 bg-white/[0.03] font-retro text-base tracking-widest text-ink/40">
+          <tr className="border-b border-white/10 bg-white/[0.03] font-retro text-base tracking-widest text-ink/60">
             <th scope="col" className={headerClass}>
               Modelo
             </th>

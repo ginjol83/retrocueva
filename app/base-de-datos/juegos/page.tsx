@@ -26,12 +26,12 @@ export default function JuegosPage() {
   ]);
 
   return (
-    <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
+    <main id="contenido" tabIndex={-1} className="mx-auto max-w-6xl px-6 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: breadcrumb }}
       />
-      <p className="font-retro text-lg tracking-widest text-ink/40">
+      <p className="font-retro text-lg tracking-widest text-ink/60">
         RETROCUEVA /{" "}
         <Link href="/base-de-datos" className="transition-colors hover:text-neon">
           BASE DE DATOS
@@ -80,7 +80,7 @@ export default function JuegosPage() {
               className="border-2 border-white/15 px-3 py-1 font-retro text-lg text-ink/70 transition-colors hover:border-neon hover:text-neon"
             >
               {letter}
-              <span className="ml-1 text-base text-ink/40">
+              <span className="ml-1 text-base text-ink/60">
                 {counts[letter]}
               </span>
             </Link>

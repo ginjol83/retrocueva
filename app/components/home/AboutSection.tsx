@@ -29,7 +29,7 @@ export default function AboutSection({ data = about }: { data?: About }) {
           <div className="mt-6 grid gap-px overflow-hidden border-2 border-white/10 bg-white/10 sm:grid-cols-2">
             {data.highlights.map((highlight) => (
               <div key={highlight.label} className="bg-[#0b0e1d] p-4">
-                <p className="font-retro text-base tracking-widest text-ink/40">
+                <p className="font-retro text-base tracking-widest text-ink/60">
                   {highlight.label}
                 </p>
                 <p className="mt-1 font-retro text-lg text-ink">

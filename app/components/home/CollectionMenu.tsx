@@ -8,6 +8,7 @@ import { games, machines } from "../../lib/data";
 export default function CollectionMenu() {
   const [open, setOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
+  const buttonRef = useRef<HTMLButtonElement>(null);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -16,7 +17,10 @@ export default function CollectionMenu() {
       if (!rootRef.current?.contains(event.target as Node)) setOpen(false);
     };
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") {
+        setOpen(false);
+        buttonRef.current?.focus();
+      }
     };
     document.addEventListener("mousedown", onPointerDown);
     document.addEventListener("keydown", onKeyDown);
@@ -37,8 +41,8 @@ export default function CollectionMenu() {
   return (
     <div ref={rootRef} className="relative">
       <button
+        ref={buttonRef}
         type="button"
-        aria-haspopup="true"
         aria-expanded={open}
         onClick={() => setOpen((value) => !value)}
         className={
@@ -70,7 +74,7 @@ export default function CollectionMenu() {
               }
             >
               <span>{item.label}</span>
-              <span className="text-ink/40">{item.count}</span>
+              <span className="text-ink/60">{item.count}</span>
             </Link>
           ))}
         </div>

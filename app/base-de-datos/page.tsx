@@ -63,7 +63,7 @@ export default function BaseDeDatosPage() {
   ];
 
   return (
-    <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
+    <main id="contenido" tabIndex={-1} className="mx-auto max-w-6xl px-6 py-12">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -73,7 +73,7 @@ export default function BaseDeDatosPage() {
           ]),
         }}
       />
-      <p className="font-retro text-lg tracking-widest text-ink/40">
+      <p className="font-retro text-lg tracking-widest text-ink/60">
         RETROCUEVA / <span className="text-neon">BASE DE DATOS</span>
       </p>
 
@@ -102,7 +102,7 @@ export default function BaseDeDatosPage() {
                 className="border-2 border-white/10 bg-white/[0.02] px-4 py-5"
               >
                 <dd className="font-pixel text-lg text-neon">{stat.value}</dd>
-                <dt className="mt-2 font-retro text-base tracking-widest text-ink/50">
+                <dt className="mt-2 font-retro text-base tracking-widest text-ink/60">
                   {stat.label}
                 </dt>
               </div>

@@ -35,14 +35,14 @@ export default function GameCard({ game }: { game: Game }) {
         <h3 className="font-pixel text-[12px] leading-6 text-ink">
           {game.title}
         </h3>
-        <p className="mt-2 font-retro text-lg text-ink/50">
+        <p className="mt-2 font-retro text-lg text-ink/60">
           {game.platform}
           {game.publisher ? ` · ${game.publisher}` : ""}
         </p>
         <p className="mt-3 flex-1 text-sm leading-relaxed text-ink/70">
           {game.description}
         </p>
-        <span className="mt-4 inline-flex items-center gap-2 font-retro text-base text-ink/50 transition-colors group-hover:text-[var(--accent)]">
+        <span className="mt-4 inline-flex items-center gap-2 font-retro text-base text-ink/60 transition-colors group-hover:text-[var(--accent)]">
           Ver ficha del juego <span aria-hidden>→</span>
         </span>
       </div>

@@ -10,6 +10,7 @@ export default function NotFound() {
   return (
     <main
       id="contenido"
+      tabIndex={-1}
       className="mx-auto flex min-h-dvh max-w-3xl flex-col items-center justify-center gap-6 px-6 py-16 text-center"
     >
       <Logo />

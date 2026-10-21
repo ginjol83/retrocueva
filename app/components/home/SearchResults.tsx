@@ -30,11 +30,11 @@ function ResultRow({
       <span className="font-pixel text-[11px] leading-6 text-ink">
         <Highlight text={title} query={query} />
       </span>
-      <span className="font-retro text-base text-ink/50">
+      <span className="font-retro text-base text-ink/60">
         <Highlight text={subtitle} query={query} />
       </span>
       {meta && (
-        <span className="ml-auto font-retro text-base text-ink/40">{meta}</span>
+        <span className="ml-auto font-retro text-base text-ink/60">{meta}</span>
       )}
     </div>
   );

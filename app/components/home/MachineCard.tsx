@@ -40,7 +40,7 @@ export default function MachineCard({ machine }: { machine: Machine }) {
         <h3 className="font-pixel text-[12px] leading-6 text-ink">
           {machine.name}
         </h3>
-        <p className="mt-2 font-retro text-lg text-ink/50">
+        <p className="mt-2 font-retro text-lg text-ink/60">
           {machine.manufacturer}
         </p>
         <p className="mt-3 flex-1 text-sm leading-relaxed text-ink/70">
@@ -51,7 +51,7 @@ export default function MachineCard({ machine }: { machine: Machine }) {
           <SpecRow label="RAM" value={machine.ram} />
           <SpecRow label="Storage" value={machine.storage} />
         </dl>
-        <span className="mt-4 inline-flex items-center gap-2 font-retro text-base text-ink/50 transition-colors group-hover:text-[var(--accent)]">
+        <span className="mt-4 inline-flex items-center gap-2 font-retro text-base text-ink/60 transition-colors group-hover:text-[var(--accent)]">
           Ver ficha completa <span aria-hidden>→</span>
         </span>
       </div>

@@ -17,7 +17,7 @@ export default function ArticlesSection({
         noun={data.length === 1 ? "artículo" : "artículos"}
       />
       {data.length === 0 ? (
-        <p className="border-2 border-dashed border-white/15 px-6 py-14 text-center font-retro text-xl text-ink/50">
+        <p className="border-2 border-dashed border-white/15 px-6 py-14 text-center font-retro text-xl text-ink/60">
           Aún no hay artículos publicados. Esta sección está lista para cuando
           lleguen los números.
         </p>
@@ -49,13 +49,13 @@ export function ArticleCard({ article }: { article: Article }) {
           {article.title}
         </h3>
         {article.issue && (
-          <p className="mt-2 font-retro text-lg text-ink/50">{article.issue}</p>
+          <p className="mt-2 font-retro text-lg text-ink/60">{article.issue}</p>
         )}
         <p className="mt-3 flex-1 text-sm leading-relaxed text-ink/70">
           {article.summary}
         </p>
         {href && (
-          <span className="mt-4 inline-flex items-center gap-2 font-retro text-base text-ink/50 transition-colors group-hover:text-[var(--accent)]">
+          <span className="mt-4 inline-flex items-center gap-2 font-retro text-base text-ink/60 transition-colors group-hover:text-[var(--accent)]">
             Leer artículo <span aria-hidden>→</span>
           </span>
         )}

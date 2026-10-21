@@ -77,14 +77,14 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
     >
       <SiteHeader />
 
-      <main id="contenido" className="mx-auto max-w-6xl px-6 py-12">
+      <main id="contenido" tabIndex={-1} className="mx-auto max-w-6xl px-6 py-12">
         <Link
           href="/juegos"
           className="font-retro text-lg text-ink/70 transition-colors hover:text-neon"
         >
           ← Volver al software
         </Link>
-        <p className="mt-4 font-retro text-lg tracking-widest text-ink/40">
+        <p className="mt-4 font-retro text-lg tracking-widest text-ink/60">
           COLECCIÓN / SOFTWARE /{" "}
           <span style={{ color }}>{game.title.toUpperCase()}</span>
         </p>
@@ -120,7 +120,7 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
             <h1 className="font-pixel text-base leading-8 text-ink sm:text-lg md:text-xl">
               {game.title}
             </h1>
-            <p className="mt-3 font-retro text-xl text-ink/50">
+            <p className="mt-3 font-retro text-xl text-ink/60">
               {game.platform} · {game.genre}
             </p>
             <p className="mt-5 text-base leading-relaxed text-ink/75">
@@ -140,7 +140,7 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
             <dl className="mt-3 grid gap-1.5 font-retro text-lg">
               {specs.map((row) => (
                 <div key={row.label} className="flex justify-between gap-4">
-                  <dt className="text-ink/45">{row.label}</dt>
+                  <dt className="text-ink/60">{row.label}</dt>
                   <dd className="text-right text-ink/90">{row.value}</dd>
                 </div>
               ))}
@@ -155,7 +155,7 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
           <div className="mt-4 grid grid-cols-1 gap-px overflow-hidden border-2 border-white/10 bg-white/10 sm:grid-cols-2 lg:grid-cols-4">
             {unit.map((u) => (
               <div key={u.label} className="bg-[#0b0e1d] p-5">
-                <p className="font-retro text-base tracking-widest text-ink/40">
+                <p className="font-retro text-base tracking-widest text-ink/60">
                   {u.label}
                 </p>
                 <p className="mt-1 font-retro text-xl text-ink">{u.value}</p>
@@ -163,7 +163,7 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
             ))}
           </div>
           <div className="mt-4 border-2 border-white/10 bg-white/[0.02] p-5">
-            <p className="font-retro text-base tracking-widest text-ink/40">
+            <p className="font-retro text-base tracking-widest text-ink/60">
               Notas
             </p>
             <p className="mt-1 text-base leading-relaxed text-ink/80">
@@ -184,13 +184,13 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
                 { label: "Japón", value: romEntry.jp },
               ].map((row) => (
                 <div key={row.label} className="bg-[#0b0e1d] p-5">
-                  <p className="font-retro text-base tracking-widest text-ink/40">
+                  <p className="font-retro text-base tracking-widest text-ink/60">
                     {row.label}
                   </p>
                   <p
                     className={
                       isNoRelease(row.value)
-                        ? "mt-1 font-retro text-xl text-ink/30"
+                        ? "mt-1 font-retro text-xl text-ink/60"
                         : "mt-1 font-retro text-xl text-ink"
                     }
                   >
@@ -199,7 +199,7 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
                 </div>
               ))}
             </div>
-            <p className="mt-4 font-retro text-base text-ink/50">
+            <p className="mt-4 font-retro text-base text-ink/60">
               Títulos del romset de Game Boy ·{" "}
               <Link
                 href="/base-de-datos/juegos"
@@ -237,7 +237,7 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
                     <p className="font-pixel text-[11px] leading-6 text-ink">
                       {sibling.title}
                     </p>
-                    <p className="mt-2 font-retro text-lg text-ink/50">
+                    <p className="mt-2 font-retro text-lg text-ink/60">
                       {sibling.genre} · {sibling.year}
                     </p>
                     <p className="mt-2 text-sm leading-relaxed text-ink/70">
@@ -265,7 +265,7 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
                     <p className="font-pixel text-[11px] leading-6 text-ink">
                       {machine.name}
                     </p>
-                    <p className="mt-2 font-retro text-lg text-ink/50">
+                    <p className="mt-2 font-retro text-lg text-ink/60">
                       {machine.manufacturer} · {machine.year}
                     </p>
                   </Link>
@@ -292,10 +292,10 @@ export default async function GamePage(props: PageProps<"/juegos/[id]">) {
                       <span className="font-pixel text-[11px] leading-6 text-ink">
                         {article.title}
                       </span>
-                      <span className="font-retro text-base text-ink/50">
+                      <span className="font-retro text-base text-ink/60">
                         {article.magazine} {article.issue ?? ""}
                       </span>
-                      <span className="ml-auto font-retro text-base text-ink/40">
+                      <span className="ml-auto font-retro text-base text-ink/60">
                         {article.year}
                       </span>
                     </div>
