@@ -29,7 +29,7 @@ Leyenda: `[x]` hecho · `[~]` en curso · `[ ]` pendiente · `[–]` descartado 
 - [ ] **1.6** Más vídeos + metadatos (`channel`, `duration`).
 - [ ] **1.7** Rellenar seriales pendientes (Portátil 486) y añadir más.
 - [ ] **1.8** Enlazar `link` de desarrollos y Samaruc a sus repos.
-- [ ] **1.9** Sección "Taller" usando `public/taller/*`.
+- [x] **1.9** Sección "Taller" usando `public/taller/*`.
 
 ---
 

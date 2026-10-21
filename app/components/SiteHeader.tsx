@@ -8,6 +8,7 @@ import CollectionMenu from "./home/CollectionMenu";
 
 const LINKS = [
   { href: "/quienes-somos", label: "Quiénes somos" },
+  { href: "/taller", label: "Taller" },
   { href: "/articulos", label: "Artículos" },
   { href: "/videos", label: "Vídeos" },
   { href: "/samaruc", label: "Samaruc" },

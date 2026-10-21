@@ -1,4 +1,4 @@
-import machinesData from "../../db/machines.json";
+﻿import machinesData from "../../db/machines.json";
 import gamesData from "../../db/games.json";
 import articlesData from "../../db/articles.json";
 import samarucData from "../../db/samaruc.json";
@@ -6,6 +6,7 @@ import developedData from "../../db/developed.json";
 import aboutData from "../../db/about.json";
 import serialsData from "../../db/serials.json";
 import videosData from "../../db/videos.json";
+import tallerData from "../../db/taller.json";
 
 export interface Machine {
   id: number;
@@ -160,12 +161,19 @@ export interface Serial {
   notes?: string;
 }
 
-export interface Video {
-  id: string;
-  title: string;
-  channel?: string;
-  duration?: string;
+export interface TallerImage {
+  src: string;
+  alt: string;
+  caption?: string;
 }
+
+export interface TallerSection {
+  id: number;
+  title: string;
+  description: string;
+  images: TallerImage[];
+}
+
 
 export const machines = machinesData as Machine[];
 export const games = gamesData as Game[];
@@ -174,7 +182,17 @@ export const samaruc = samarucData as Project;
 export const developed = developedData as DevelopedGame[];
 export const about = aboutData as About;
 export const serials = serialsData as Serial[];
+export interface Video {
+  id: string;
+  title: string;
+  channel?: string;
+  duration?: string;
+}
+
 export const videos = videosData as Video[];
+export const taller = tallerData as TallerSection[];
+
+
 
 const ACCENTS: Record<string, string> = {
   "Commodore 64": "#8b9cff",
@@ -186,11 +204,11 @@ const ACCENTS: Record<string, string> = {
   "BBC Micro": "#00f0ff",
   "Casio MX-10": "#ff7a45",
   "Thomson MO5": "#5aa9ff",
-  "Portátil 486": "#c9a0ff",
+  "PortÃ¡til 486": "#c9a0ff",
   "Game Boy": "#9be15d",
   "CAAD": "#ffb000",
   "Retro Gamer": "#ff2e97",
-  "Micromanía": "#5aa9ff",
+  "MicromanÃ­a": "#5aa9ff",
   "MicroHobby": "#39ff14",
 };
 
@@ -203,7 +221,7 @@ const CODES: Record<string, string> = {
   "Amstrad CPC": "CPC",
   "Casio MX-10": "MX",
   "Thomson MO5": "MO5",
-  "Portátil 486": "486",
+  "PortÃ¡til 486": "486",
 };
 
 export const accent = (key: string): string => ACCENTS[key] ?? "#00f0ff";
@@ -292,4 +310,5 @@ export const entitiesMentionedIn = (
     ),
   };
 };
+
 

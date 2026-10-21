@@ -1,0 +1,11 @@
+[
+  {
+    "id": 1,
+    "title": "Taller",
+    "description": "Zona de trabajo para reparación, pruebas y restauración de equipos retro.",
+    "images": [
+      { "src": "/taller/taller.jpg", "alt": "Banco de trabajo del taller", "caption": "Banco de trabajo con equipos y herramientas." },
+      { "src": "/taller/electronica.jpg", "alt": "Banco de electrónica", "caption": "Zona de electrónica para diagnósticos y reparaciones." }
+    ]
+  }
+]
