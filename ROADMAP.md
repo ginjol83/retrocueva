@@ -51,7 +51,7 @@ Leyenda: `[x]` hecho · `[~]` en curso · `[ ]` pendiente · `[–]` descartado 
 - [x] **3.15** `not-found.tsx` y `error.tsx` personalizados.
 - [x] **3.16** JSON-LD (`ItemList` en la colección, `Article` en artículos).
 - [x] **3.17** Auditoría a11y: foco visible, contraste, "saltar al contenido", orden de tabla, `aria-live` en resultados.
-- [ ] **3.18** Tests: Vitest (funciones de datos/búsqueda) + Playwright (home, `/placas`) + CI en GitHub Actions.
+- [x] **3.18** Tests: Vitest (funciones de datos/búsqueda) + Playwright (home, `/placas`) + CI en GitHub Actions.
 
 ---
 
