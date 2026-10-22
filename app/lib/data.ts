@@ -127,6 +127,7 @@ export interface DevelopedGame {
   tools: string;
   description: string;
   link?: string;
+  image?: string;
 }
 
 export interface Member {
@@ -206,6 +207,7 @@ const ACCENTS: Record<string, string> = {
   "Thomson MO5": "#5aa9ff",
   "PortÃ¡til 486": "#c9a0ff",
   "Game Boy": "#9be15d",
+  "Atari XE": "#ffb000",
   "CAAD": "#ffb000",
   "Retro Gamer": "#ff2e97",
   "MicromanÃ­a": "#5aa9ff",

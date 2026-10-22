@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import Image from "next/image";
 import { accent, developed, type DevelopedGame } from "../../lib/data";
 import { EmptyState, SectionTitle } from "./SectionBits";
 
@@ -29,15 +30,35 @@ function DevelopedCard({ item }: { item: DevelopedGame }) {
       className="retro-card"
       style={{ "--accent": accent(item.platform) } as CSSProperties}
     >
-      <div className="screen h-24 px-5">
-        <span className="badge">{item.platform}</span>
-        {item.year && (
-          <span className="font-retro text-3xl" style={{ color: "var(--accent)" }}>
-            {item.year}
-          </span>
-        )}
-      </div>
+      {item.image ? (
+        <div className="relative h-40 w-full overflow-hidden">
+          <Image
+            src={item.image}
+            alt={item.title}
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          />
+        </div>
+      ) : (
+        <div className="screen h-24 px-5">
+          <span className="badge">{item.platform}</span>
+          {item.year && (
+            <span className="font-retro text-3xl" style={{ color: "var(--accent)" }}>
+              {item.year}
+            </span>
+          )}
+        </div>
+      )}
       <div className="flex flex-1 flex-col p-5">
+        <div className="mb-2 flex items-center justify-between">
+          <span className="badge">{item.platform}</span>
+          {item.year && (
+            <span className="font-retro text-xl" style={{ color: "var(--accent)" }}>
+              {item.year}
+            </span>
+          )}
+        </div>
         <h3 className="font-pixel text-[12px] leading-6 text-ink">
           {item.title}
         </h3>
@@ -50,11 +71,11 @@ function DevelopedCard({ item }: { item: DevelopedGame }) {
         {item.link && (
           <a
             href={item.link}
-            target="_blank"
-            rel="noopener noreferrer"
+            target={item.link.startsWith("http") ? "_blank" : "_self"}
+            rel={item.link.startsWith("http") ? "noopener noreferrer" : undefined}
             className="mt-4 inline-flex items-center gap-2 font-retro text-base text-ink/60 transition-colors hover:text-[var(--accent)]"
           >
-            Ver proyecto <span aria-hidden>↗</span>
+            {item.link.endsWith(".xex") || item.link.includes("/roms/") ? "Descargar" : "Jugar online"} <span aria-hidden>→</span>
           </a>
         )}
       </div>

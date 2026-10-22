@@ -1,35 +1,35 @@
 [
   {
     "id": 1,
-    "title": "StarCombat Galactic Force",
-    "platform": "Game Boy",
-    "year": 2021,
+    "title": "CQ, Are you Copy?",
+    "platform": "ZX Spectrum",
+    "year": 2024,
     "language": "C",
-    "tools": "GBDK",
-    "description": "Shooter espacial para Game Boy escrito en C, con sprites propios y sistema de colisiones."
+    "tools": "Samaruc Code",
+    "description": "Mini novela gráfica minimalista de terror ambientada en un faro, centrada en la radioafición. Demo técnica para ZX Spectrum, jugable online en el navegador.",
+    "link": "/emulator/cq-are-you-copy.html",
+    "image": "/images/desarrollos/faro_cuad.png"
   },
   {
     "id": 2,
-    "title": "GB Ajedrez",
+    "title": "ClonePong",
     "platform": "Game Boy",
+    "year": 2024,
     "language": "C",
-    "tools": "GBDK",
-    "description": "Ajedrez para Game Boy con tablero gráfico, menú y estados de partida, escrito en C."
+    "tools": "Samaruc Code",
+    "description": "Demo técnica para Game Boy desarrollada con Samaruc Code. Se ejecuta en el navegador mediante EmulatorJS.",
+    "link": "/emulator/clone-pong.html",
+    "image": "/images/desarrollos/clonePong.png"
   },
   {
     "id": 3,
-    "title": "CQ Do You Copy",
-    "platform": "Game Boy",
-    "language": "GB Studio",
-    "tools": "GB Studio",
-    "description": "Juego para Game Boy desarrollado con GB Studio, con escenas y guion propios."
-  },
-  {
-    "id": 4,
-    "title": "La Mansión Embrujada",
-    "platform": "ZX Spectrum",
-    "language": "C",
-    "tools": "Z88DK · motor de aventuras propio",
-    "description": "Aventura conversacional para ZX Spectrum construida sobre un motor de aventuras modular desarrollado en C."
+    "title": "La Pócima",
+    "platform": "Atari XE",
+    "year": 2003,
+    "language": "Assembly",
+    "tools": "Traducción al español",
+    "description": "Traducción al español del juego 'The Potion' Copyright (C) 2002-2003 Peter Karlsson (Softwolves Software), distribuido bajo licencia GNU. ROM disponible para descarga.",
+    "link": "/roms/potion.xex",
+    "image": "/images/desarrollos/laPocima.png"
   }
 ]

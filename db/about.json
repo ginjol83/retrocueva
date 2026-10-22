@@ -1,7 +1,20 @@
 {
   "intro": [
-    "RETROCUEVA es mi colección personal de informática retro: ordenadores, consolas y juegos que voy documentando uno a uno, con su número de serie, su estado y su ficha técnica. Todo lo que sale aquí está en mi casa, en la vitrina, y se puede abrir y ver.",
-    "También programo para 8 bits. Así conviven el hardware que conservo con el software que desarrollo: el editor de C retro Samaruc, juegos para Game Boy y aventuras para ZX Spectrum."
+    "# Quiénes somos",
+    "RetroCueva es un proyecto personal sin ánimo de lucro dedicado a la informática retro, la conservación de equipos clásicos y el desarrollo de nuevos proyectos inspirados en la tecnología de otras épocas.",
+    "## Mucho más que una colección",
+    "Reunimos, documentamos, reparamos y restauramos ordenadores, consolas y videojuegos que forman parte de la historia de la informática y del entretenimiento electrónico. Queremos preservar ese patrimonio y compartirlo con otros aficionados.",
+    "La preservación va más allá de las máquinas: también mantenemos viva la información que las rodea —manuales, fotografías, documentos, revistas, testimonios y conocimientos— para que no se pierdan con el tiempo. Cualquier aportación en forma de material, datos o correcciones nos ayuda en esa labor.",
+    "## Reparación, restauración y desarrollo",
+    "Dedicamos parte de nuestro tiempo a la reparación y restauración de equipos clásicos, tanto de nuestra colección como de aparatos de terceros. Además, desarrollamos nuestro propio software y videojuegos para plataformas de 8 bits, manteniendo vivo el espíritu de programar cuando los recursos eran limitados y cada byte contaba.",
+    "## Colaboración y donativos",
+    "Estamos abiertos a la compra, donación o cesión de equipos, juegos, documentación y material relacionado con la informática clásica. También agradecemos la colaboración de aficionados, coleccionistas, técnicos o cualquier persona que quiera aportar conocimientos o difundir el proyecto.",
+    "## Sin ánimo de lucro",
+    "RetroCueva no tiene ánimo de lucro. Si se generan ingresos a través de publicidad, venta de artículos relacionados o donaciones, se destinarán íntegramente al proyecto: adquisición de material para preservar, reparación, restauración, herramientas, documentación, mantenimiento de la web y desarrollo de nuevos recursos.",
+    "Nos comprometemos a gestionarlos de forma responsable y transparente.",
+    "## Contacto",
+    "Si compartes esta afición, necesitas reparar o restaurar un equipo, quieres solicitar presupuesto, tienes material para ofrecernos o deseas colaborar, escríbenos a **laretrocueva.contacto@gmail.com**.",
+    "**RetroCueva: conservando el pasado, compartiendo el conocimiento y creando nuevos proyectos para el futuro.**"
   ],
   "members": [
     {
@@ -10,10 +23,5 @@
       "bio": "Trabajo con C y Java sobre plataformas de 8 bits. Mi trabajo de fin de grado fue Samaruc, un editor de C retro con compilación integrada para GBDK y Z88DK, y de ahí han salido varios juegos para Game Boy y un motor de aventuras para ZX Spectrum."
     }
   ],
-  "highlights": [
-    { "label": "Colección", "value": "Casio MX-10, Thomson MO5 y portátil 486" },
-    { "label": "Software", "value": "Samaruc, juegos de Game Boy y ZX Spectrum" },
-    { "label": "Herramientas", "value": "GBDK, Z88DK y JavaFX" },
-    { "label": "Publicaciones", "value": "Artículos en revistas de retroinformática" }
-  ]
+  "highlights": []
 }

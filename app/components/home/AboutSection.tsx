@@ -17,27 +17,59 @@ export default function AboutSection({ data = about }: { data?: About }) {
             height={173}
             className="mb-6 h-28 w-auto drop-shadow-[0_0_24px_rgba(0,240,255,0.25)] sm:h-36"
           />
-          {data.intro.map((paragraph) => (
-            <p
-              key={paragraph}
-              className="mb-4 text-base leading-relaxed text-ink/75"
-            >
-              {paragraph}
-            </p>
-          ))}
+          {data.intro.map((paragraph, i) => {
+            if (paragraph.startsWith("# ")) {
+              return (
+                <h1 key={i} className="mb-6 font-pixel text-[14px] leading-8 text-ink">
+                  {paragraph.replace("# ", "")}
+                </h1>
+              );
+            }
+            if (paragraph.startsWith("## ")) {
+              return (
+                <h2 key={i} className="mb-3 mt-8 font-pixel text-[11px] leading-7 text-ink">
+                  {paragraph.replace("## ", "")}
+                </h2>
+              );
+            }
+            if (paragraph.includes("**") && !paragraph.includes("mailto")) {
+              return (
+                <p
+                  key={i}
+                  className="mb-4 text-base leading-relaxed text-ink/75"
+                  dangerouslySetInnerHTML={{
+                    __html: paragraph
+                      .replace(/\*\*(.*?)\*\*/g, '<strong class="text-ink">$1</strong>')
+                      .replace(/\*([^*\s][^*]*?)\*/g, '<em>$1</em>'),
+                  }}
+                />
+              );
+            }
+            return (
+              <p
+                key={i}
+                className="mb-4 text-base leading-relaxed text-ink/75"
+                dangerouslySetInnerHTML={{
+                  __html: paragraph.replace(/\*\*(.*?)\*\*/g, '<strong class="text-ink">$1</strong>'),
+                }}
+              />
+            );
+          })}
 
-          <div className="mt-6 grid gap-px overflow-hidden border-2 border-white/10 bg-white/10 sm:grid-cols-2">
-            {data.highlights.map((highlight) => (
-              <div key={highlight.label} className="bg-[#0b0e1d] p-4">
-                <p className="font-retro text-base tracking-widest text-ink/60">
-                  {highlight.label}
-                </p>
-                <p className="mt-1 font-retro text-lg text-ink">
-                  {highlight.value}
-                </p>
-              </div>
-            ))}
-          </div>
+          {data.highlights && data.highlights.length > 0 && (
+            <div className="mt-6 grid gap-px overflow-hidden border-2 border-white/10 bg-white/10 sm:grid-cols-2">
+              {data.highlights.map((highlight) => (
+                <div key={highlight.label} className="bg-[#0b0e1d] p-4">
+                  <p className="font-retro text-base tracking-widest text-ink/60">
+                    {highlight.label}
+                  </p>
+                  <p className="mt-1 font-retro text-lg text-ink">
+                    {highlight.value}
+                  </p>
+                </div>
+              ))}
+            </div>
+          )}
         </div>
 
         <div className="grid gap-6 self-start">

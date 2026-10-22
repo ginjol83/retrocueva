@@ -45,7 +45,7 @@ const ACCESS = [
     href: "/samaruc",
     title: "Samaruc",
     meta: "8 plataformas",
-    description: "IDE de desarrollo retro de 8 bits hecho a mano.",
+    description: "IDE de desarrollo retro de 8 bits.",
   },
   {
     href: "/desarrollos",

@@ -1,6 +1,6 @@
 {
   "name": "Samaruc",
-  "title": "Samaruc: un IDE de 8 bits hecho a mano",
+  "title": "Samaruc: un IDE de 8 bits",
   "lead": "*Programar para una Game Boy, un ZX Spectrum o un Amstrad CPC no debería parecerse a hacer malabares con scripts de consola y un emulador abierto en otra ventana.* **Samaruc** nace justo de ahí: de querer un entorno decente para el desarrollo retro, con compilador, emulador y editores gráficos en el mismo sitio.",
   "author": "Andrés Giménez",
   "year": 2026,
