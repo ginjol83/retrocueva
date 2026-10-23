@@ -140,7 +140,8 @@ export interface DevelopedGame {
 export interface Member {
   name: string;
   role: string;
-  bio: string;
+  bio: string | string[];
+  avatar?: string;
 }
 
 export interface Highlight {

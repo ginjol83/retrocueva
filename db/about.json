@@ -19,8 +19,15 @@
   "members": [
     {
       "name": "Andrés Giménez",
-      "role": "Coleccionista y desarrollador",
-      "bio": "Trabajo con C y Java sobre plataformas de 8 bits. Mi trabajo de fin de grado fue Samaruc, un editor de C retro con compilación integrada para GBDK y Z88DK, y de ahí han salido varios juegos para Game Boy y un motor de aventuras para ZX Spectrum."
+      "role": "Desarrollador y amante del retro",
+      "avatar": "/avatar.png",
+      "bio": [
+        "Soy ingeniero informático por la UNED con más de 10 años de experiencia en el sector IT. He trabajado en empresas de consultoría y desarrollo de software en proyectos para administraciones públicas y empresas privadas, trabajando en análisis, desarrollo y mantenimiento de aplicaciones empresariales. Mi experiencia está centrada sobre todo en tecnologías Java y entornos J2EE, utilizando herramientas y frameworks como Spring Boot, Hibernate, Node.js, Maven y MySQL.",
+        "En lo profesional, actualmente sigo ampliando conocimientos en tecnologías backend modernas, APIs REST e inteligencia artificial aplicada al desarrollo. Dedico tiempo a explorar soluciones prácticas de IA para automatización, análisis de datos y mejora de productos software.",
+        "Me gusta desarrollar aplicaciones claras, mantenibles y funcionales, manteniendo un enfoque práctico y orientado a resolver problemas reales.",
+        "Fuera del ámbito profesional, también me apasiona la informática clásica, el desarrollo de herramientas y los proyectos relacionados con retrocomputación y emulación, intereses que a menudo inspiran iniciativas personales y experimentales.",
+        "RetroCueva es el rincón que he creado donde puedo compartir el conocimiento adquirido durante muchos años en computación clásica y, al mismo tiempo, un espacio para proyectar mi pasión por ella, para que cualquier aficionado pueda disponer de esta información a su alcance y tratar de mantener vivo el legado de las máquinas de 8 y 16 bits."
+      ]
     }
   ],
   "highlights": []

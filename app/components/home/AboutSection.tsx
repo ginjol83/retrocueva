@@ -80,15 +80,31 @@ export default function AboutSection({ data = about }: { data?: About }) {
               style={{ "--accent": "#00f0ff" } as CSSProperties}
             >
               <div className="screen h-24 px-5">
+                {member.avatar ? (
+                  <Image
+                    src={member.avatar}
+                    alt={`Avatar de ${member.name}`}
+                    width={821}
+                    height={787}
+                    sizes="64px"
+                    className="h-16 w-16 border-2 border-white/20 object-cover"
+                  />
+                ) : (
+                  <span />
+                )}
                 <span className="badge">{member.role}</span>
               </div>
               <div className="p-5">
                 <h3 className="font-pixel text-[12px] leading-6 text-ink">
                   {member.name}
                 </h3>
-                <p className="mt-3 text-sm leading-relaxed text-ink/70">
-                  {member.bio}
-                </p>
+                <div className="mt-3 space-y-3 text-sm leading-relaxed text-ink/70">
+                  {(Array.isArray(member.bio) ? member.bio : [member.bio]).map(
+                    (paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ),
+                  )}
+                </div>
               </div>
             </div>
           ))}
