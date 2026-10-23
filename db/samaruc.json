@@ -4,7 +4,7 @@
   "lead": "*Programar para una Game Boy, un ZX Spectrum o un Amstrad CPC no debería parecerse a hacer malabares con scripts de consola y un emulador abierto en otra ventana.* **Samaruc** nace justo de ahí: de querer un entorno decente para el desarrollo retro, con compilador, emulador y editores gráficos en el mismo sitio.",
   "author": "Andrés Giménez",
   "year": 2026,
-  "version": "1.0.0",
+  "version": "1.3.3",
   "license": "MIT",
   "platforms": [
     "Game Boy / Game Boy Color",
@@ -18,6 +18,19 @@
   ],
   "stack": ["Java 17", "JavaFX", "Maven", "GBDK-2020", "Z88DK", "CC65", "devkitSMS"],
   "logo": "/samaruc/favicon.png",
+  "link": "https://github.com/ginjol83/samaruc-editor/releases/latest",
+  "downloads": [
+    {
+      "label": "Instalador Windows (MSI)",
+      "description": "Instala Samaruc en Windows con acceso directo y desinstalador. Recomendado para la mayoría de usuarios.",
+      "url": "https://github.com/ginjol83/samaruc-editor/releases/download/v1.3.3/Samaruc-Setup-1.3.3.msi"
+    },
+    {
+      "label": "Windows portable (EXE)",
+      "description": "Ejecutable portable: no requiere instalación, ideal para llevar la aplicación en un USB.",
+      "url": "https://github.com/ginjol83/samaruc-editor/releases/download/v1.3.3/Samaruc-Setup-1.3.3.exe"
+    }
+  ],
   "screenshots": [
     {
       "src": "/samaruc/CapturaSamaruc1.png",

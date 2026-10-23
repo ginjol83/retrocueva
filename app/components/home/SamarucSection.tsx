@@ -137,6 +137,8 @@ export default function SamarucSection({ project = samaruc }: { project?: Projec
             {project.link && (
               <a
                 href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border-2 border-neon bg-neon/10 px-5 py-2.5 font-retro text-lg text-neon transition-all hover:bg-neon hover:text-black"
               >
                 Descargar Samaruc
@@ -165,6 +167,36 @@ export default function SamarucSection({ project = samaruc }: { project?: Projec
               </span>
             ))}
           </div>
+
+          {project.downloads && project.downloads.length > 0 && (
+            <section className="mt-8">
+              <h3 className="font-pixel text-[12px] leading-6 text-ink sm:text-sm">
+                <span style={{ color: ACCENT }}>/</span> Descargas para Windows
+              </h3>
+              <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+                {project.downloads.map((download) => (
+                  <li key={download.url}>
+                    <a
+                      href={download.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group flex h-full flex-col border-2 border-white/10 bg-black/30 p-4 transition-colors hover:border-neon/60 hover:bg-neon/5"
+                    >
+                      <span className="flex items-center justify-between gap-3 font-retro text-lg text-neon">
+                        {download.label}
+                        <span aria-hidden>↓</span>
+                      </span>
+                      {download.description && (
+                        <span className="mt-2 text-sm leading-relaxed text-ink/60">
+                          {download.description}
+                        </span>
+                      )}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
 
           {project.sections.map((section) => (
             <section key={section.heading} className="mt-8">

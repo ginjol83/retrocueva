@@ -102,6 +102,12 @@ export interface ProjectScreenshot {
   height?: number;
 }
 
+export interface ProjectDownload {
+  label: string;
+  description?: string;
+  url: string;
+}
+
 export interface Project {
   name: string;
   title: string;
@@ -116,6 +122,7 @@ export interface Project {
   screenshots?: ProjectScreenshot[];
   logo?: string;
   link?: string;
+  downloads?: ProjectDownload[];
 }
 
 export interface DevelopedGame {
